@@ -1,0 +1,11 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: tesi.aux
+A level-1 auxiliary file: capitolo1.aux
+The style file: plain.bst
+I couldn't open database file bibl_tesi.bib
+---line 6 of file tesi.aux
+ : \bibdata{bibl_tesi
+ :                   }
+I'm skipping whatever remains of this command
+I found no \citation commands---while reading file tesi.aux
+I found no database files---while reading file tesi.aux
+(There were 3 error messages)

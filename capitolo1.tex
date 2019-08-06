@@ -1,0 +1,62 @@
+\chapter{Introduzione}
+\label{Introduzione}
+\thispagestyle{empty}
+
+
+\section{Inquadramento generale}
+\noindent L'analisi e la comprensione di grosse quantit\`a di dati in questi ultimi anni \`e diventata una pratica fondamentale per comprendere i fenomeni che ci circondano. In particolare quando questi fenomeni sono descritti da una posizione geografica e da un momento temporale preciso ci permettono di realizzare delle deduzioni che altrimenti sarebbero impensabili.
+\\\\
+In questo ramo della ricerca si inserisce il \textit{Data Mining}, ovvero l'insieme di tecniche e metodologie che hanno per oggetto l'estrazione di informazioni utili da grandi quantit\`a di dati attraverso metodi automatici o semi-automatici (\textit{machine learning}).\\
+Nel lavoro svolto in particolare viene effettuata una \textit{analisi delle associazioni}, una tecnica particolare di data mining utilizzata per la ricerca di connessioni di eventi con determinate caratteristiche. 
+
+\section{Breve descrizione del lavoro}
+L'algoritmo preso in esame \`e lo \textit{Spatio-Temporal Breath-first Miner (STBFM)} definito da Piotr S. Maciag and Robert Bembenik. Questo particolare algoritmo permette di definire delle sequenze di tipologie di eventi connesse nello spazio e nel tempo. 
+Viene definito un vicinato basato su un raggio spaziale e un intervallo di tempo dal quale valutare se il singolo evento \`e "vicino" ad altri. Questa valutazione viene fatta per tutti gli eventi di uno stesso tipo rispetto a tutti gli eventi di un altro tipo. Da queste valutazioni si ricava un valore di \textit{connessione} tra tipi compreso tra $[0,1]$, pi\`u questo valore tende a $1$ pi\`u i rispettivi tipi sono associati.\\
+Questo lavoro viene fatto su diverse combinazioni di tipi, queste combinazioni vengono unite in sequenze e a ogni sequenza viene associato il valore di associazione.
+\\
+es. 
+
+$[A, B, C]$ - 0.8
+
+$[B, D]$ - 0.5\\\\
+Tramite questi valori dovremmo essere in grado di capire quanto degli eventi sono associati e, in questi casi, cercare di prevenire/supportare (a seconda dei casi) l'evento di tipologia successiva.\\
+\\
+Il caso preso in esame \`e quello dei crimini avvenuti a Boston, utilizzando il database fornito dal Boston Police Department (BPD) in cui sono registrati tutti i crimini avvenuti a Boston dal 2015, etichettandoli con la tipologia (di crimine), le coordinate GPS dell'evento e il momento in cui avvengono, con il giorno e l'orario.\\\\
+es.
+\begin{table}[h]
+	\begin{tabular}{|l|l|l|l|l|}
+		\hline
+		Offence Code& Date& Lat	& Long \\
+		\hline
+		LarcFromMotVehic	& 01/01/2018 00:00	& 4.235.314.550	& -7.107.763.936 \\
+		ResidentialBurglary			& 01/01/2018 00:00	& 4.229.755.533 & -7.105.970.910 \\
+		AggravatedAssault			& 01/01/2018 02:23	& 4.235.040.583 & -7.106.512.526 \\
+		\hline
+	\end{tabular}
+	\caption{esempio eventi}
+\end{table}
+\\
+Esso rispetta tutti i vincoli di applicazione di questo algoritmo, vi \`e un gran numero di eventi etichettati per tipologia, geolocalizzati spazialmente e temporalmente, pertanto \`e stato scelto per l'applicazione pratica.
+
+\section{Scopo e prospettive}
+Lo scopo di questo lavoro \`e quindi quello di implementare il l'algoritmo \textit{Spatio-Temporal Breath-First Miner (STBFS)} per capire le sue applicazioni a casi concreti come quello dei crimini di Boston e analizzarne l'efficacia anche in termini di tempi di computazione. \\
+Esso si apre a possibili sviluppi futuri anche in contesti completamente diversi rispetto a quello preso in esame, come ad esempio l'analisi dell'incidenza di epidemie.
+
+\section{Struttura della tesi}
+La tesi \`e strutturata nel seguente modo:
+\begin{itemize}
+	\item Nel \textbf{capitolo due} si parla della base teorica su cui si basa l'algoritmo, in particolare i calcoli che si effettuano e la struttura dati utilizzata nel paper (anche possibili alternative come algoritmo apriori?)
+	
+	\item Nel \textbf{capitolo tre} si analizza in modo pi\`u approfondito il dataset utilizzato e le varie considerazioni fatte
+	
+	\item Nel \textbf{capitolo quattro} si parla dell'implementazione effettuata
+	
+	\item Nel \textbf{capitolo cinque} si analizzano i risultati ottenuti sia in termini di tempi di computazione che in termini di significato degli stessi
+	
+	\item \textbf{Conclusioni} e prospettive future		 
+\end{itemize}
+
+
+
+
+

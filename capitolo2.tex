@@ -1,0 +1,37 @@
+\chapter{Base teorica}
+\label{Teoria}
+\thispagestyle{empty}
+
+\section{Paper}
+Come precedentemente anticipato l'algoritmo oggetto di questo lavoro \`e \\
+\textbf{A Novel Breadth-first Strategy Algorithm for Discovering Sequential Patterns from Spatio-temporal Data} \\ di Piotr S. Maciag e Robert Bembenik del \textit{Instituite of Computer Science, Warsaw University of Tecnology, Nowowiejska 15/19, 00-665, Warsaw, Poland}.\\ Di seguito vi \`e la trascritta la base teorica su cui si fonda l'algoritmo e le strutture dati utilizzate per la sua realizzazione.
+
+\section{Nozioni base}
+Il problema che si considera \`e quello della scoperta di pattern da un certo dataset di istanze di eventi, i quali sono di una certa tipologia, definiamo quindi:
+
+$D \rightarrow$ dataset di istanze di eventi
+
+$F \rightarrow$ insieme di tipologie di eventi
+\\\\
+Ogni istanza $e \in D$ ha:
+\begin{itemize}
+	\item chiave di identificazione (unica)
+	\item location spaziale (es. coordinate geografiche)
+	\item istante temporale
+	\item tipologia $f \in F$
+\end{itemize}
+\noindent
+La sequenza di eventi (pattern) \`e cos\`i definita:
+
+$\vec{s} = f_{i_1} \rightarrow f_{i_2} \rightarrow ... \rightarrow f_{i_n}$, dove $f_{i_1}, f_{i_2}, ..., f_{i_n} \in F$\\
+Quindi per ogni due tipologie di eventi consecutive in una sequenza $f_{i_{j-1}} \rightarrow f_{i_j}$, le istanze dell'evento $j-1$ sono connesse con con il tipo successivo spazialmente e temporalmente, definendo una sorta di \textit{vicinato} comune tra istanze. 
+\\\\
+QUA FAI L'ESEMPIO DEL PAPER PER SPiEGARE COSA SI INTENDE (QUESTO \`E IL CAPITOLO DEL VICINATO???)
+\section{Vicinato}
+
+\section{Parametri di threshold}
+
+\section{Struttura ad albero}
+
+\section{Alternativa - Algoritmo apriori}
+
