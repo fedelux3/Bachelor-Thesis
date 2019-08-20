@@ -3,11 +3,12 @@
 \thispagestyle{empty}
 
 \section{Paper}
-Come precedentemente anticipato l'algoritmo oggetto di questo lavoro \`e \\
-\textbf{A Novel Breadth-first Strategy Algorithm for Discovering Sequential Patterns from Spatio-temporal Data} \\ di Piotr S. Maciag e Robert Bembenik del \textit{Instituite of Computer Science, Warsaw University of Tecnology, Nowowiejska 15/19, 00-665, Warsaw, Poland}.\\ Di seguito vi \`e la trascritta la base teorica su cui si fonda l'algoritmo e le strutture dati utilizzate per la sua realizzazione.
+Come precedentemente anticipato, l'algoritmo oggetto di questo lavoro \`e \\
+\textbf{A Novel Breadth-first Strategy Algorithm for Discovering Sequential Patterns from Spatio-temporal Data} \\ di Piotr S. Maciag e Robert Bembenik del \textit{Instituite of Computer Science, Warsaw University of Tecnology, Nowowiejska 15/19, 00-665, Warsaw, Poland}.\\ Di seguito vi \`e la base teorica su cui si fonda l'algoritmo e le strutture dati utilizzate per la sua realizzazione.
 
 \section{Vicinato}
-Il problema che si considera \`e quello della scoperta di pattern da un certo dataset di istanze di eventi, i quali sono di una certa tipologia, definiamo quindi:
+Il problema che si considera \`e la scoperta di pattern da un certo dataset di istanze di eventi, i quali sono di una data tipologia.\\
+Definiamo quindi:
 
 $D \rightarrow$ dataset di istanze di eventi
 
@@ -24,7 +25,7 @@ Ogni istanza $e \in D$ ha:
 La sequenza di eventi (pattern) \`e cos\`i definita:
 
 $\overrightarrow{s} = f_{i_1} \rightarrow f_{i_2} \rightarrow ... \rightarrow f_{i_n}$, dove $f_{i_1}, f_{i_2}, ..., f_{i_n} \in F$\\
-Quindi per ogni due tipologie di eventi consecutive in una sequenza $f_{i_{j-1}} \rightarrow f_{i_j}$, le istanze dell'evento $j-1$ sono connesse con con il tipo successivo spazialmente e temporalmente. \\
+Quindi per ogni due tipi consecutivi di eventi in una sequenza $f_{i_{j-1}} \rightarrow f_{i_j}$, le istanze dell'evento di tipo $j-1$ sono connesse con le istanze del tipo successivo $j$ spazialmente e temporalmente. \\
 L'insieme di eventi collegati in questo modo a una determinata istanza viene definito \textbf{neighborhood} o  vicinato. 
 
 \underline{Esempio}\\
@@ -38,12 +39,16 @@ $F = \{A,B,C\}$
 \end{figure}
 \\
 Una sequenza significativa per esempio potrebbe essere $\overrightarrow{s} = A \rightarrow B \rightarrow C$.\\
-Per valutare la connessione $A \rightarrow B$ bisogna considerare il \textit{neighborhood} tra le loro istanze. Come si nota dalla figura \`e stato scelto un raggio spaziale pari a $R = 3.5$ e un intervallo temporale pari a $T = 10$ per la dimensione del vicinato. 
+Per valutare la connessione $A \rightarrow B$ bisogna considerare il \textit{neighborhood} tra le loro istanze. Come si nota dalla figura per la dimensione del vicinato \`e stato scelto un raggio spaziale pari a $R = 3.5$ e un intervallo temporale pari a $T = 10$. 
 
 \section{Nozioni di base}
-Dopo aver inquadrato graficamente il problema ora definiamo formalmente i concetti base usati per il calcolo di tutte le sequenze pattern usati nell'algoritmo.
+Dopo aver inquadrato graficamente il problema, ora definiamo formalmente i concetti base usati per il calcolo di tutte le sequenze pattern impiegati nell'algoritmo.
 
-\paragraph{Spazio Neighborhood} Con $V_{N(e)}$ denotiamo lo spazio di neighborhood (vicinato) dell'istanza $e$. Questo spazio si basa su tre dimensioni, che sono le due dimensioni spaziali - latitudine e longitudine - e la dimensione temporale. Graficamente ne risulta un cilindro, con parametri $R$ che denota il raggio spaziale e $T$ l'intervallo temporale.
+\paragraph{Spazio Neighborhood} Con $V_{N(e)}$ denotiamo lo spazio di neighborhood (vicinato) dell'istanza $e$. Questo spazio si basa su tre dimensioni, che sono le due dimensioni spaziali - latitudine e longitudine - e la dimensione temporale. Graficamente ne risulta un cilindro, con i seguenti parametri:
+\begin{itemize}
+	\item $R$: il raggio spaziale 
+	\item $T$: l'intervallo temporale
+\end{itemize} 
 
 In Figura 2.2 vengono mostrati i due neighborhood tratti dall'\textit{esempio} della Figura 2.1: $V_{N(a1)}$ e $V_{N(a2)}$.
 
@@ -54,7 +59,7 @@ In Figura 2.2 vengono mostrati i due neighborhood tratti dall'\textit{esempio} d
 	\caption{$V_{N(a1)}$ e $V_{N(a2)}$}
 \end{figure}
 
-\paragraph{Neighborhood rispetto a una tipologia di evento} Data una certa istanza $e$, il \textit{neighborhood} di $e$ \`e definito nel modo seguente:\\
+\paragraph{Neighborhood rispetto ad una tipologia di evento} Data una certa istanza $e$, il \textit{neighborhood} di $e$ \`e definito nel modo seguente:\\
 
 $N_f(e) = \{e|p \in D(f) $
 
@@ -64,7 +69,7 @@ $N_f(e) = \{e|p \in D(f) $
 \\
 dove $R$ e $T$ sono i parametri dello spazio di vicinato $V_{N(e)}$ e $D(f)$ \`e l'insieme di istanze degli eventi di tipo $f$ nel dataset $D$.
 
-\noindent \underline{Nota} si considerano solo gli eventi che si susseguono dal punto di vista temporale, in quanto \`e poco significativo considerare gli eventi passati dell'istanza nella ricerca di sequenze.
+\noindent \underline{Nota} si considerano solo gli eventi che si susseguono dal punto di vista temporale, in quanto \`e poco significativo nella ricerca di sequenze considerare gli eventi passati dell'istanza.
 \\\\
 Riassumento con $N_f(e)$ denoto l'insieme di istanze di tipo $f$ contenute all'interno dello spazio $V_{N(e)}$.
 \\
@@ -82,10 +87,11 @@ $N_B(a1) = \{b1,b2,b3\}$ e $N_B(a2) = \{b4,b5,b6\}$
 	\qquad $I(\overrightarrow{s}[i]) = distinct( \underset{e \in I(\overrightarrow{s}[i-1])}{\bigcup} N_{\overrightarrow{s}[i]}(e))$	
 \end{enumerate}
 \noindent
-In pratica per il primo tipo di evento (d'ora in poi nominato solo "tipo") che partecipa alla sequenza $\overrightarrow{s}$, il set di istanze $I(\overrightarrow{s}[1])$ corrisponde al set di istanze di tipo $\overrightarrow{s}[1]$ in $D$, ovvero $D(\overrightarrow{s}[1])$.\\
+In altre parole, per il primo tipo di evento (d'ora in poi nominato solo "tipo") che partecipa alla sequenza $\overrightarrow{s}$, il set di istanze $I(\overrightarrow{s}[1])$ corrisponde al set di istanze di tipo $\overrightarrow{s}[1]$ in $D$, ovvero $D(\overrightarrow{s}[1])$.\\
 Per i tipi successivi di $\overrightarrow{s}$, i set $I(\overrightarrow{s}[i])$ sono definiti come insiemi di istanze contenute nei vicinati di istanze a partire da $I(\overrightarrow{s}[i-1])$.\\
-Seguendo questo meccanismo si valuta tutta la sequenza e tendendo in considerazione l'insieme di istanze calcolato al passaggio precedente.
+Seguendo questo meccanismo si valuta tutta la sequenza, tenendo in considerazione l'insieme di istanze calcolato al passaggio precedente.
 \\\\
+\textit{Esempio}\\
 Consideriamo la sequenza $\overrightarrow{s} = A \rightarrow B$ dal dataset dell'\textit{esempio} in Figura 2.1. In questo caso avremmo i seguenti set di istanze:\\
 $I(\overrightarrow{s}[1]) = \{a1,a2\}$\\
 $I(\overrightarrow{s}[2]) = \{b1,b2,b3,b4,b5,b6\}$
