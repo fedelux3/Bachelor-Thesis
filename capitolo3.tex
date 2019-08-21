@@ -164,8 +164,22 @@ Seguendo questo processo viene generato l'\textit{SPTree}.
 \clearpage
 
 \section{STBFM}
+L'integrazione tra l'algoritmo \textit{Spatio-Temporal Miner} (STM) e l'albero \textit{SPTree} porta numerosi vantaggi in termini di tempi computazionali. L'algoritmo risultante viene chiamato \textbf{Spatio-Temporal Breath First Miner} (STBFM).\\
+\\
+Questa versione dell'algoritmo \`e in grado di trovare un insieme di $N$ sequenze pattern significative da un certo dataset, rispetto a ricavare \textit{tutte} le sequenze pattern significative.\\
+\\
+Viene applicata la seguente definizione:
+\paragraph{Top-N Sequential Pattern} Una sequenza pattern $\overrightarrow{s}$ \`e l'$N$-esima sequenza pattern, se esistono $N-1$ sequenze nel insieme dei $Top$ con \textit{participation index} maggiore o uguale al PI($\overrightarrow{s}$).\\
+\\
+Detto ci\`o si definisce un insieme $Top$ formato da $N$ sequenze pattern significative che corrisponde all'output dell'algoritmo stesso.\\
+Partendo dall'algoritmo $STM$ ridefiniamo i precedenti algoritmi aggiungendo l'$SPTree$.
 
-\begin{algorithm}[H]
+\paragraph{Algorithm 6} Si parte dall'Algorithm 6 che nella ricerca del possibile candidato recupera il $children$ del $secondParent$ della sequenza di partenza $\overrightarrow{s_i}$ definendolo come $\overrightarrow{s_j}$ (riga 3). Il $secondParent$ svolge il lavoro della ricerca di una possibile sequenza candidato $\overrightarrow{s}$ di lunghezza maggiore, facendolo con un semplice collegamento tra nodi. Lo si pu\`o capire dal fatto che il $secondParent$ collega un certo nodo al nodo con il suo stesso valore finale del livello precedente (vedi Figura 3.1).
+\\
+Le due sequenze ($\overrightarrow{s_i}$ e $\overrightarrow{s_j}$) hanno due corrispettivi nodi nell'$SPTree$ e da questi nodi riesco a definire il nuovo nodo per la nuova sequenza $\overrightarrow{s}$ che avr\`a come $firstParent(\overrightarrow{s}) := \overrightarrow{s_i}$ e come $secondParent(\overrightarrow{s}) := \overrightarrow{s_j}$ (riga 6). Come ultimo passaggio resta aggiungere ai $children$ di $\overrightarrow{s_i}$ il nodo creato (in quanto $\overrightarrow{s_i}$ \`e $firstParent$) e si completa l'inserimento (riga 7).\\
+
+\clearpage
+\begin{algorithm}[h]
 	\KwData{$L_{m-1}$ - insieme di sequenze di tipi di lunghezza $m - 1$}
 	\KwResult{$C_m$ - insieme di candidati sequenze di tipi di lunghezza $m$}
 	\nl $C_m := \emptyset$\\
