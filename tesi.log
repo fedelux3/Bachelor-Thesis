@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.3)  21 AUG 2019 21:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.3)  23 AUG 2019 11:55
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -567,86 +567,104 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--126
 
 ]
 Capitolo 3.
+[11] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 75--82
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+ []
 
-[11]
-Underfull \vbox (badness 1596) has occurred while \output is active []
-
- [12]
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 109--114
+Underfull \hbox (badness 10000) in paragraph at lines 88--95
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--118
 
  []
 
 [14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 118--124
+<albero.png, id=72, 220.825pt x 194.7275pt>
+File: albero.png Graphic file (type png)
+<use albero.png>
+Package pdftex.def Info: albero.png  used on input line 135.
+(pdftex.def)             Requested size: 176.90956pt x 155.99762pt.
+ [16
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 118--124
-
- []
-
-
-Overfull \hbox (12.21184pt too wide) in paragraph at lines 118--124
+ <./albero.png (PNG copy)>]
+Overfull \hbox (12.21184pt too wide) in paragraph at lines 141--143
 \OT1/cmr/m/n/12 Consideriamo un in-sie-me di ti-pi di even-ti di que-sto ti-po:
  $\OML/cmm/m/it/12 F \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 A; B;
  C; D; E; F\OMS/cmsy/m/n/12 g$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--146
+Underfull \hbox (badness 10000) in paragraph at lines 159--165
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--146
+Underfull \hbox (badness 10000) in paragraph at lines 159--165
 
  []
 
-[16
-
-]
-<sptree.png, id=75, 417.35925pt x 231.264pt>
+<sptree.png, id=76, 417.35925pt x 231.264pt>
 File: sptree.png Graphic file (type png)
 <use sptree.png>
-Package pdftex.def Info: sptree.png  used on input line 157.
+Package pdftex.def Info: sptree.png  used on input line 176.
 (pdftex.def)             Requested size: 351.92946pt x 195.0pt.
- [17 <./sptree.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 167--172
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[17
+
+] [18 <./sptree.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 186--190
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--172
+Underfull \hbox (badness 10000) in paragraph at lines 190--194
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--176
+Overfull \hbox (5.79874pt too wide) in paragraph at lines 190--194
+\OT1/cmr/m/n/12 Partendo da-gli al-go-rit-mi pre-ce-den-te-men-te de-fi-ni-ti i
+n-te-gria-mo l'al-be-ro $\OML/cmm/m/it/12 SPTree$\OT1/cmr/m/n/12 . 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--201
+
+ []
+
+[19
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 239--243
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--180
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
+Underfull \hbox (badness 10000) in paragraph at lines 285--289
 
  []
 
-[18
-
-]) [19
-
-] [20] (tesi.aux (capitolo1.aux) (capitolo2.aux) (capitolo3.aux)) ) 
+) [22] (tesi.aux (capitolo1.aux) (capitolo2.aux) (capitolo3.aux)) ) 
 Here is how much of TeX's memory you used:
- 5922 strings out of 492973
- 88468 string characters out of 3126693
- 189668 words of memory out of 3000000
- 9658 multiletter control sequences out of 15000+200000
- 15629 words of font info for 59 fonts, out of 3000000 for 9000
+ 5928 strings out of 492973
+ 88554 string characters out of 3126693
+ 185668 words of memory out of 3000000
+ 9663 multiletter control sequences out of 15000+200000
+ 15936 words of font info for 60 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
- 41i,29n,43p,615b,540s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,32n,43p,625b,556s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/fe
 de9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
@@ -667,9 +685,9 @@ a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users
 fb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmti12.pfb>
-Output written on tesi.pdf (20 pages, 261354 bytes).
+Output written on tesi.pdf (22 pages, 282448 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
+ 147 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

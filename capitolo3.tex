@@ -2,10 +2,16 @@
 \label{Algoritmo}
 \thispagestyle{empty}
 
-\section{STM Algorithm}
-Definiti i concetti teorici di base, ora verr\`a descritto l'algoritmo Spatio-Temporal Miner che permette di trovare tutte le sequenze pattern con \textit{participation index} maggiori di una certa soglia \textbf{threshold} $\theta$ data dall'utente.\\
+\section{Algoritmo di base}
+Definiti i concetti teorici di base, ora verr\`a descritto l'algoritmo \textbf{Spatio-Temporal Breadth-First Miner} (STBFM) che permette di trovare tutte le sequenze pattern con \textit{participation index} maggiori di una certa soglia \textbf{threshold} $\theta$ data dall'utente.\\
 La definizione di un $\theta$ permette, da un lato, di considerare come risultato solo le sequenze pi\`u significative e, dall'altro, ignorare dalla computazione quelle che hanno un livello di correlazione troppo basso. \\
 Naturalmente bisogna considerare che l'utente definisce il parametro $\theta$ ma anche il raggio spaziale $R$ e l'intervallo temporale $T$ che sono imprescindibili per il calcolo del neighborhood.
+
+\noindent
+\paragraph{Algorithm 1} L'algoritmo che sta alla base di tutto \`e l'Algorithm 1. Inizialmente genera le sequenze candidato di lunghezza 2, unendo ciascun tipo con tutti gli altri in modo da coprire tutte le combinazioni possibili. Per tutte queste sequenze viene calcolato il \textit{set di istanze} e basandosi su questo si calcolano i \textit{participation index} (PI) attraverso la funzione VerifyCandidates.\\
+Nella fase che segue vengono generate le sequenze candidato del livello successivo ($C_k$) attraverso la funzione CandidateGen (riga 5), con calcolo dei \textit{set di istanze} annessi. Successivamente vengono calcolati i valori di PI associati alle sequenze appena generate ($L_k$), sempre utilizzando la funzione VerifyCandidates (riga 6). \\
+Queste operazioni avvengono per ogni insieme di sequenze di un certa lunghezza iterativamente finch\`e l'insieme di sequenze di lunghezza $k-1$ non sia vuoto.
+Tutti questi risultati vengono registrati nella famiglia di insiemi $L$ che verr\`a poi ritornata.  
 
 \begin{algorithm}[h]
 	\KwData{D - dataset delle istanze degli eventi, F - insieme di tipi di eventi, R - raggio spaziale, T - intervallo temporale, $\theta$ - threshold}
@@ -22,14 +28,8 @@ Naturalmente bisogna considerare che l'utente definisce il parametro $\theta$ ma
 	} 
 	\nl \textbf{return} $L$
 	
-	\caption{Spatio-temporal breath first miner for discovering significant sequential patterns (STBFM)}
+	\caption{Spatio-temporal breadth-first miner for discovering significant sequential patterns (STBFM)}
 \end{algorithm}
-
-\noindent
-\paragraph{Algorithm 1} L'algoritmo che sta alla base di tutto \`e l'Algorithm 1. Inizialmente genera le sequenze candidato di lunghezza 2, unendo ciascun tipo con tutti gli altri in modo da coprire tutte le combinazioni possibili. Per tutte queste sequenze viene calcolato il \textit{set di istanze} e basandosi su questo si calcolano i \textit{participation index} (PI) attraverso la funzione VerifyCandidates.\\
-Nella fase che segue vengono generate le sequenze candidato del livello successivo ($C_k$) attraverso la funzione CandidateGen (riga 5), con calcolo dei \textit{set di istanze} annessi. Successivamente vengono calcolati i valori di PI associati alle sequenze appena generate ($L_k$), sempre utilizzando la funzione VerifyCandidates (riga 6). \\
-Queste operazioni avvengono per ogni livello iterativamente finch\`e il livello precedente ($k-1$) non sia vuoto.
-Tutti questi risultati vengono registrati nella famiglia di insiemi $L$ che verr\`a poi ritornata.  
 
 \begin{algorithm}[H]
 	\KwData{$C_m$ - insieme di candidati sequenze di tipi di lunghezza $m$, $\theta$ - threshold}
@@ -47,7 +47,7 @@ Tutti questi risultati vengono registrati nella famiglia di insiemi $L$ che verr
 	\caption{VerifyCandidates}
 \end{algorithm}
 
-\paragraph{Algorithm 2} L'Algorithm 2 ha il compito di verificare le sequenze candidato. Questa verifica consiste nel calcolo del \textit{participation index} della sequenza e se questo valore supera il threshold $\theta$ allora la si accetta, altrimenti si rifiuta. Questa valutazione viene effettuata iterativamente per tutte le sequeze candidato. \\
+\paragraph{Algorithm 2} L'Algorithm 2 ha il compito di verificare le sequenze candidato. La verifica consiste nel calcolo del \textit{participation index} della sequenza e se questo valore supera il threshold $\theta$ allora la si accetta. Questa valutazione viene effettuata iterativamente per tutte le sequeze candidato. \\
 Il calcolo del PI viene effettuato seguendo la definizione nella sua applicazione nell'\textbf{Algorithm 4}.
 
 \begin{algorithm}[H]
@@ -76,11 +76,12 @@ due sequenze di lunghezza $m-1$ si uniscono per creare una nuova sequenza di lun
 $P_1 = \{ A \rightarrow B \rightarrow C \rightarrow D \}$ (sequenza lunga $m-1$)\\
 $P_2 = \{ B \rightarrow C \rightarrow D \rightarrow E \}$ (sequenza lunga $m-1$)\\
 $P_{new} = \{ A \rightarrow B \rightarrow C \rightarrow D \rightarrow E\}$ (sequenza lunga $m$)\\
+\\
 Come si pu\`o notare, la nuova sequenza ha tutti i tipi della prima e come ultimo elemento l'ultimo tipo della seconda sequenza.\\
 Per quanto riguarda il calcolo del \textit{set di istanze} (riga 6) ci sono 2 possibili casi:
 \begin{enumerate}
-	\item per i tipi di eventi dal primo al penultimo elemento della sequenza, il set di istanze \`e lo stesso di quello della prima sequenza quindi di $I(\overrightarrow{s_i}[m-1])$
-	\item per l'ultimo tipo di eventi, il set di istanze \`e dato dal neighborhood che c'\`e tra il penultimo tipo (che corrisponde al set di istanze della prima sequenza) e l'ultimo tipo della seconda sequenza, ovvero\\ CalculateNeighborhood$(I(\overrightarrow{s_i}[m-1]), I(\overrightarrow{s_j}[m-1]))$
+	\item per i tipi di eventi dal primo al penultimo elemento della sequenza, il set di istanze \`e lo stesso di quello della prima sequenza quindi di $I(\overrightarrow{s_i}[m-1])$;
+	\item per l'ultimo tipo di eventi, il set di istanze \`e dato dal neighborhood che c'\`e tra il penultimo tipo (che corrisponde al set di istanze della prima sequenza) e l'ultimo tipo della seconda sequenza, ovvero\\ CalculateNeighborhood$(I(\overrightarrow{s_i}[m-1]), I(\overrightarrow{s_j}[m-1]))$.
 \end{enumerate}
 Per il calcolo del vicinato si utilizza la definizione applicata nell'\textbf{Algorithm 5}.
 
@@ -88,7 +89,9 @@ Per il calcolo del vicinato si utilizza la definizione applicata nell'\textbf{Al
 \begin{cases}
 PI(\overrightarrow{s}^\ast) \\ PR(\overrightarrow{s}[m-1] \rightarrow \overrightarrow{s}[m]
 \end{cases} 
-$
+$\\
+\\
+dove $\overrightarrow{s}^\ast = \overrightarrow{s}[1] \rightarrow \overrightarrow{s}[2] \rightarrow ... \rightarrow \overrightarrow{s}[m-1]$.
 
 \begin{algorithm}[h]
 	\KwData{$\overrightarrow{s} = \overrightarrow{s}[1] \rightarrow \overrightarrow{s}[2] \rightarrow ... \rightarrow \overrightarrow{s}[m-1] \rightarrow \overrightarrow{s}[m]$ - una sequenza di tipi di eventi}
@@ -97,7 +100,7 @@ $
 	\caption{CalculatePI$(\vec{s})$}
 \end{algorithm}
 
-\paragraph{Algorithm 5} L'Algorithm 5 si occupa del calcolo del neighborhood. Esso si applica secondo la definizione data in precedenza, per\`o non prendendo i dati direttamente dal dataset. Si considera $I(\overrightarrow{s_i}[m-1])$ come set di partenza e si considera il vicinato con l'ultimo elemento della seconda sequenza $I(\overrightarrow{s_j}[m-1])$. 
+\paragraph{Algorithm 5} L'Algorithm 5 si occupa del calcolo del neighborhood. Esso si applica secondo la definizione data in precedenza, per\`o non prendendo i dati direttamente dal dataset. Si considera $I(\overrightarrow{s_i}[m-1])$ come set di partenza e si considera il vicinato con l'ultimo elemento della seconda sequenza\\ $I(\overrightarrow{s_j}[m-1])$. 
 \begin{algorithm}[h]
 	\KwData{$I(\overrightarrow{s_i}[m-1])$ - un insieme di istanze di tipo $\overrightarrow{s}[m]$ della sequenza $\overrightarrow{s_i}$, $I(\overrightarrow{s_j}[m-1])$ - un insieme di istanze di eventi di tipo $\overrightarrow{s_j}[m]$ della sequenza $\overrightarrow{s}_j$}
 	\KwResult{$I(\overrightarrow{s}[m])$ - un insieme di istanze di eventi di tipo $\overrightarrow{s}[m]$ della sequenza candidato $\overrightarrow{s}$}
@@ -106,20 +109,36 @@ $
 	\caption{CalculateNeighborhood($I(\vec{s_i}[m-1]), I(\vec{s_j}[m-1])$)}
 \end{algorithm}
 
-Come si pu\`o da subito notare il carico coputazionale pi\`u pesante lo si ha nell'Algorithm 3, la CandidateGen. In quest'ultimo bisogna valutare tutte le possibili coppie di sequenze del livello precedente se sono compatibili tra loro per generare le nuove sequenze del livello successivo e i rispettivi set di istanze. \\
-Se consideriamo anche solo un dataset di 10.000 record con 20 tipi di eventi, significa che l'algoritmo itera sui 10.000 record migliaia di volte per ciascuna sequenza da generare. \\
+\noindent
+Come si pu\`o da subito notare il carico coputazionale pi\`u pesante lo si ha nell'Algorithm 3, la \textit{CandidateGen}. In quest'ultimo bisogna valutare tutte le possibili coppie di sequenze del livello precedente se sono compatibili tra loro per generare le nuove sequenze del livello successivo e i rispettivi set di istanze. \\
+Se consideriamo anche solo un dataset di 10.000 record con 20 tipi di eventi, significa che l'algoritmo itera su tutti i 10.000 record migliaia di volte per ciascuna sequenza da generare. \\
 Certamente un threshold $\theta$ alto ci permette di ignorare diverse combinazioni,  per\`o \`e un parametro handmade. Pertanto se si sceglie un $\theta$ troppo alto si rischia di avere pochi risultati con PI molto alto, se si sceglie un $\theta$ troppo bassso si rischia di considerare troppe sequenze che dilaterebbero troppo i tempi di computazione. \\
 \\
-Per questi motivi viene definita una nuova struttura ad albero per evitare moltissime di queste computazioni (SPTree) e viene migliorato l'algoritmo in modo da rendere il parametro $\theta$ variabile in base al numero di risultati significativi, come vediamo di seguito.
+Per questi motivi viene definita una nuova struttura ad albero per evitare moltissime di queste computazioni ($SPTree$) e viene migliorato l'algoritmo in modo da rendere il parametro $\theta$ variabile in base al numero di risultati significativi, come vediamo di seguito.
 
 \clearpage
 
-\section{Albero - SPTree}
-A sostegno dell'algoritmo viene definita una struttura ad albero dedicata per ridurre drasticamente il numero delle computazioni, in particolare per quanto riguarda la generazione di sequenze candidato nuove. \\
-L'albero \`e chiamato Sequence Pattern Tree (SPTree).\\
-\\
-INSERIRE DEFINIZIONE DI ALBERO DAL CORMAN
-\\\\
+\section{Struttura ad albero}
+A sostegno dell'algoritmo viene definita una struttura ad albero dedicata per ridurre drasticamente il numero delle computazioni, in particolare per quanto riguarda la generazione di sequenze candidato nuove.
+\subsection{Albero}
+Innanzitutto definiamo cos'\`e una struttura ad albero ordinato:\\
+Un \textbf{albero ordinato} \`e un grafo connesso, aciclico ed ordinato. Esso \`e una struttura dati che si compone di due sottostrutture fondamentali: 
+\begin{itemize}
+	\item il \textbf{nodo} che solitamente contiene informazioni o altre strutture dati;
+	\item l'\textbf{arco} che stabilisce un collegamento gerarchico fra due nodi.
+\end{itemize}
+Si definisce \textit{nodo padre} il nodo che ha un arco orientato uscente che va in un \textit{nodo figlio}. \\
+La \textbf{radice} \`e il nodo che si distingue da tutti gli altri in quanto essa \`e l'unico nodo da cui vi sono solo archi uscenti.\\
+I nodi \textbf{foglia} sono i nodi che hanno solo archi uscenti ma non entranti, corrispondono ai nodi dell'ultimo livello di albero.
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=0.4 \linewidth]{albero.png}
+	\caption{esempio di albero ordinato}
+\end{figure}
+\clearpage
+
+\subsection{Sequence Pattern Tree}
+L'albero utilizzato nel lavoro svolto \`e chiamato \textbf{Sequence Pattern Tree} ($SPTree$).\\
 Consideriamo un insieme di tipi di eventi di questo tipo: $F = \{A,B,C,D,E,F\}$ e un insieme $L$ di sequenze pattern presentate in Tabella 3.1.
 
 \begin{table}[h]
@@ -139,9 +158,9 @@ Consideriamo un insieme di tipi di eventi di questo tipo: $F = \{A,B,C,D,E,F\}$ 
 \end{table}
 \noindent
 Partendo dalla radice verranno inserite tutte le sequenze significative secondo i criteri che seguono.\\\\
-La \textbf{root} avr\`a come figli tutti i tipi di eventi presenti in $F$. Assumiamo che le sequenze di lunghezza 2 ($L_2$) siano state generate dai tipi di partenza effettuando tutte le combinazioni tra di essi, con le verifiche del \textit{participation rateo} come presentato dal $L_2$ dell'albero in Figura 3.1.\\
+La \textbf{radice} ha valore nullo e come figli tutti i tipi di eventi presenti in $F$. Assumiamo che le sequenze di lunghezza 2 ($L_2$) siano state generate dai tipi di partenza effettuando tutte le combinazioni tra di essi, con le verifiche del \textit{participation rateo} come presentato dal $L_2$ dell'albero in Figura 3.1.\\
 \\
-Per ogni sequenza, ovvero ogni nodo dell'albero, utilizziamo tre strutture di dati: \textit{firstParent}, \textit{secondParent} e \textit{children}.\\
+Per ogni sequenza, ovvero ogni nodo dell'albero, vengono impiegate tre strutture di dati: \textit{firstParent}, \textit{secondParent} e \textit{children}.\\
 Per la generazione dei \textbf{nodi} si procede per livello, ovvero ci si basa sul livello immediatamente precedente e si genera quello sottostante, seguendo queste procedure:
 \begin{itemize}
 	\item se la sequenza $\overrightarrow{s}$ \`e stata creata unendo i tipi di eventi $f_{i_1}$ e $f_{i_2}$ a $\overrightarrow{s} = f_{i_1} \rightarrow f_{i_2}$, allora:\\
@@ -164,21 +183,22 @@ Seguendo questo processo viene generato l'\textit{SPTree}.
 \clearpage
 
 \section{STBFM}
-L'integrazione tra l'algoritmo \textit{Spatio-Temporal Miner} (STM) e l'albero \textit{SPTree} porta numerosi vantaggi in termini di tempi computazionali. L'algoritmo risultante viene chiamato \textbf{Spatio-Temporal Breath First Miner} (STBFM).\\
+L'integrazione tra l'algoritmo precedentemente mostrato e l'albero \textit{SPTree} porta numerosi e fondamentali vantaggi in termini di tempi computazionali. L'algoritmo risultante rispetta tutte le codizioni date e svolge la computazione in tempi molto pi\`u ristretti.\\
 \\
-Questa versione dell'algoritmo \`e in grado di trovare un insieme di $N$ sequenze pattern significative da un certo dataset, rispetto a ricavare \textit{tutte} le sequenze pattern significative.\\
-\\
-Viene applicata la seguente definizione:
+Questa versione dell'algoritmo \`e in grado di trovare un insieme di $N$ sequenze pattern significative da un certo dataset, rispetto a ricavare \textit{tutte} le sequenze pattern significative.
+Viene introdotta la seguente definizione:
 \paragraph{Top-N Sequential Pattern} Una sequenza pattern $\overrightarrow{s}$ \`e l'$N$-esima sequenza pattern, se esistono $N-1$ sequenze nel insieme dei $Top$ con \textit{participation index} maggiore o uguale al PI($\overrightarrow{s}$).\\
 \\
 Detto ci\`o si definisce un insieme $Top$ formato da $N$ sequenze pattern significative che corrisponde all'output dell'algoritmo stesso.\\
-Partendo dall'algoritmo $STM$ ridefiniamo i precedenti algoritmi aggiungendo l'$SPTree$.
+Partendo dagli algoritmi precedentemente definiti integriamo l'albero $SPTree$.
 
-\paragraph{Algorithm 6} Si parte dall'Algorithm 6 che nella ricerca del possibile candidato recupera il $children$ del $secondParent$ della sequenza di partenza $\overrightarrow{s_i}$ definendolo come $\overrightarrow{s_j}$ (riga 3). Il $secondParent$ svolge il lavoro della ricerca di una possibile sequenza candidato $\overrightarrow{s}$ di lunghezza maggiore, facendolo con un semplice collegamento tra nodi. Lo si pu\`o capire dal fatto che il $secondParent$ collega un certo nodo al nodo con il suo stesso valore finale del livello precedente (vedi Figura 3.1).
+\paragraph{Algorithm 6} Si parte dall'Algorithm 3 che si occupa della generazione delle possibili sequenze candidato. Presa una sequenza gi\`a valutata $\overrightarrow{s_i}$ e il suo corrispondente nodo, si estrae una sequenza candidato $\overrightarrow{s_j}$ nel insieme $children$ del suo $secondParent$ (riga 3). \\
+Il ruolo del $secondParent$ \`e quello di verificare la presenza di possibili prolungamenti della sequenza $\overrightarrow{s_i}$ presa in esame. Come si pu\`o notare dall'albero di esempio in Figura 3.1 si pu\`o generare $A \rightarrow B \rightarrow C$ ($\overrightarrow{s}$) partendo da $A \rightarrow B$ ($\overrightarrow{s_i}$) aggiungendo la sequenza $B \rightarrow C$ ($\overrightarrow{s_j}$) presente nei $children(secondParent(\overrightarrow{s_i}))$.\\
+In concreto il $secondParent$ collega un certo nodo al nodo di livello precedente con il suo stesso valore finale di sequenza, dai $children$ di quest'ultimo si pu\`o verificare la presenza di possibili nuove sequenze.\\
 \\
-Le due sequenze ($\overrightarrow{s_i}$ e $\overrightarrow{s_j}$) hanno due corrispettivi nodi nell'$SPTree$ e da questi nodi riesco a definire il nuovo nodo per la nuova sequenza $\overrightarrow{s}$ che avr\`a come $firstParent(\overrightarrow{s}) := \overrightarrow{s_i}$ e come $secondParent(\overrightarrow{s}) := \overrightarrow{s_j}$ (riga 6). Come ultimo passaggio resta aggiungere ai $children$ di $\overrightarrow{s_i}$ il nodo creato (in quanto $\overrightarrow{s_i}$ \`e $firstParent$) e si completa l'inserimento (riga 7).\\
+Dai due nodi relativi alle due sequenze $\overrightarrow{s_i}$, $\overrightarrow{s_j}$ viene creato il nuovo nodo per la nuova sequenza $\overrightarrow{s}$ che avr\`a come $firstParent(\overrightarrow{s}) := \overrightarrow{s_i}$ e come $secondParent(\overrightarrow{s}) := \overrightarrow{s_j}$ (riga 6), queste due propriet\`a garantiscono la possibilit\`a della ricerca di un prolungamento ulteriore dell'albero. Infine si aggiunge ai $children$ di $\overrightarrow{s_i}$ il nodo creato (in quanto $\overrightarrow{s_i}$ \`e $firstParent$) e si completa l'inserimento (riga 7).\\
+Queste istruzioni vengono svolte iterativamente per tutti i nodi dell'ultimo livello dell'albero ($m-1$) cos\`i da generare il livello successivo ($m$). Il nuovo livello dell'$SPTree$, come si pu\`o notare, si limita alle nuove sequenze candidato significative rispetto a quelle in precedenza generate.
 
-\clearpage
 \begin{algorithm}[h]
 	\KwData{$L_{m-1}$ - insieme di sequenze di tipi di lunghezza $m - 1$}
 	\KwResult{$C_m$ - insieme di candidati sequenze di tipi di lunghezza $m$}
@@ -215,7 +235,21 @@ Le due sequenze ($\overrightarrow{s_i}$ e $\overrightarrow{s_j}$) hanno due corr
 	\caption{VerifyCandidates}
 \end{algorithm}
 
-\begin{algorithm}
+
+\paragraph{Algorithm 7} L'Algorithm 7 parte dalla base dell' Algorithm 2 e integra l'$SPTree$. Questo algoritmo si occupa del calcolo dei \textit{participation index} delle nuove sequenze candidato e se essi superano il threshold $\theta$ allora vengono inserite nell'insieme di sequenze significative (riga 5), altrimenti viene eliminata la rispettiva sequenza presente nell'albero.\\
+Il \textit{pruning} dell'albero avviene attraverso la cancellazione del collegamento che ha il nodo della sequenza $\overrightarrow{s}$ con il nodo $firstParent$ (riga 7).\\
+\\
+Quest'ultimo algoritmo per\`o non ricerca l'insieme di sequenze che rispettano la definizione di \textit{Top-N sequential pattern}. Per questo viene ridefinito nell'Algorithm 8.
+
+\paragraph{Algorithm 8} L'Algorithm 8 ridefinisce l'Algorithm 7 in modo da creare solo un determinato numero $N$ di sequenze significative memorizzate nell'insieme $Top$. Pertanto la cardinalit\`a di $Top$ ($|Top|$) \`e uguale a $N$.\\
+Calcolato il \textit{participation index}, se esso \`e maggiore del threshold $\theta$ vi sono tre scenari possibili:
+\begin{enumerate}
+	\item se il numero di sequenze in $Top$ \`e minore di $N-1$, allora la sequenza candidato viene inserita in $Top$ e $L_m$ (riga 6);
+	\item se il numero di sequenze in $Top$ \`e uguale a $N-1$, allora la sequenza candidato viene inserita in $Top$ e $L_m$ e $\theta$ viene aumentato al valore del PI dell'N-esima sequenza top, in quanto l'insieme $Top$ \`e stato riempito di $N$ sequenze (righe 8-9);
+	\item se il numero di sequenze in $Top$ \`e uguale ad $N$, allora la sequenza candidato viene inserita in $Top$ e $L_m$ e se il suo PI \`e maggiore del threshold attuale $\theta$, allora $\theta$ viene settato al valore del PI dell'N-esima sequenza top attuale e tutte le sequenze con PI minore del nuovo $\theta$ vengono eliminate da $Top$ e da $L_m$, ovviamente di tutte queste sequenze cancellate viene fatto il \textit{pruning} nell'$SPTree$ (righe 11-16).
+\end{enumerate}
+
+\begin{algorithm}[H]
 	\KwData{$C_m$ - un insieme di sequenze pattern candidato di lunghezza $m$, $\theta$ - threshold}
 	
 	\nl $L_m := \emptyset$\\
@@ -229,14 +263,14 @@ Le due sequenze ($\overrightarrow{s_i}$ e $\overrightarrow{s_j}$) hanno due corr
 				\nl Add $\overrightarrow{s}$ to $L_m$, add $\overrightarrow{s}$ to $Top$\\
 				\nl $\theta := PI(Top(N))$	
 			}
-		}
-		\nl \Else{
-			\nl Add $\overrightarrow{s}$ to $L_m$, add $\overrightarrow{s}$ to $Top$\\
-			\nl \If{PI($\overrightarrow{s} > \theta$)}{
-				\nl $\theta := $ PI($Top(N)$)\\
-				\nl Delete all $\overrightarrow{s} \in Top$ with PI($\overrightarrow{s}$) $< \theta$\\
-				\nl Delete all $\overrightarrow{s} \in L_m$ with PI($\overrightarrow{s}$) $< \theta$\\
-				\nl Delete $\overrightarrow{s}$ from $children(firstParent(\overrightarrow{s}))$
+			\nl \Else{
+				\nl Add $\overrightarrow{s}$ to $L_m$, add $\overrightarrow{s}$ to $Top$\\
+				\nl \If{PI($\overrightarrow{s} > \theta$)}{
+					\nl $\theta := $ PI($Top(N)$)\\
+					\nl Delete all $\overrightarrow{s} \in Top$ with PI($\overrightarrow{s}$) $< \theta$\\
+					\nl Delete all $\overrightarrow{s} \in L_m$ with PI($\overrightarrow{s}$) $< \theta$\\
+					\nl Delete $\overrightarrow{s}$ from $children(firstParent(\overrightarrow{s}))$
+				}
 			}
 		}
 		\nl \Else{
@@ -247,6 +281,11 @@ Le due sequenze ($\overrightarrow{s_i}$ e $\overrightarrow{s_j}$) hanno due corr
 	
 	\caption{Top-N-VerifyCandiatesSPTree($C_m$)}
 \end{algorithm}
+\vspace{0.5cm}
+\noindent
+Come si pu\`o notare quest'ultimo algoritmo garantisce due premesse fondamentali per la risoluzione del problema: l'output di un numero fissato $N$ di sequenze significative ed un $\theta$ che, una volta inizializzato dall'utente, aumenta in base ai risultati ottenuti.\\
+\\
+La combinazione di Algorithm 1, Algorithm 6 ed Algorithm 8 forma l'algoritmo \textbf{Spatio-Temporal Breadth-First Miner}.
 
 \section{Alternativa - Algoritmo apriori}
 
