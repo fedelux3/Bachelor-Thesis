@@ -120,9 +120,10 @@ Per questi motivi viene definita una nuova struttura ad albero per evitare molti
 
 \section{Struttura ad albero}
 A sostegno dell'algoritmo viene definita una struttura ad albero dedicata per ridurre drasticamente il numero delle computazioni, in particolare per quanto riguarda la generazione di sequenze candidato nuove.
+
 \subsection{Albero}
-Innanzitutto definiamo cos'\`e una struttura ad albero ordinato:\\
-Un \textbf{albero ordinato} \`e un grafo connesso, aciclico ed ordinato. Esso \`e una struttura dati che si compone di due sottostrutture fondamentali: 
+Innanzitutto definiamo cos'\`e una struttura ad albero orientato:\\
+Un \textbf{albero orientato} \`e un grafo connesso, aciclico ed orientato. Esso \`e una struttura dati che si compone di due sottostrutture fondamentali: 
 \begin{itemize}
 	\item il \textbf{nodo} che solitamente contiene informazioni o altre strutture dati;
 	\item l'\textbf{arco} che stabilisce un collegamento gerarchico fra due nodi.
@@ -139,7 +140,7 @@ I nodi \textbf{foglia} sono i nodi che hanno solo archi uscenti ma non entranti,
 
 \subsection{Sequence Pattern Tree}
 L'albero utilizzato nel lavoro svolto \`e chiamato \textbf{Sequence Pattern Tree} ($SPTree$).\\
-Consideriamo un insieme di tipi di eventi di questo tipo: $F = \{A,B,C,D,E,F\}$ e un insieme $L$ di sequenze pattern presentate in Tabella 3.1.
+Si consideri un insieme di tipi di eventi di questo tipo: $F = \{A,B,C,D,E,F\}$ e un insieme $L$ di sequenze pattern presentate in Tabella 3.1.
 
 \begin{table}[h]
 	\centering
@@ -177,7 +178,7 @@ Per la generazione dei \textbf{nodi} si procede per livello, ovvero ci si basa s
 	\caption{SPTree basato sulle sequenze della Tabella 3.1}
 \end{figure}
 \textit{Esempio}\\
-Consideriamo la sequenza $A \rightarrow B$ dalla Tabella 3.1 e quindi la sua memorizzazione nel \textit{SPTree} come in Figura 2.3. Assumiamo che dobbiamo generare i candidati di lunghezza 3 quindi generare il terzo livello dell'albero.\\
+Consideriamo la sequenza $A \rightarrow B$ dalla Tabella 3.1 e quindi la sua memorizzazione nel \textit{SPTree} come in Figura 3.2. Assumiamo che dobbiamo generare i candidati di lunghezza 3 quindi generare il terzo livello dell'albero.\\
 In questo caso $A \rightarrow B$ pu\`o essere estesa con due diversi tipi $C$ o $D$, in quanto $A \rightarrow B$ ha come \textit{secondParent} il tipo $B$ ed esso ha come sequenze figlio (\textit{children}) $B \rightarrow C$ e $B \rightarrow D$, pertanto le posso aggiungere alla sequenza $A \rightarrow B$.\\
 Seguendo questo processo viene generato l'\textit{SPTree}.
 \clearpage
@@ -286,6 +287,7 @@ Calcolato il \textit{participation index}, se esso \`e maggiore del threshold $\
 Come si pu\`o notare quest'ultimo algoritmo garantisce due premesse fondamentali per la risoluzione del problema: l'output di un numero fissato $N$ di sequenze significative ed un $\theta$ che, una volta inizializzato dall'utente, aumenta in base ai risultati ottenuti.\\
 \\
 La combinazione di Algorithm 1, Algorithm 6 ed Algorithm 8 forma l'algoritmo \textbf{Spatio-Temporal Breadth-First Miner}.
+\clearpage
 
 \section{Alternativa - Algoritmo apriori}
 
