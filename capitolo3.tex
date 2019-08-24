@@ -290,4 +290,43 @@ La combinazione di Algorithm 1, Algorithm 6 ed Algorithm 8 forma l'algoritmo \te
 \clearpage
 
 \section{Alternativa - Algoritmo apriori}
+L'algoritmo proposto, non \`e l'unica alternativa allo studio di regole di associazioni. Un altro algoritmo di ricerca di associazioni molto valido \`e l'\textbf{algoritmo apriori}.
+\paragraph{L'algoritmo apriori} \`e utilizzato per la generazione di \textit{itemset} frequenti a partire da itemset con un solo elemento. Concretamente parte da una serie di itemset frequenti e vi aggiunge elementi verificando quanto questa frequenza viene mantenuta.\\
+L'algoritmo si basa sulla considerazione che se un inseime di oggetti (itemset) \`e frequente,  allora anche tutti i suoi sotto insiemi sono frequenti, viceversa se un itemset non \`e frequente, allora neanche gli insiemi che lo contengono sono frequenti.\\
+\\
+Viene applicato soprattutto per il \textit{problema del carrello della spesa}, ovvero lo studio delle correlazioni tra prodotti acquistati al supermercato. In questo tipo di situazioni la generazione del gruppo di candidati viene svolta aggiungendo un item per volta; i gruppi di candidati sono successivamente verificati e l'algoritmo termina quando non ci sono ulteriori estensioni possibili, compatibilmente come avviene per lo \textit{STBFM}.\\
+\\
+La generazione di itemset candidati consiste nella costruzione di un insieme ordinato di $k$ nodi, a partire da un itemset di grandezza $k-1$.\\
+\textit{Esempio}
 
+$A \rightarrow B \rightarrow C$
+
+$A \rightarrow B \rightarrow D$\\
+gli itemset generati saranno:
+
+$A \rightarrow B \rightarrow C \rightarrow D$
+
+$A \rightarrow B \rightarrow D \rightarrow C$
+
+\paragraph{Considerazioni} Come possiamo notare questo algoritmo, con alcune dovute modifiche, \`e applicabile al nostro problema. Va notato, per\`o, che non vi \`e alcuna ottimizzazione per quanto riguarda la generazione di candidati, inoltre il threshold utilizzato ($\epsilon$) \`e fisso (vedi Algorithm 9).\\
+Per questi motivi, per il corrente caso di studio, si preferisce utilizzare lo $STBFM$.
+\begin{algorithm}[h]
+	\KwData{T - dataset delle transazioni, $\epsilon$ threshold di significativit\`a}
+	
+	\nl $L_1 := \{$ large $ 1-itemset\}$\\
+	\nl $k:=2$\\
+	\nl \While{$L_{k-1} \ne \emptyset$}{
+		\nl $C_k :=$ Generate($L_{k-1}$)\\
+		\nl \ForEach{$t \in T$}{
+			\nl $C_t:=$ Subset($C_k$, $t$)\\
+			\nl \ForEach{$c \in C_t$}{
+				\nl $count[c] := count[c] + 1$\\
+			}
+		}
+		\nl $L_k := \{ c \in C_k | count[c] \ge \epsilon\}$\\
+		\nl $k:=k+1$\\
+	}
+	$return$ $\underset{k}{\bigcup} L_k$
+	
+	\caption{Algoritmo apriori}
+\end{algorithm}
