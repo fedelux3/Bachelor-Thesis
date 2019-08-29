@@ -7,7 +7,6 @@ Definiti i concetti teorici di base, ora verr\`a descritto l'algoritmo \textbf{S
 La definizione di un $\theta$ permette, da un lato, di considerare come risultato solo le sequenze pi\`u significative e, dall'altro, ignorare dalla computazione quelle che hanno un livello di correlazione troppo basso. \\
 Naturalmente bisogna considerare che l'utente definisce il parametro $\theta$ ma anche il raggio spaziale $R$ e l'intervallo temporale $T$ che sono imprescindibili per il calcolo del neighborhood.
 
-\noindent
 \paragraph{Algorithm 1} L'algoritmo che sta alla base di tutto \`e l'Algorithm 1. Inizialmente genera le sequenze candidato di lunghezza 2, unendo ciascun tipo con tutti gli altri in modo da coprire tutte le combinazioni possibili. Per tutte queste sequenze viene calcolato il \textit{set di istanze} e basandosi su questo si calcolano i \textit{participation index} (PI) attraverso la funzione VerifyCandidates.\\
 Nella fase che segue vengono generate le sequenze candidato del livello successivo ($C_k$) attraverso la funzione CandidateGen (riga 5), con calcolo dei \textit{set di istanze} annessi. Successivamente vengono calcolati i valori di PI associati alle sequenze appena generate ($L_k$), sempre utilizzando la funzione VerifyCandidates (riga 6). \\
 Queste operazioni avvengono per ogni insieme di sequenze di un certa lunghezza iterativamente finch\`e l'insieme di sequenze di lunghezza $k-1$ non sia vuoto.
@@ -290,26 +289,28 @@ La combinazione di Algorithm 1, Algorithm 6 ed Algorithm 8 forma l'algoritmo \te
 \clearpage
 
 \section{Alternativa - Algoritmo apriori}
-L'algoritmo proposto, non \`e l'unica alternativa allo studio di regole di associazioni. Un altro algoritmo di ricerca di associazioni molto valido \`e l'\textbf{algoritmo apriori}.
-\paragraph{L'algoritmo apriori} \`e utilizzato per la generazione di \textit{itemset} frequenti a partire da itemset con un solo elemento. Concretamente parte da una serie di itemset frequenti e vi aggiunge elementi verificando quanto questa frequenza viene mantenuta.\\
-L'algoritmo si basa sulla considerazione che se un inseime di oggetti (itemset) \`e frequente,  allora anche tutti i suoi sotto insiemi sono frequenti, viceversa se un itemset non \`e frequente, allora neanche gli insiemi che lo contengono sono frequenti.\\
+L'algoritmo proposto, non \`e l'unica alternativa allo studio di regole di associazioni. Un altro algoritmo di ricerca di associazioni molto valido \`e l'\textit{algoritmo apriori}.\\
 \\
-Viene applicato soprattutto per il \textit{problema del carrello della spesa}, ovvero lo studio delle correlazioni tra prodotti acquistati al supermercato. In questo tipo di situazioni la generazione del gruppo di candidati viene svolta aggiungendo un item per volta; i gruppi di candidati sono successivamente verificati e l'algoritmo termina quando non ci sono ulteriori estensioni possibili, compatibilmente come avviene per lo \textit{STBFM}.\\
+\textbf{L'algoritmo apriori} \`e utilizzato per la generazione di \textit{itemset} frequenti a partire da itemset con un solo elemento. Concretamente parte da una serie di itemset frequenti e vi aggiunge elementi verificando quanto questa frequenza venga mantenuta.\\
+L'algoritmo si basa sulla considerazione che se un insieme di oggetti (itemset) \`e frequente,  allora anche tutti i suoi sottoinsiemi sono frequenti, viceversa se un itemset non \`e frequente, allora neanche gli insiemi che lo contengono sono frequenti, esso \`e definito \textbf{principio di anti-monotonicit\`a}.\\
 \\
-La generazione di itemset candidati consiste nella costruzione di un insieme ordinato di $k$ nodi, a partire da un itemset di grandezza $k-1$.\\
-\textit{Esempio}
+Viene applicato soprattutto per il \textit{problema del carrello della spesa}, ovvero lo studio delle correlazioni tra prodotti acquistati al supermercato. In questo tipo di situazioni la generazione del gruppo di candidati viene svolta aggiungendo un item per volta come quando si mettono i prodotti della spesa nel carrello. I gruppi di candidati sono successivamente valutati e l'algoritmo termina quando non ci sono ulteriori estensioni possibili, similmente a come avviene per lo \textit{STBFM}.\\
+\\
+La generazione di itemset candidati consiste nella costruzione di un insieme ordinato di $k$ elementi, a partire da un itemset di grandezza $k-1$.\\
+\textit{Esempio}\\
+itemset di partenza:
 
 $A \rightarrow B \rightarrow C$
 
 $A \rightarrow B \rightarrow D$\\
-gli itemset generati saranno:
+itemset generati:
 
 $A \rightarrow B \rightarrow C \rightarrow D$
 
-$A \rightarrow B \rightarrow D \rightarrow C$
-
-\paragraph{Considerazioni} Come possiamo notare questo algoritmo, con alcune dovute modifiche, \`e applicabile al nostro problema. Va notato, per\`o, che non vi \`e alcuna ottimizzazione per quanto riguarda la generazione di candidati, inoltre il threshold utilizzato ($\epsilon$) \`e fisso (vedi Algorithm 9).\\
-Per questi motivi, per il corrente caso di studio, si preferisce utilizzare lo $STBFM$.
+$A \rightarrow B \rightarrow D \rightarrow C$\\
+\\
+Ogni itemset cos\`i creato viene valutato all'interno del dataset, concetamente contando il numero delle istanze delle quali fa parte. Se il numero delle istanze supera un threshold $\epsilon$, l'itemset viene considerato per la generazione di itemset di lunghezza maggiore. Il processo \`e ripetuto finch\`e non \`e pi\`u possibile generare itemset significativi, rispettando il \textit{principio di anti-monotonicit\`a}.\\
+Nel dettaglio vedi \textbf{Algorithm 9}.
 \begin{algorithm}[h]
 	\KwData{T - dataset delle transazioni, $\epsilon$ threshold di significativit\`a}
 	
@@ -326,7 +327,9 @@ Per questi motivi, per il corrente caso di studio, si preferisce utilizzare lo $
 		\nl $L_k := \{ c \in C_k | count[c] \ge \epsilon\}$\\
 		\nl $k:=k+1$\\
 	}
-	$return$ $\underset{k}{\bigcup} L_k$
+	\nl $return$ $\underset{k}{\bigcup} L_k$
 	
 	\caption{Algoritmo apriori}
 \end{algorithm}
+\paragraph{Considerazioni} Come possiamo notare questo algoritmo, con alcune dovute modifiche, \`e applicabile al nostro problema. Va notato, per\`o, che non vi \`e alcuna ottimizzazione per quanto riguarda la generazione di candidati, inoltre il threshold utilizzato ($\epsilon$) \`e fisso.\\
+Per questi motivi, per il corrente caso di studio, si preferisce utilizzare lo $STBFM$.

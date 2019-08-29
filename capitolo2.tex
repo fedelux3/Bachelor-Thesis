@@ -4,7 +4,7 @@
 
 \section{Paper}
 Come precedentemente anticipato, l'algoritmo oggetto di questo lavoro \`e \\
-\textbf{A Novel Breadth-first Strategy Algorithm for Discovering Sequential Patterns from Spatio-temporal Data} \\ di Piotr S. Maciag e Robert Bembenik del \textit{Instituite of Computer Science, Warsaw University of Tecnology, Nowowiejska 15/19, 00-665, Warsaw, Poland}.\\ Di seguito vi \`e la base teorica su cui si fonda l'algoritmo e le strutture dati utilizzate per la sua realizzazione.
+\textbf{A Novel Breadth-first Strategy Algorithm for Discovering Sequential Patterns from Spatio-temporal Data} \\ di Piotr S. Maciag e Robert Bembenik del \textit{Instituite of Computer Science, Warsaw University of Tecnology, Nowowiejska 15/19, 00-665, Warsaw, Poland}.\\ Di seguito vi \`e la base teorica su cui si fonda l'algoritmo.
 
 \section{Vicinato}
 Il problema che si considera \`e la scoperta di pattern da un certo dataset di istanze di eventi, i quali sono di una data tipologia.\\
@@ -100,7 +100,7 @@ $I(\overrightarrow{s}[2]) = \{b1,b2,b3,b4,b5,b6\}$
 
 $PR(\overrightarrow{s}[i-1] \rightarrow \overrightarrow{s}[i]) =$ {\large$\frac{|I(\overrightarrow{s}[i])|}{|D(\overrightarrow{s}[i])|}$}\\
 \\
-questo valore corrisponde al numero di istanze distinte di tipo $\overrightarrow{s}[i]$ contenute nei neighborhoods delle istanze di tipo $\overrightarrow{s}[i-1]$ diviso il numero di istanze di tipo $\overrightarrow{s}[i]$ presenti nel dataset $D$.\\
+il valore corrisponde al numero di istanze distinte di tipo $\overrightarrow{s}[i]$ contenute nei neighborhoods delle istanze di tipo $\overrightarrow{s}[i-1]$ diviso il numero di istanze di tipo $\overrightarrow{s}[i]$ presenti nel dataset $D$.\\
 Per ogni coppia di tipi consecutivi ($\overrightarrow{s}[i-1]$, $\overrightarrow{s}[i]$) in una sequenza $\overrightarrow{s}$ il \textit{participation rateo} \`e definito come il rapporto tra $|I(\overrightarrow{s}[i])|$ e $|D(\overrightarrow{s}[i])|$ e il suo valore \`e compreso nel range $[0,1]$.
 
 \paragraph{Participation Index} Data una sequenza lunga $m$: $\overrightarrow{s} = \overrightarrow{s}[1] \rightarrow \overrightarrow{s}[2] \rightarrow ... \rightarrow \overrightarrow{s}[m]$, il \textit{participation index} \`e cos\`i definito:
@@ -119,8 +119,8 @@ Per ogni coppia di tipi consecutivi ($\overrightarrow{s}[i-1]$, $\overrightarrow
 \end{enumerate}
 dove $\overrightarrow{s}^\ast = \overrightarrow{s}[1] \rightarrow \overrightarrow{s}[2] \rightarrow ... \rightarrow \overrightarrow{s}[m-1]$\\
 \\
-Il \textit{participation index} corrisponde al minimo di tutti i \textit{participation rateo} calcolati su due tipi consecutivi presenti in $\overrightarrow{s}$, ed \`e il nostro valore di output dell'algoritmo.\\
+Il \textit{participation index} corrisponde al minimo di tutti i \textit{participation rateo} calcolati su tutte le coppie di tipi consecutivi presenti in $\overrightarrow{s}$, ed \`e il nostro valore di output dell'algoritmo.\\
 Intuitivamente lo possiamo pensare come il numero di istanze di eventi collegate alle istanze di tipi connessi precedentemente secondo un ordine stabilito dalla sequenza e questo ci d\`a la misura di quanto la sequenza sia correlata.\\
 \\
-Consideriamo il nostro \textit{esempio} della Figura 2.1, per la sequenza $\overrightarrow{s} = A \rightarrow B$ il $PI(\overrightarrow{s}) = 0.75$ ($PI(A \rightarrow B) = PR(A \rightarrow B) = \frac{6}{8} = 0.75)$ che \`e un buon risultato di correlazione. 
+Consideriamo il nostro \textit{esempio} della Figura 2.1, per la sequenza $\overrightarrow{s} = A \rightarrow B$ il $PI(\overrightarrow{s}) = 0.75$, infatti $PI(A \rightarrow B) = PR(A \rightarrow B) = \frac{6}{8} = 0.75$, che \`e un buon risultato di correlazione. 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.3)  24 AUG 2019 11:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.3)  29 AUG 2019 14:48
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -432,56 +432,75 @@ italian.ldf    on input line 28.
 (capitolo1.tex
 Capitolo 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--11
+Underfull \hbox (badness 10000) in paragraph at lines 7--12
 
  []
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 14.
-("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 14.
-("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
-
-
-
-{C:/Users/fede9/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-
-LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <12> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 36.
-
-
-LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 36.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--40
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--40
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--40
-
- []
-
-[2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 48.
- ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
+("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 48.
-) [3]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
+LaTeX Font Info:    Try loading font information for U+msa on input line 13.
+
+("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 13.
+("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <12> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 32.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 32.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--45
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--45
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--45
+
+ []
+
+[1
+
+
+
+{C:/Users/fede9/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 57--63
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--63
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 64--81
+
+ []
+
+[4
+
+]) [5
+
+]
 \openout2 = `capitolo2.aux'.
 
- (capitolo2.tex [4
+ (capitolo2.tex [6
 
 
 
@@ -492,19 +511,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--18
 
  []
 
-[5]
-<neighborhood.png, id=23, 375.20175pt x 285.4665pt>
+[7]
+<neighborhood.png, id=32, 375.20175pt x 285.4665pt>
 File: neighborhood.png Graphic file (type png)
 <use neighborhood.png>
 Package pdftex.def Info: neighborhood.png  used on input line 37.
 (pdftex.def)             Requested size: 307.57008pt x 234.00238pt.
- [6 <./neighborhood.png>]
-<neia1.png, id=33, 87.9285pt x 102.98476pt>
+ [8 <./neighborhood.png>]
+<neia1.png, id=41, 87.9285pt x 102.98476pt>
 File: neia1.png Graphic file (type png)
 <use neia1.png>
 Package pdftex.def Info: neia1.png  used on input line 57.
 (pdftex.def)             Requested size: 66.59422pt x 77.99881pt.
-<neia2.png, id=34, 63.8385pt x 104.7915pt>
+<neia2.png, id=42, 63.8385pt x 104.7915pt>
 File: neia2.png Graphic file (type png)
 <use neia2.png>
 Package pdftex.def Info: neia2.png  used on input line 58.
@@ -524,7 +543,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 72--78
 
  []
 
-[7 <./neia1.png> <./neia2.png>]
+[9 <./neia1.png> <./neia2.png>]
 Overfull \hbox (30.65054pt too wide) in paragraph at lines 79--80
 \OML/cmm/m/it/12 ::: \OMS/cmsy/m/n/12 ! []\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 m\O
 T1/cmr/m/n/12 ]$ di lun-ghez-za $\OML/cmm/m/it/12 m$\OT1/cmr/m/n/12 , gli in-si
@@ -548,7 +567,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--105
 
  []
 
-[8]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 120--126
 
  []
@@ -558,114 +577,120 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--126
 
  []
 
-) [9]
+) [11]
 \openout2 = `capitolo3.aux'.
 
- (capitolo3.tex [10
+ (capitolo3.tex [12
 
 
 
 ]
 Capitolo 3.
-[11] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 75--82
+[13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 74--81
 
  []
 
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 88--95
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 87--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--118
+Underfull \hbox (badness 10000) in paragraph at lines 111--117
 
  []
 
-[14] [15]
-<albero.png, id=72, 220.825pt x 194.7275pt>
+[16] [17]
+<albero.png, id=78, 220.825pt x 194.7275pt>
 File: albero.png Graphic file (type png)
 <use albero.png>
-Package pdftex.def Info: albero.png  used on input line 136.
+Package pdftex.def Info: albero.png  used on input line 135.
 (pdftex.def)             Requested size: 176.90956pt x 155.99762pt.
- [16
+ [18
 
  <./albero.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 160--166
+Underfull \hbox (badness 10000) in paragraph at lines 159--165
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--166
+Underfull \hbox (badness 10000) in paragraph at lines 159--165
 
  []
 
-<sptree.png, id=76, 417.35925pt x 231.264pt>
+<sptree.png, id=82, 417.35925pt x 231.264pt>
 File: sptree.png Graphic file (type png)
 <use sptree.png>
-Package pdftex.def Info: sptree.png  used on input line 177.
+Package pdftex.def Info: sptree.png  used on input line 176.
 (pdftex.def)             Requested size: 351.92946pt x 195.0pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[17
+[19
 
-] [18 <./sptree.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 187--191
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 191--195
+] [20 <./sptree.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 186--190
 
  []
 
 
-Overfull \hbox (5.79874pt too wide) in paragraph at lines 191--195
+Underfull \hbox (badness 10000) in paragraph at lines 190--194
+
+ []
+
+
+Overfull \hbox (5.79874pt too wide) in paragraph at lines 190--194
 \OT1/cmr/m/n/12 Partendo da-gli al-go-rit-mi pre-ce-den-te-men-te de-fi-ni-ti i
 n-te-gria-mo l'al-be-ro $\OML/cmm/m/it/12 SPTree$\OT1/cmr/m/n/12 . 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--202
+Underfull \hbox (badness 10000) in paragraph at lines 195--201
 
  []
 
-[19
+[21
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 240--244
+Underfull \hbox (badness 10000) in paragraph at lines 239--243
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20]
+ [22]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21]
-Underfull \hbox (badness 10000) in paragraph at lines 286--290
+ [23]
+Underfull \hbox (badness 10000) in paragraph at lines 285--289
 
  []
 
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 294--301
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 292--302
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--301
+Underfull \hbox (badness 10000) in paragraph at lines 292--302
 
  []
 
-)
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 292--302
 
-[23
+ []
 
-] [24] (tesi.aux (capitolo1.aux) (capitolo2.aux) (capitolo3.aux)) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 310--334
+
+ []
+
+[25
+
+]) [26] (tesi.aux (capitolo1.aux) (capitolo2.aux) (capitolo3.aux)) ) 
 Here is how much of TeX's memory you used:
  5928 strings out of 492973
  88554 string characters out of 3126693
@@ -674,29 +699,29 @@ Here is how much of TeX's memory you used:
  15936 words of font info for 60 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
  41i,32n,43p,625b,556s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/fe
-de9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmbx8.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmex10.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/fede9/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/fede9/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/fede9
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:
-/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mr10.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr12.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmr6.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/fede9/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/fede9/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users
-/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.p
-fb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmsy8.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmti12.pfb>
-Output written on tesi.pdf (24 pages, 287272 bytes).
+<C:/Users/f
+ede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pf
+b><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmbx8.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmex10.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/fede9/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/fede9/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/fede
+9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C
+:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr10.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmr12.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr6.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/fede9/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/fede9/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/User
+s/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.
+pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmsy8.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmti12.pfb>
+Output written on tesi.pdf (26 pages, 293932 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
+ 160 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
