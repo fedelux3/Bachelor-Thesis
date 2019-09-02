@@ -1,4 +1,20 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{bostonCrime:data}
+{\sc AnkurJain}.
+\newblock Kaggle - crimes in boston.
+\newblock \url{https://www.kaggle.com/ankkur13/boston-crime-data}.
+
+\bibitem{dataBoston}
+{\sc Department, B.~P.}
+\newblock Crime incident reports (august 2015 - to date).
+\newblock
+  \url{https://data.boston.gov/dataset/crime-incident-reports-august-2015-to-date-source-new-system/resource/12cb3883-56f5-47de-afa5-3b1cf61b257b}.
+
+\bibitem{ucr:data}
+{\sc FBI}.
+\newblock Ucr - uniform crime reporting.
+\newblock \url{https://www.bjs.gov/ucrdata/offenses.cfm}.
 
 \bibitem{sole24:bigdata}
 {\sc IlSole24ore}.
@@ -13,6 +29,12 @@
 \newblock {\em A Novel Breadth-first Strategy Algorithm for Discovering
   Sequential Patterns from Spatio-Temporal Data}.
 \newblock Institute of Computer Science, Warsaw University of Tecnology, 2019.
+
+\bibitem{cormen:libro}
+{\sc Thomas H.~Cormen, Charles E.~Leiserson, R. L. R. C.~S.}
+\newblock {\em Introduzione agli algoritmi e strutture dati - 3a edizione}.
+\newblock 2010.
+\newblock Appendice B.5 - pag. 974-981.
 
 \bibitem{wiki:associaz}
 {\sc Wikipedia}.

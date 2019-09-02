@@ -1,0 +1,88 @@
+% !TeX spellcheck = en_GB
+\chapter{Dataset e Implementazione}
+\label{Dataset}
+\pagestyle{empty}
+
+La sezione seguente descrive il dataset del Boston Police Department (BPD) e l'implementazione dello Spatio-Temporal Breadth-First Miner applicato ad esso.
+
+\section{Dataset}
+Il dataset utilizzato si basa sulla raccolta dati del Department if Innovation and Technology del Boston Police Department. In questo database sono registrati tutti gli interventi che ha effettuato la polizia di Boston dal giugno 2015 fino ad oggi. \`E un servizio che viene quotidianamente aggiornato con le nuove segnalazioni.\\
+Il dataset si compone di 17 colonne descritte singolarmente in Tabella 4.1.\\
+\\
+Per l'algoritmo oggetto del lavoro non servono tutti questi dati, le informazioni necessarie sono:
+\begin{itemize}
+	\item chiave di intentificazione unica 
+	\item location spaziale 
+	\item istante temporale 
+	\item tipologia di evento 
+\end{itemize}
+
+\begin{table}[h]
+	\hspace{-1cm}
+	\begin{tabular}{|c|l|c|p{6cm}|}
+		\hline
+		\textbf{N} & \textbf{Campo} & \textbf{Tipo di dato} &  \textbf{Descrizione} \\
+		\hline
+		1 & INCIDENT\_NUMBER & varchar(20) & numero di report interno del BPD nonch\`e \textbf{chiave primaria} \\
+		\hline
+		2 & OFFENSE\_CODE & varchar(25) & numero che codifica la descrizione dell'evento \\
+		\hline
+		3 & OFFENSE\_CODE\_GROUP & varchar(80) & categoria di evento criminale (\textbf{tipologia}) \\
+		\hline
+		4 & OFFENSE\_DESCRIPTION & varchar(80) & descrizione sommaria dell'evento \\
+		\hline
+		5 & DISTRICT & varchar(10) & distretto cittadino \\
+		\hline
+		6 & REPORTING\_AREA & varchar(10) & area dalla quale \`e stato segnalato l'evento \\
+		\hline
+		7 & SHOOTING & char(1) & indica se vi \`e stata una sparatoria \\
+		\hline
+		8 & OCCURRED\_ON\_DATE & datetime(7) & data e ora in cui l'evento ha preso luogo \\
+		\hline
+		9 & YEAR & integer(8) & anno in cui avviene l'evento \\
+		\hline
+		10 & MONTH & integer(8) & mese in cui avviene l'evento \\
+		\hline
+		11 & DAY\_OF\_WEEK & varchar(25) & giorno della settimana in cui avviene l'evento \\
+		\hline
+		12 & HOUR & integer(8) & ora in cui avviene l'evento\\
+		\hline
+		13 & UCR\_PART & varchar(25) & Universal Crime Reporting part, codice: 1,2,3 \\
+		\hline
+		14 & STREET & varchar(50) & nome della via in cui l'evento \`e avvenuto \\
+		\hline
+		15 & LATITUDE & varchar(20) & latitudine del luogo dell'evento \\
+		\hline
+		16 & LONGITUDE & varchar(20) & longitudine del luogo dell'evento \\
+		\hline
+		17 & LOCATION & varchar(50) & latitudine e longitudine del luogo dell'evento\\
+		\hline
+	\end{tabular}
+	\caption{attributi database BPD}
+\end{table}
+\clearpage
+
+\noindent
+\underline{La chiave di identificazione} del evento si pu\`o ricavare in INCIDENT\_NUMBER in quanto corrisponde alla chiave primaria del database e garantisce l'univocit\`a di valore di un evento rispetto a tutti gli altri.
+\\
+\underline{La location spaziale} si acquisisce dalle colonne LATITUDE e LONGITUDE. Le coordinate sono presenti nel formato digitale.
+\\
+\underline{L'istante temporale} viene ottenuto dall'attributo OCCURRED\_ON\_DATE. Il dato \`e registrato nel seguente formato: yyyy-MM-dd hh:mm:ss.\\
+Ad esempio: 2018-09-01 21:28:00
+\\
+\underline{La tipologia di evento} si ricava dalla colonna OFFENCE\_CODE\_GROUP. L'attributo definisce le diverse tipologie di crimini pertanto \`e l'informazione in questo campo. Non \`e stato scelto l'attributo OFFENCE\_CODE in quanto le descrizioni sono troppo specifiche e poco generiche come dovrebbero essere le tipologie di eventi.\\
+Inoltre si \`e scelto di analizzare i crimini di particolare gravit\`a per cercare di avere dei risultati pi\`u utili e visibili possibili. Nel database i crimini sono suddivisi in tre macro categorie denominate UCR part (Uniform Crime Reporting), seguendo uno standard americano di raccolta dati criminali. Queste categorie sono ordinate per gravit\`a: la terza categoria per i reati lievi quali persone scomparse, liti e frodi; la seconda per gli illeciti poco pi\`u gravi come vandalismo e spaccio; la prima per i reati molto gravi come furto con scasso, aggressione grave e omicidio.\\
+Nei test effettuati si utilizzano le tipologie di crimini con UCR Part = 1, e sono i seguenti 9:
+\begin{itemize}
+	\item Aggravated Assault
+	\item Auto Theft
+	\item Commercial Burglary
+	\item Homicide
+	\item Other Burglary
+	\item Robbery
+	\item Larceny
+	\item Residential Burglary 
+	\item Larceny From Motor Vehicle
+\end{itemize}
+
+GRAFICO DELLE FREQUENZE DELLE TIPOLOGIE E SPIEGARE QUALI PERIODI DI TEMPO SONO STATI SCELTI PER DEFINIRE I DATASET UTILIZZATI

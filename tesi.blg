@@ -2,5 +2,12 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: tesi.aux
 A level-1 auxiliary file: capitolo1.aux
 A level-1 auxiliary file: capitolo2.aux
 A level-1 auxiliary file: capitolo3.aux
+A level-1 auxiliary file: capitolo4.aux
 The style file: acm.bst
 Database file #1: bibl_tesi.bib
+Too many commas in name 1 of "Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Cifford Stein" for entry cormen:libro
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Cifford Stein" for entry cormen:libro
+while executing---line 1133 of file acm.bst
+Warning--empty publisher in cormen:libro
+(There were 2 error messages)
