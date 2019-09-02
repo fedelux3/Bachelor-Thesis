@@ -3,7 +3,7 @@
 \thispagestyle{empty}
 
 \section{Algoritmo di base}
-Definiti i concetti teorici di base, ora verr\`a descritto l'algoritmo \textbf{Spatio-Temporal Breadth-First Miner} (STBFM) che permette di trovare tutte le sequenze pattern con \textit{participation index} maggiori di una certa soglia \textbf{threshold} $\theta$ data dall'utente.\\
+Definiti i concetti teorici di base, ora verr\`a descritto l'algoritmo \textbf{Spatio-Temporal Breadth-First Miner} (STBFM) che permette di trovare tutte le sequenze pattern con \textit{participation index} maggiore di una certa soglia \textbf{threshold} $\theta$ data dall'utente.\\
 La definizione di un $\theta$ permette, da un lato, di considerare come risultato solo le sequenze pi\`u significative e, dall'altro, ignorare dalla computazione quelle che hanno un livello di correlazione troppo basso. \\
 Naturalmente bisogna considerare che l'utente definisce il parametro $\theta$ ma anche il raggio spaziale $R$ e l'intervallo temporale $T$ che sono imprescindibili per il calcolo del neighborhood.
 
@@ -86,7 +86,7 @@ Per il calcolo del vicinato si utilizza la definizione applicata nell'\textbf{Al
 
 \paragraph{Algorithm 4} L'Algorithm 4 definisce il calcolo del \textit{participation index} come definito dalla formula: $PI(\overrightarrow{s}) = min
 \begin{cases}
-PI(\overrightarrow{s}^\ast) \\ PR(\overrightarrow{s}[m-1] \rightarrow \overrightarrow{s}[m]
+PI(\overrightarrow{s}^\ast) \\ PR(\overrightarrow{s}[m-1] \rightarrow \overrightarrow{s}[m])
 \end{cases} 
 $\\
 \\
@@ -129,7 +129,7 @@ Un \textbf{albero orientato} \`e un grafo connesso, aciclico ed orientato. Esso 
 \end{itemize}
 Si definisce \textit{nodo padre} il nodo che ha un arco orientato uscente che va in un \textit{nodo figlio}. \\
 La \textbf{radice} \`e il nodo che si distingue da tutti gli altri in quanto essa \`e l'unico nodo da cui vi sono solo archi uscenti.\\
-I nodi \textbf{foglia} sono i nodi che hanno solo archi uscenti ma non entranti, corrispondono ai nodi dell'ultimo livello di albero.
+I nodi \textbf{foglia} sono i nodi che hanno solo archi entranti, quindi nessun arco uscente.
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=0.4 \linewidth]{albero.png}
@@ -333,3 +333,4 @@ Nel dettaglio vedi \textbf{Algorithm 9}.
 \end{algorithm}
 \paragraph{Considerazioni} Come possiamo notare questo algoritmo, con alcune dovute modifiche, \`e applicabile al nostro problema. Va notato, per\`o, che non vi \`e alcuna ottimizzazione per quanto riguarda la generazione di candidati, inoltre il threshold utilizzato ($\epsilon$) \`e fisso.\\
 Per questi motivi, per il corrente caso di studio, si preferisce utilizzare lo $STBFM$.
+

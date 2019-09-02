@@ -6,7 +6,10 @@
 \usepackage{afterpage}
 \usepackage{amsmath,amssymb}            
 \usepackage{rotating}  
-\usepackage{fancyhdr}  
+\usepackage{fancyhdr}
+\usepackage{url}
+\usepackage{hyperref}
+%\usepackage{breakurl}
 \usepackage[ruled,vlined]{algorithm2e}
 \usepackage[scriptsize]{caption} 
 \hyphenation{a-gen-tiz-za-zio-ne}
@@ -49,9 +52,9 @@
 
 \cleardoublepage
 % ---- Bibliography ----
-%\addcontentsline{toc}{chapter}{Bibliografia}
-%\bibliographystyle{plain}
-%\bibliography{bibl_tesi}
-%\nocite{*}
+\addcontentsline{toc}{chapter}{Bibliografia}
+\bibliographystyle{acm}
+\bibliography{bibl_tesi}
+\nocite{*}
 
 \end{document}

@@ -44,7 +44,7 @@ Dal piccolo esempio appena esposto si possono intuire le potenzialit\`a offerte 
 Essendo i campi di applicazione molto diversi e di complessit\`a crescente, si ha la necessit\`a di algoritmi sempre pi\`u sofisticati e scalabili. Nel seguente elaborato si studia un algoritmo di data mining che mira a trovare associazioni di eventi avvenuti in un istante temporale e in un luogo preciso.
 
 \section{Breve descrizione del lavoro}
-L'algoritmo preso in esame \`e lo \textit{Spatio-Temporal Breath-first Miner (STBFM)} definito da Piotr S. Maciag and Robert Bembenik. Esso cerca di scoprire associazioni di tipologie di eventi connesse nello spazialmente e temporalmente.\\
+L'algoritmo preso in esame \`e lo \textit{Spatio-Temporal Breath-first Miner (STBFM)} definito da Piotr S. Maciag and Robert Bembenik. Esso cerca di scoprire associazioni di tipologie di eventi connesse spazialmente e temporalmente.\\
 Viene definito un vicinato basato su un raggio spaziale e un intervallo di tempo con il quale valutare se il singolo evento \`e "vicino" (o in relazione) ad altri. Le relazioni di vicinato vengono considerate per tutti gli eventi di uno stesso tipo rispetto a tutti gli eventi di un altro tipo. In base ai vicinati trovati si ricava un valore di \textit{connessione} tra tipi compreso tra $[0,1]$, pi\`u questo valore tende a $1$ pi\`u i rispettivi tipi sono associati.\\
 Diverse sequenze di tipi vengono considerate e ad ogni una si calcola il valore di associazione, in questo modo si \`e in grado di confrontare quali sequenze sono pi\`u signficative di altre.
 \\
