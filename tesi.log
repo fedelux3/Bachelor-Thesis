@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.3)  2 SEP 2019 16:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.3)  3 SEP 2019 18:28
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -610,18 +610,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--21
  []
 
 [7]
-<neighborhood.png, id=139, 375.20175pt x 285.4665pt>
+<neighborhood.png, id=147, 375.20175pt x 285.4665pt>
 File: neighborhood.png Graphic file (type png)
 <use neighborhood.png>
 Package pdftex.def Info: neighborhood.png  used on input line 40.
 (pdftex.def)             Requested size: 307.57008pt x 234.00238pt.
  [8 <./neighborhood.png>]
-<neia1.png, id=150, 87.9285pt x 102.98476pt>
+<neia1.png, id=158, 87.9285pt x 102.98476pt>
 File: neia1.png Graphic file (type png)
 <use neia1.png>
 Package pdftex.def Info: neia1.png  used on input line 60.
 (pdftex.def)             Requested size: 66.59422pt x 77.99881pt.
-<neia2.png, id=151, 63.8385pt x 104.7915pt>
+<neia2.png, id=159, 63.8385pt x 104.7915pt>
 File: neia2.png Graphic file (type png)
 <use neia2.png>
 Package pdftex.def Info: neia2.png  used on input line 61.
@@ -708,7 +708,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--117
  []
 
 [16] [17]
-<albero.png, id=246, 220.825pt x 194.7275pt>
+<albero.png, id=254, 220.825pt x 194.7275pt>
 File: albero.png Graphic file (type png)
 <use albero.png>
 Package pdftex.def Info: albero.png  used on input line 135.
@@ -725,7 +725,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 159--165
 
  []
 
-<sptree.png, id=252, 417.35925pt x 231.264pt>
+<sptree.png, id=260, 417.35925pt x 231.264pt>
 File: sptree.png Graphic file (type png)
 <use sptree.png>
 Package pdftex.def Info: sptree.png  used on input line 176.
@@ -802,22 +802,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 310--334
  (capitolo4.tex
 Capitolo 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--13
+Underfull \hbox (badness 10000) in paragraph at lines 8--12
 
  []
 
 
-Underfull \hbox (badness 5878) in paragraph at lines 30--31
+Underfull \hbox (badness 5878) in paragraph at lines 29--30
 []|\OT1/cmr/m/n/12 categoria di even-to cri-mi-na-le
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 46--47
+Underfull \hbox (badness 2790) in paragraph at lines 45--46
 []|\OT1/cmr/m/n/12 giorno del-la set-ti-ma-na in cui
  []
 
 
-Overfull \hbox (34.26439pt too wide) in paragraph at lines 21--61
+Overfull \hbox (34.26439pt too wide) in paragraph at lines 20--60
 []  [] 
  []
 
@@ -829,13 +829,64 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 ] [28]
-Overfull \hbox (9.18007pt too wide) in paragraph at lines 65--76
+Overfull \hbox (9.18007pt too wide) in paragraph at lines 64--76
 $[]$ \OT1/cmr/m/n/12 del even-to si puo ri-ca-va-re in IN-CI-DENT[]NUMBER
  []
 
-) [29
 
-] [30] (tesi.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 64--76
+
+ []
+
+<frequenze18.png, id=371, 478.1865pt x 281.25075pt>
+File: frequenze18.png Graphic file (type png)
+<use frequenze18.png>
+Package pdftex.def Info: frequenze18.png  used on input line 98.
+(pdftex.def)             Requested size: 424.36612pt x 249.59976pt.
+
+Overfull \hbox (22.75084pt too wide) in paragraph at lines 97--99
+[]  [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--104
+
+ []
+
+
+Overfull \hbox (14.48067pt too wide) in paragraph at lines 89--104
+\OT1/cmr/m/n/12 INCIDENT[]NUMBER, OF-FEN-CE[]CODE[]GROUP, OC-CUR-RED[]ON[]DATE,
+
+ []
+
+[29
+
+] [30 <./frequenze18.png>]
+Overfull \hbox (42.55939pt too wide) in paragraph at lines 106--117
+[]  [] 
+ []
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 122--125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+[]|\OT1/cmr/m/n/12 children
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--143
+
+ []
+
+) [32
+
+] [33] [34
+
+
+] (tesi.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 9--13
 []\OT1/cmr/m/sc/12 Department, B. P.  \OT1/cmr/m/n/12 Cri-me in-ci-dent re-port
 s (au-gu-
@@ -865,30 +916,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--26
 re . com / 2015 / 11 / 02 /
  []
 
-[31
-
-
+[35
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 61.
- [32]
+ [36]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
  (tesi.aux (capitolo1.aux) (capitolo2.aux) (capitolo3.aux)
 (capitolo4.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 61.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 61.
-Package rerunfilecheck Info: File `tesi.out' has not changed.
-(rerunfilecheck)             Checksum: F674CEFCE51F0F7D5682C21F41B07614;1563.
+
+
+Package rerunfilecheck Warning: File `tesi.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `tesi.out':
+(rerunfilecheck)             Before: 27EB2FE258B4EB39BB20870929FDB291;1685
+(rerunfilecheck)             After:  402FD9ED990229E22EC512FCF27D833B;1746.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 61.
  ) 
 Here is how much of TeX's memory you used:
- 9617 strings out of 492973
- 144070 string characters out of 3126693
+ 9635 strings out of 492973
+ 144326 string characters out of 3126693
  266437 words of memory out of 3000000
- 13134 multiletter control sequences out of 15000+200000
+ 13140 multiletter control sequences out of 15000+200000
  16406 words of font info for 62 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
- 36i,32n,43p,631b,618s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,32n,43p,684b,618s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmbx8.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fo
@@ -910,9 +966,9 @@ onts/cm/cmsy10.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/fede9/AppData/Local/Progra
 ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/fede9/AppData
 /Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on tesi.pdf (32 pages, 363464 bytes).
+Output written on tesi.pdf (36 pages, 386756 bytes).
 PDF statistics:
- 506 PDF objects out of 1000 (max. 8388607)
- 188 named destinations out of 1000 (max. 500000)
- 218 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 538 PDF objects out of 1000 (max. 8388607)
+ 199 named destinations out of 1000 (max. 500000)
+ 239 words of extra memory for PDF output out of 10000 (max. 10000000)
 
