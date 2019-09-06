@@ -24,11 +24,24 @@
   novembre 2015.
 \newblock pagine 12-13.
 
-\bibitem{piotr:paper}
-{\sc Maciag, P.~S., and Bembenik, R.}
-\newblock {\em A Novel Breadth-first Strategy Algorithm for Discovering
-  Sequential Patterns from Spatio-Temporal Data}.
-\newblock Institute of Computer Science, Warsaw University of Tecnology, 2019.
+\bibitem{bostonCrime:code}
+{\sc Luzzi, F.}
+\newblock Bostoncrime.
+\newblock \url{https://github.com/fedelux3/BostonCrime}.
+
+\bibitem{icpram19}
+{\sc Maciag., P.~S., and Bembenik., R.}
+\newblock A novel breadth-first strategy algorithm for discovering sequential
+  patterns from spatio-temporal data.
+\newblock In {\em Proceedings of the 8th International Conference on Pattern
+  Recognition Applications and Methods - Volume 1: ICPRAM,\/} (2019), INSTICC,
+  SciTePress, pp.~459--466.
+
+\bibitem{coord:calculate}
+{\sc Scripts, M.~T.}
+\newblock Calculate distance, bearing and more between latitude/longitude
+  points.
+\newblock \url{http://www.movable-type.co.uk/scripts/latlong.html}.
 
 \bibitem{cormen:libro}
 {\sc Thomas H.~Cormen, Charles E.~Leiserson, R. L. R. C.~S.}

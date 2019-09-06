@@ -5,7 +5,7 @@
 La sezione seguente descrive il dataset del Boston Police Department (BPD) e l'implementazione dello Spatio-Temporal Breadth-First Miner applicato ad esso.
 
 \section{Dataset}
-Il dataset utilizzato si basa sulla raccolta dati del Department if Innovation and Technology del Boston Police Department. In questo database sono registrati tutti gli interventi sul campo che ha effettuato la polizia di Boston dal giugno 2015 fino ad oggi. \`E un servizio che viene quotidianamente aggiornato con le nuove segnalazioni.\\
+Il dataset utilizzato si basa sulla raccolta dati del Department of Innovation and Technology del Boston Police Department. In questo database sono registrati tutti i reati rilevati sul campo dalla polizia di Boston dal giugno 2015 fino ad oggi. \`E un servizio che viene quotidianamente aggiornato con le nuove segnalazioni.\\
 Il dataset si compone di 17 colonne descritte singolarmente in Tabella 4.1.\\
 \\
 Per l'algoritmo oggetto del lavoro non sono necessari tutti questi dati, le informazioni fondamentali sono:
@@ -62,43 +62,38 @@ Per l'algoritmo oggetto del lavoro non sono necessari tutti questi dati, le info
 \clearpage
 
 \noindent
-\underline{La chiave di identificazione} del evento si pu\`o ricavare in INCIDENT\_NUMBER in quanto corrisponde alla chiave primaria del database e garantisce l'univocit\`a di valore di un evento rispetto a tutti gli altri.
+\underline{La chiave di identificazione} del evento si pu\`o ricavare in INCIDENT\_NUMBER, in quanto corrisponde alla chiave primaria del database e garantisce l'univocit\`a di valore di un evento rispetto a tutti gli altri.
 \\
 \underline{La location spaziale} si acquisisce dalle colonne LATITUDE e LONGITUDE. Le coordinate sono presenti nel formato digitale.
 \\
-\underline{L'istante temporale} viene ottenuto dall'attributo OCCURRED\_ON\_DATE. Il dato \`e registrato nel seguente formato: yyyy-MM-dd hh:mm:.\\
+\underline{L'istante temporale} viene ottenuto dall'attributo OCCURRED\_ON\_DATE. Il dato \`e registrato nel seguente formato: yyyy-MM-dd hh:mm.\\
 Ad esempio: 2018-09-01 21:28:00
 \\
-\underline{La tipologia di evento} si ricava dalla colonna OFFENCE\_CODE\_GROUP. L'attributo definisce le diverse tipologie di crimini pertanto \`e l'informazione in questo campo. Non \`e stato scelto l'attributo OFFENCE\_CODE in quanto le descrizioni sono troppo specifiche e poco generiche come dovrebbero essere le tipologie di eventi.\\
+\underline{La tipologia di evento} si ricava dalla colonna OFFENCE\_CODE\_GROUP. L'attributo definisce le diverse tipologie di crimini, pertanto \`e l'informazione in questo campo. Non \`e stato scelto l'attributo OFFENCE\_CODE in quanto le descrizioni sono troppo specifiche e poco generiche come dovrebbero essere le tipologie di eventi.\\
 Inoltre si \`e scelto di analizzare i crimini di particolare gravit\`a per cercare di avere dei risultati pi\`u utili e visibili possibili. Nel database i crimini sono suddivisi in tre macro categorie denominate UCR part (Uniform Crime Reporting), seguendo uno standard americano di raccolta dati criminali. Queste categorie sono ordinate per gravit\`a: la terza categoria comprende i reati lievi quali liti e frodi, la seconda gli illeciti pi\`u gravi come vandalismo e spaccio, la prima i reati molto gravi come furto con scasso, aggressione grave e omicidio.\\
 \\
 Nei test effettuati si utilizzano le tipologie di crimini con UCR Part = 1, e sono i seguenti 9:
 \begin{itemize}
-	\item Aggravated Assault
-	\item Auto Theft
-	\item Commercial Burglary
-	\item Homicide
-	\item Other Burglary
-	\item Robbery
-	\item Larceny
-	\item Residential Burglary 
-	\item Larceny From Motor Vehicle
+	\item Aggravated Assault - aggressione aggravata
+	\item Auto Theft - furto d'auto
+	\item Commercial Burglary - furto con scasso commerciale
+	\item Homicide - omicidio
+	\item Robbery - rapina
+	\item Larceny - furto
+	\item Residential Burglary - furto con scasso residenziale
+	\item Larceny From Motor Vehicle - furto da autoveicolo
+	\item Other Burglary - altro furto con scasso
 \end{itemize}
 
 \noindent
 \paragraph{Preprocessing} Prima di procedere all'applicazione dell'algoritmo sul database \`e stata effettuata una fase di \textit{data preprocessing} con lo scopo di eliminare i dati inconsistenti e lavorare solo su quelli significativi e coerenti.\\ 
-Sono stati eliminati i record con le informazioni di LATITUDINE e LONGITUDINE vuote, inoltre sono stati eliminati valori di INCIDENT\_NUMBER duplicati. Il periodo di tempo degli eventi scelto \`e l'anno 2018. Questo perch\`e degli anni precedenti mancano riferimenti ad alcuni mesi e avrebbe potuto condizionare gli esiti dei test in quanto \`e risaputo che la frequenza di certe tipologie di eventi criminali \`e soggetta a variazioni in base alla stagione e al periodo dell'anno.\\
+Sono stati eliminati i record con le informazioni di LATITUDINE e LONGITUDINE vuote o non valide. Sono stati eliminati valori di INCIDENT\_NUMBER duplicati.\\ 
+Il periodo di tempo degli eventi scelto \`e l'anno 2018, perch\`e degli anni precedenti mancano riferimenti ad alcuni mesi. Questa mancanza di dati avrebbe potuto condizionare gli esiti dei test, in quanto \`e risaputo che la frequenza di certe tipologie di eventi criminali \`e soggetta a variazioni in base alla stagione e al periodo dell'anno.\\
 \\
 Dopo tutte queste assunzioni i record cosiderati per il database del 2018 sono: $72135$.\\ 
 Di questi si \`e deciso di considerare, per significativit\`a e compattezza nei risultati, i tipi con UCR part = 1, ovvero i reati di pi\`u alta gravit\`a, concretamente \textbf{$15648$ record} di eventi criminali. \\
-Come chiaro che sia i tipi di eventi non sono ugualmente frequenti, si pu\`o notare in Figura 4.1 l'evento pi\`u rilevato \`e \textit{larceny} (furto), invece quello di intesit\`a minore \`e \textit{homicide} (omicidio).
-\begin{figure}[h]
-	
-	\hspace{-0.5cm}
-	\includegraphics[height=0.64 \linewidth]{frequenze18.png}
-	\caption{frequenze eventi per classe nel 2018}
-\end{figure}
-\noindent
+Come chiaro che sia, i tipi di eventi non sono ugualmente frequenti, si pu\`o notare in Figura 4.1 (di seguito) l'evento pi\`u rilevato \`e \textit{larceny} (furto), mentre quello di intesit\`a minore \`e \textit{homicide} (omicidio).\\
+\\
 Le colonne della versione finale del database sono quelle di\\ INCIDENT\_NUMBER, OFFENCE\_CODE\_GROUP, OCCURRED\_ON\_DATE, LATITUDE, LONGITUDE.\\
 In Tabella 4.2 un esempio di alcuni record del dataset:
 
@@ -109,13 +104,20 @@ In Tabella 4.2 un esempio di alcuni record del dataset:
 		incident\_number & offence\_code\_group & occurred\_on\_date & latitude & longitude \\
 		\hline
 		I192014076 & Larceny & 20/12/2018 00:01 & 4.232.386.050 & -7.107.600.196 \\
-		I192003189 & Aggr. Assault & 30/12/2018 12:00 & 4.233.596.847 & -7.108.129.856\\
+		I192003189 & Aggravated Assault & 30/12/2018 12:00 & 4.233.596.847 & -7.108.129.856\\
 		I192013746 & Larceny & 16/11/2018 12:00 & 4.232.809.966 & -7.106.321.676 \\
 		I192013689 & Auto Theft & 28/12/2018 10:07 & 4.235.988.372 & -7.106.016.189 \\
 		\hline
 	\end{tabular}
 	\caption{esempio di record nel dataset dopo preprocessing}
 \end{table}
+
+
+\begin{figure}[h]
+	\hspace{-0.5cm}
+	\includegraphics[height=0.64 \linewidth]{frequenze18.png}
+	\caption{frequenze eventi per tipologia nel 2018}
+\end{figure}
 \clearpage
 
 \section{Implementazione}
@@ -136,11 +138,60 @@ La struttura \`e la seguente:
 	\end{tabular}
 \end{table}
 \noindent
-Il \textbf{parent1} e il \textbf{parent2} sono reference ad oggetti Node connessi al nodo attuale corrispondenti rispettivamente al $firstParent$ e al $secondParent$ definiti nell'albero.\\
-Il \textbf{value} corrisponde al tipo di evento del nodo corrente, che varia in base alle sequenze generate e alla posizione dello stesso.\\
-Il \textbf{set} si riferisce al \textit{set di istanze} calcolato fino a quel punto nella sequenza, viene salvato nel nodo in modo da non perdere l'informazione quando si dovr\`a analizzare le sequenze di lunghezza maggiore, vedi riga 5 dell'Algorithm 6. L'insieme \`e rappresentato da un dizionario in Python; \`e la struttura perfetta per questo genere di informazione perch\`e ogni istanza evento inserita viene indicizzata attraverso l'\textit{incident\_number} in questo modo risulta univoca e non duplicata nel set. Inoltre le memorizza direttamente in RAM riducendo drasticamente il numero di accessi a memoria secondaria. \\
+Il \textbf{parent1} e il \textbf{parent2} sono reference ad oggetti Node connessi al nodo attuale corrispondenti rispettivamente al $firstParent$ ed al $secondParent$ definiti nell'albero.\\
+\\
+Il \textbf{value} corrisponde al tipo di evento del nodo corrente, che varia in base alle sequenze generate e alla posizione dello stesso. Indicativamente il value corrisponde all'ultimo valore della sequenza fin qui generata. \textit{esempio} in una sequenza totalmente inserita $A \rightarrow B \rightarrow C$ il nodo pi\`u profondo avr\`a come \textit{value} = $C$.\\
+\\
+Il \textbf{set} si riferisce al \textit{set di istanze} calcolato fino a quel punto nella sequenza, viene salvato nel nodo in modo da non perdere l'informazione quando si dovranno analizzare le sequenze di lunghezza maggiore, vedi riga 5 dell'Algorithm 6. L'insieme \`e memorizzato in un dizionario in Python, che \`e la struttura dati perfetta per questo genere di informazione, perch\`e ogni istanza evento inserita viene indicizzata attraverso l'\textit{incident\_number}. In questo modo ogni tupla inserita risulta univoca e non duplicata nel set. Inoltre le memorizza direttamente in RAM rendendo necessario l'accesso a memoria secondaria (estremamente costoso) solo a una prima lettura dei dati e non ad ogni iterazione dell'algoritmo. \\
+\\
 Il campo \textbf{children} contiene una lista di reference ad oggetti Node che sono considerati "figli" del nodo corrente. La struttura della lista \`e stata scelta perch\`e dinamica e comoda nell'aggiunta ed eliminazione di elementi.\\
 
 \subsection{SPTree}
 La classe SPTree si occupa di modellare il Sequence Pattern Tree. Come struttura del nodo di base utilizza la classe \textit{Node}.\\
-Come la struttura dati originale l'SPTree ho un solo attributo di base, la \textbf{root}. Essa \`e un \textit{Node} con tutti i parametri settati a \textbf{None} inizialmente. L'algoritmo esterno successivamente inserisce i \textit{children} alla root attraverso il metodo \textit{insertNode}. Un altro metodo fondamentale presente \`e \textit{searchNode} che, data una sequenza in input, ricerca e restituisce il nodo che corrisponde all'ultimo elemento della sequenza all'interno dell'albero. In questo modo posso aggiungere o eliminare nodi partendo dal termine di una sequenza e navigando con i campi del Node.
+Seguendo il modello di struttura dati originale, l'SPTree ha un solo attributo di base, la \textbf{root}. Essa \`e un \textit{Node} con tutti i parametri inizialmente settati a \textbf{None}. Con l'inserimento di ciascun nodo di primo livello di albero, viene riempito il campo children della root con i reference al nodo stesso.\\
+L'\textbf{inserimento} viene gestito dal metodo \textit{insertNode()} che, data una sequenza in input e il suo set di istanze, genera il nuovo nodo. Il nuovo nodo corrisponde all'ultimo elemento della sequenza in input, e viene posizionato nell'albero seguendo il percorso della stessa.\\
+L'\textbf{eliminazione} di un nodo viene gestita dal metodo \textit{deleteNode()} che, data in input una sequenza, elimina l'ultimo nodo corrispondente, permettendo il \textit{pruning} di tutto il sottoalbero presente nei children di quel nodo.\\
+Inoltre \`e stato definito un \textbf{metodo ausiliario} \textit{searchNode()} che, data una sequenza in input, restituisce il nodo corrispondete all'ultima posizione della stessa.
+
+\subsection{STBFM}
+Il corpo dell'algoritmo vero e proprio \`e contenuto nel file \textit{STBFM.py}.\\
+Il software rispecchia il pi\`u possibile l'algoritmo originale definito nel Capitolo 3 utilizzando la classe \textit{SPTree}. Vanno fatte comunque delle premesse.\\
+\\
+La distanza spaziale, avendo in input coordinate GPS, non pu\`o considerarsi perfetta in quanto la superficie terrestre non \`e regolare e il nostro pianeta non pu\`o essere considerato una sfera. Il metodo di calcolo della distanza scelto \`e quello della \textit{legge sferica dei coseni}:\\
+\\
+date $(\varphi_1, \lambda_1)$ e $(\varphi_2, \lambda_2)$ due coordinate in radianti (latitudine, longitudine)
+la distanza tra di esse in km \`e:
+
+$d = \arccos(\sin(\varphi_1) \cdot \sin(\varphi_2) + \cos(\varphi_1) \cdot \cos(\varphi_2) \cdot \cos(\Delta \lambda)) \cdot R$\\
+\\
+dove $R = 6371 [km]$ \`e il raggio della Terra e $\Delta \lambda$ la differenza tra $\lambda_1$ e $\lambda_2$.\\
+L'applicazione di altri metodi di calcolo per la distanza probabilmente modifica i risultati anche se di lieve intensit\`a.\\
+\\
+Un'altra premessa degna di nota \`e la generazione delle sequenze candidato di lunghezza 2. Il software genera tutte le combinazioni possibili di sequenze \textit{randomicamente}. Questo implica che la generazione dell'albero non avviene sempre nello stesso ordine e quindi valida ulteriormente i risultati ottenuti, in particolare per quanto riguarda i tempi di computazione che restano indipendenti dall'ordine delle sequenze candidato scelto.\\
+\\
+In generale, il resto del software rispetta tutti i passaggi visti nell'Algorithm 1, 6 e 8, adattandoli al linguaggio di programmazione Python.\\
+\\
+L'\textbf{input} al software avviene per riga di comando, i parametri da inserire sono: threshold $\theta$, numero di risultati nel $Top$, raggio spaziale ed intervallo temporale (in ore).\\
+\textit{esempio}:
+
+- $>$ python3 STBFM.py 0.25 50 3 168\\
+in questo caso richiedo una computazione con $\theta = 0.25$, num$Top = 50$, raggio $R = 3 km$, intervallo tempo $T = 168$ ore (7 giorni).\\
+\\
+\underline{Nota Bene} \`e possibile, dati i parametri, eseguire la computazione in pi\`u dataset. I dataset utilizzati sono dei file in formato .csv e sono dichiarati esplicitamente all'interno del codice.\\
+\\
+L'\textbf{output} \`e di due tipi:
+
+\begin{itemize}
+\item output da terminale che, man mano nella computazione, mostra i risultati intermedi e lo svolgimento delle operazioni, nonch\`e eventuali errori;
+
+\item output su file.csv dove al termine della computazione di un dataset stampa l'insieme $Top$ e i tempi di computazione per livello. 
+\end{itemize}
+L'output in csv utilizza il seguente formato:
+\\
+nomeFile, $R$, $T$, num$Top$, $\theta$ finale, $[tempo2, tempo3, ..., tempoN]$, $tempoTot$\\
+dove $[tempo2, tempo3, ..., tempoN]$ \`e una lista che contiene i tempo di calcolo divisi nei vari livelli di albero.\\
+\textit{esempio}
+
+dataset18\_5216.csv, 2,168,0.57,[230,450,345,123],1148\\
+\\
+Il codice del software con relativa guida all'utilizzo sono presenti sulla piattaforma di condivisione del codice GitHub al seguente indirizzo:\\ \href{https://github.com/fedelux3/BostonCrime}{https://github.com/fedelux3/BostonCrime}.

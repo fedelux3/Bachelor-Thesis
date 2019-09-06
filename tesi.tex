@@ -1,6 +1,7 @@
 \documentclass[12pt,a4paper,twoside,openright]{report}
 
 \usepackage{graphicx}
+\usepackage{setspace}
 \usepackage{tabularx}
 \usepackage{subfigure}
 \usepackage{afterpage}
@@ -29,8 +30,8 @@
 \pagestyle{empty}
 
 \begin{document}
-%\include{frontespizio}
-%\thispagestyle{empty} \normalfont \cleardoublepage
+\include{frontespizio}
+\thispagestyle{empty} \normalfont \cleardoublepage
 %\include{dedica}
 %\thispagestyle{empty}  \clearpage
 \pagenumbering{arabic}
@@ -46,6 +47,8 @@
 \fancyhead[LO]{\bfseries\rightmark}     
 \renewcommand{\headrulewidth}{0.3pt} 
 
+\tableofcontents
+
 \include{capitolo1}
 \include{capitolo2}
 \include{capitolo3}
@@ -54,7 +57,7 @@
 \cleardoublepage
 % ---- Bibliography ----
 \addcontentsline{toc}{chapter}{Bibliografia}
-\bibliographystyle{acm}
+\bibliographystyle{plain}
 \bibliography{bibl_tesi}
 \nocite{*}
 

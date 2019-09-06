@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.3)  3 SEP 2019 18:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.3)  6 SEP 2019 10:07
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -49,6 +49,10 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
+)
+("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\setspace\setspace.
+sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
 )
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\tabularx.sty
 "
@@ -444,23 +448,25 @@ Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@posthook=\toks25
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\latin1.def"
 File: latin1.def 2018/04/06 v1.3b Input encoding file
-)) (tesi.aux (capitolo1.aux) (capitolo2.aux) (capitolo3.aux) (capitolo4.aux))
+)) (tesi.aux (frontespizio.aux) (capitolo1.aux) (capitolo2.aux) (capitolo3.aux)
+
+(capitolo4.aux))
 \openout1 = `tesi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
 
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
@@ -493,7 +499,7 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 \AtBeginShipoutBox=\box42
-Package hyperref Info: Link coloring OFF on input line 31.
+Package hyperref Info: Link coloring OFF on input line 32.
 
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
 ty"
@@ -505,17 +511,17 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count136
 )
-LaTeX Info: Redefining \ref on input line 31.
-LaTeX Info: Redefining \pageref on input line 31.
-LaTeX Info: Redefining \nameref on input line 31.
+LaTeX Info: Redefining \ref on input line 32.
+LaTeX Info: Redefining \pageref on input line 32.
+LaTeX Info: Redefining \nameref on input line 32.
  (tesi.out) (tesi.out)
 \@outlinefile=\write3
 \openout3 = `tesi.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \it@ocap on input line 31.
-LaTeX Info: Redefining \it@ccap on input line 31.
+LaTeX Info: Redefining \it@ocap on input line 32.
+LaTeX Info: Redefining \it@ccap on input line 32.
 
 
 File italian.ldf warning: 
@@ -523,11 +529,72 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 31.
+italian.ldf    on input line 32.
 
+\openout2 = `frontespizio.aux'.
+
+(frontespizio.tex
+<logo_unimib.pdf, id=114, 67.8029pt x 66.29492pt>
+File: logo_unimib.pdf Graphic file (type pdf)
+<use logo_unimib.pdf>
+Package pdftex.def Info: logo_unimib.pdf  used on input line 6.
+(pdftex.def)             Requested size: 77.9727pt x 76.23854pt.
+
+Overfull \hbox (3.87175pt too wide) in paragraph at lines 6--7
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--16
+
+ []
+
+
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 4--17
+[] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--32
+
+ []
+
+[1
+
+
+{C:/Users/fede9/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./logo_unim
+ib.pdf>]) [2
+
+
+] (tesi.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
+
+("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
+("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.39 ...rline {4.2.2}SPTree}{35}{subsection.4.2.2}
+                                                   [1
+
+])
+\tf@toc=\write4
+\openout4 = `tesi.toc'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.52 \include{capitolo1}
+                         [2]
 \openout2 = `capitolo1.aux'.
 
-(capitolo1.tex
+ (capitolo1.tex
 Capitolo 1.
 
 Underfull \hbox (badness 10000) in paragraph at lines 7--12
@@ -540,15 +607,7 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
-LaTeX Font Info:    Try loading font information for U+msa on input line 13.
 
-("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 13.
-("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <12> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 32.
@@ -572,11 +631,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--45
 
  []
 
-[1
+[3
 
 
-
-{C:/Users/fede9/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+] [4]
 Underfull \hbox (badness 10000) in paragraph at lines 57--63
 
  []
@@ -586,19 +644,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--63
 
  []
 
-[3]
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 64--81
 
  []
 
-[4
+[6
 
-]) [5
+]) [7
 
 ]
 \openout2 = `capitolo2.aux'.
 
- (capitolo2.tex [6
+ (capitolo2.tex [8
 
 
 
@@ -609,24 +667,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--21
 
  []
 
-[7]
-<neighborhood.png, id=147, 375.20175pt x 285.4665pt>
+[9]
+<neighborhood.png, id=205, 375.20175pt x 285.4665pt>
 File: neighborhood.png Graphic file (type png)
 <use neighborhood.png>
 Package pdftex.def Info: neighborhood.png  used on input line 40.
 (pdftex.def)             Requested size: 307.57008pt x 234.00238pt.
- [8 <./neighborhood.png>]
-<neia1.png, id=158, 87.9285pt x 102.98476pt>
+ [10 <./neighborhood.png>]
+<neia1.png, id=216, 87.9285pt x 102.98476pt>
 File: neia1.png Graphic file (type png)
 <use neia1.png>
 Package pdftex.def Info: neia1.png  used on input line 60.
 (pdftex.def)             Requested size: 66.59422pt x 77.99881pt.
-<neia2.png, id=159, 63.8385pt x 104.7915pt>
+<neia2.png, id=217, 63.8385pt x 104.7915pt>
 File: neia2.png Graphic file (type png)
 <use neia2.png>
 Package pdftex.def Info: neia2.png  used on input line 61.
 (pdftex.def)             Requested size: 47.51735pt x 77.99881pt.
- [9 <./neia1.png> <./neia2.png>]
+ [11 <./neia1.png> <./neia2.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 65.
@@ -656,7 +714,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--103
 
  []
 
-[10
+[12
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 104--105
@@ -668,7 +726,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 106--110
 
  []
 
-[11]
+[13]
 Underfull \hbox (badness 10000) in paragraph at lines 125--131
 
  []
@@ -678,23 +736,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--131
 
  []
 
-) [12
+) [14
 
 ]
 \openout2 = `capitolo3.aux'.
 
  (capitolo3.tex
 Capitolo 3.
-[13
+[15
 
 
 
-] [14]
+]
+Underfull \vbox (badness 3989) has occurred while \output is active []
+
+ [16]
 Underfull \hbox (badness 10000) in paragraph at lines 74--81
 
  []
 
-[15]
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 87--94
 
  []
@@ -707,13 +768,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--117
 
  []
 
-[16] [17]
-<albero.png, id=254, 220.825pt x 194.7275pt>
+[18] [19]
+<albero.png, id=313, 220.825pt x 194.7275pt>
 File: albero.png Graphic file (type png)
 <use albero.png>
 Package pdftex.def Info: albero.png  used on input line 135.
 (pdftex.def)             Requested size: 176.90956pt x 155.99762pt.
- [18
+ [20
 
  <./albero.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 159--165
@@ -725,7 +786,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 159--165
 
  []
 
-<sptree.png, id=260, 417.35925pt x 231.264pt>
+<sptree.png, id=319, 417.35925pt x 231.264pt>
 File: sptree.png Graphic file (type png)
 <use sptree.png>
 Package pdftex.def Info: sptree.png  used on input line 176.
@@ -733,9 +794,9 @@ Package pdftex.def Info: sptree.png  used on input line 176.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[19
+[21
 
-] [20 <./sptree.png>]
+] [22 <./sptree.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 186--190
 
  []
@@ -756,25 +817,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--201
 
  []
 
-[21
+[23
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 239--243
 
  []
 
-
+[24]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23]
+ [25]
 Underfull \hbox (badness 10000) in paragraph at lines 285--289
 
  []
 
-[24]
+[26]
 Underfull \hbox (badness 10000) in paragraph at lines 292--302
 
  []
@@ -794,9 +852,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 310--334
 
  []
 
-[25
+[27
 
-]) [26]
+]) [28]
 \openout2 = `capitolo4.aux'.
 
  (capitolo4.tex
@@ -824,13 +882,13 @@ Overfull \hbox (34.26439pt too wide) in paragraph at lines 20--60
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[27
+[29
 
 
 
-] [28]
-Overfull \hbox (9.18007pt too wide) in paragraph at lines 64--76
-$[]$ \OT1/cmr/m/n/12 del even-to si puo ri-ca-va-re in IN-CI-DENT[]NUMBER
+] [30]
+Overfull \hbox (12.44392pt too wide) in paragraph at lines 64--76
+$[]$ \OT1/cmr/m/n/12 del even-to si puo ri-ca-va-re in IN-CI-DENT[]NUMBER,
  []
 
 
@@ -838,52 +896,126 @@ Underfull \hbox (badness 10000) in paragraph at lines 64--76
 
  []
 
-<frequenze18.png, id=371, 478.1865pt x 281.25075pt>
-File: frequenze18.png Graphic file (type png)
-<use frequenze18.png>
-Package pdftex.def Info: frequenze18.png  used on input line 98.
-(pdftex.def)             Requested size: 424.36612pt x 249.59976pt.
 
-Overfull \hbox (22.75084pt too wide) in paragraph at lines 97--99
-[]  [] 
+Overfull \hbox (20.3157pt too wide) in paragraph at lines 89--99
+\OT1/cmr/m/n/12 TU-DI-NE vuo-te o non va-li-de. So-no sta-ti eli-mi-na-ti va-lo
+-ri di IN-CI-DENT[]NUMBER
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--104
+Underfull \hbox (badness 10000) in paragraph at lines 89--99
 
  []
 
 
-Overfull \hbox (14.48067pt too wide) in paragraph at lines 89--104
+Underfull \hbox (badness 10000) in paragraph at lines 89--99
+
+ []
+
+
+Overfull \hbox (14.48067pt too wide) in paragraph at lines 89--99
 \OT1/cmr/m/n/12 INCIDENT[]NUMBER, OF-FEN-CE[]CODE[]GROUP, OC-CUR-RED[]ON[]DATE,
 
  []
 
-[29
+[31
 
-] [30 <./frequenze18.png>]
-Overfull \hbox (42.55939pt too wide) in paragraph at lines 106--117
+]
+Overfull \hbox (47.27713pt too wide) in paragraph at lines 101--112
 []  [] 
  []
 
-[31]
-Underfull \hbox (badness 10000) in paragraph at lines 122--125
+<frequenze18.png, id=434, 478.1865pt x 281.25075pt>
+File: frequenze18.png Graphic file (type png)
+<use frequenze18.png>
+Package pdftex.def Info: frequenze18.png  used on input line 118.
+(pdftex.def)             Requested size: 424.36612pt x 249.59976pt.
+
+Overfull \hbox (22.75084pt too wide) in paragraph at lines 117--119
+[]  [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[32] [33 <./frequenze18.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 124--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
 []|\OT1/cmr/m/n/12 children
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--143
+Underfull \hbox (badness 10000) in paragraph at lines 140--148
 
  []
 
-) [32
 
-] [33] [34
+Underfull \hbox (badness 10000) in paragraph at lines 140--148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--148
+
+ []
+
+[34
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 157--164
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--164
+
+ []
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 165--176
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--176
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--176
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--176
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--183
+
+ []
+
+[36])
+Underfull \hbox (badness 10000) in paragraph at lines 195--55
+
+ []
+
+[37] [38
 
 
 ] (tesi.bbl
@@ -916,35 +1048,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--26
 re . com / 2015 / 11 / 02 /
  []
 
-[35
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--31
+[]\OT1/cmr/m/sc/12 Luzzi, F.  \OT1/cmr/m/n/12 Bo-ston-cri-me.  []$\OT1/cmtt/m/n
+/12 https : / / github . com / fedelux3 /
+ []
+
+[39
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 61.
- [36]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
- (tesi.aux (capitolo1.aux) (capitolo2.aux) (capitolo3.aux)
-(capitolo4.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 61.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 61.
-
-
-Package rerunfilecheck Warning: File `tesi.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `tesi.out':
-(rerunfilecheck)             Before: 27EB2FE258B4EB39BB20870929FDB291;1685
-(rerunfilecheck)             After:  402FD9ED990229E22EC512FCF27D833B;1746.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 61.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
+ [40]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
+ (tesi.aux (frontespizio.aux) (capitolo1.aux) (capitolo2.aux)
+(capitolo3.aux) (capitolo4.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
+Package rerunfilecheck Info: File `tesi.out' has not changed.
+(rerunfilecheck)             Checksum: 45A3A54A59BA4F60D2360CE5F78EC5B7;1806.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 64.
  ) 
 Here is how much of TeX's memory you used:
- 9635 strings out of 492973
- 144326 string characters out of 3126693
- 266437 words of memory out of 3000000
- 13140 multiletter control sequences out of 15000+200000
- 16406 words of font info for 62 fonts, out of 3000000 for 9000
+ 9695 strings out of 492973
+ 145491 string characters out of 3126693
+ 267313 words of memory out of 3000000
+ 13177 multiletter control sequences out of 15000+200000
+ 17012 words of font info for 64 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
- 36i,32n,43p,684b,618s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,32n,43p,796b,618s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmbx8.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fo
@@ -966,9 +1097,9 @@ onts/cm/cmsy10.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/fede9/AppData/Local/Progra
 ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/fede9/AppData
 /Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on tesi.pdf (36 pages, 386756 bytes).
+Output written on tesi.pdf (42 pages, 416602 bytes).
 PDF statistics:
- 538 PDF objects out of 1000 (max. 8388607)
- 199 named destinations out of 1000 (max. 500000)
- 239 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 614 PDF objects out of 1000 (max. 8388607)
+ 207 named destinations out of 1000 (max. 500000)
+ 260 words of extra memory for PDF output out of 10000 (max. 10000000)
 
