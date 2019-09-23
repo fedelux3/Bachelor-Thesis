@@ -38,4 +38,8 @@
 \contentsline {subsection}{\numberline {4.2.1}Node}{34}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}SPTree}{35}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}STBFM}{35}{subsection.4.2.3}
-\contentsline {chapter}{Bibliografia}{39}{subsection.4.2.3}
+\contentsline {chapter}{\numberline {5}Analisi dei risultati}{39}{chapter.5}
+\contentsline {paragraph}{Il threshold $\theta $}{39}{section*.29}
+\contentsline {paragraph}{Il numero di sequenze top $Num$}{40}{section*.30}
+\contentsline {section}{\numberline {5.1}Tempi di computazione}{41}{section.5.1}
+\contentsline {chapter}{Bibliografia}{43}{figure.caption.32}

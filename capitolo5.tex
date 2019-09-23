@@ -1,0 +1,65 @@
+\chapter{Analisi dei risultati}
+\label{Analisi}
+\pagestyle{empty}
+
+La performance del software \`e stata valutata tramite diversi test in cui vengono utilizzati database con diverso numero di record e diverse combinazioni di parametri.
+\\\\
+Il database di partenza utilizzato \`e quello relativo al Boston Crime Department del 2018 descritto nel capitolo precedente con $15\,648$ record. Non \`e stato utilizzato per\`o direttamente in quanto il numero di record \`e molto elevato. Con un alto numero di record il tempo di elaborazione aumenta eccessivamente, pertanto si \`e preferito testare il software su suoi sottoinsiemi.\\
+Per la generazione dei dataset sottoinsiemi viene copiato un record ogni $N$, in questo modo si mantengono le proporzioni delle frequenze tra i diversi tipi di eventi.\\
+Sono stati generati 4 dataset sottoinsieme ed hanno i seguenti numeri di record:
+\begin{enumerate}
+	\item 1043 - 1 record ogni 15
+	\item 2235 - 1 record ogni 7
+	\item 3129 - 1 record ogni 5
+	\item 5216 - 1 record ogni 3
+\end{enumerate}
+\noindent
+I parametri utilizzati sono stati: $\theta$, numero di sequenze top ($Num$), $R$, $T$.
+
+\paragraph{Il threshold $\theta$} \`e stato fissato a $0.25$, in quanto \`e il valore consigliato dal paper. Essendo un valore basso, l'algoritmo esclude a priori le sequenze poco significative e si adatta, incrementandolo, alle sequenze considerate nell'insieme $Top$ nel caso in cui il loro numero superi il massimo consentito.
+
+\paragraph{Il numero di sequenze top $Num$} da considerare nel insieme $Top$ di output \`e stato fissato a 50, ovvero come output si considerano solo le prime cinquanta sequenze di tipi per \textit{participation index}. Il valore \`e frutto del compromesso tra numero di sequenze significative da visualizzare e tempi di computazione. Se si scegliesse un valore minore non si avrebbero sequenze di tipi significativi probabilmente utili. Se si segliesse un valore maggiore i tempi di computazione lieviterebbero esponenzialmente, inoltre le sequenze ricavate oltre la cinquantesima posizione avranno, con alta probabilit\`a, un $PI$ basso, quindi poco rilevanti.
+\\\\
+I parametri di \textbf{raggio spaziale $R$} e \textbf{intervallo temporale $T$} sono variabili che vengono fissante in base al test da effettuare.\\
+Sono state scelte 10 combinazioni diverse di questi due parametri, con $R$ che varia da 1 a 3 km e $T$ che varia da 72 a 168 ore (da 3 giorni a 7 giorni).\\
+\clearpage
+\section{Tempi di computazione}
+La prima parte dell'analisi fatta riguarda i tempi di computazione e in particolare lo studio di come scala all'aumentare dei record il tempo di elaborazione. Sono state scelte 12 combinazioni dei parametri $R$ e $T$, applicate a tutti i quattro dataset. In concreto vi sono $12 \times 4 = 48$ test, 12 combinazioni per 4 dataset.\\
+In Tabella 5.1 vengono mostrati i test effettuati con i tempi di computazione, suddivisi in base a: raggio spaziale, intervallo temporale e numero di record.
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{c|c|c|c|c|c|c}
+		\hline
+		\multirow{2}{1cm}{\textbf{test}} & \multirow{2}{2.2cm}{\textbf{raggio spaziale}} & \multirow{2}{2.2cm}{\textbf{intervallo temporale}} & \multicolumn{4}{c}{\textbf{tempo per numero di record}} \\
+		& & & \textbf{1043} & \textbf{2235} & \textbf{3129} & \textbf{5216} \\
+		\hline
+		1 & 2 & 168 & 10 & 87 & 198 & 693 \\
+		2 & 1.5 & 168 & 7 & 50 & 158 & 538 \\
+		3 & 1.5 & 120 & 7 & 42 & 116 & 475 \\
+		4 & 3 & 120	& 13 & 105 & 247 & 815 \\
+		5 & 1 & 120 & 7 & 30 & 71 & 234 \\
+		6 & 1 & 72 & 7 & 30 & 60 & 182 \\
+		7 & 2 & 120 & 8 & 68 & 181 & 624 \\
+		8 & 3 & 72 & 9 & 81 & 204 & 668 \\
+		9 & 1.5 & 72 & 7 & 33 & 74 & 307 \\
+		10 & 3 & 168 & 20 & 117 & 267 & 818 \\
+		11 & 2 & 72 & 7 & 43 & 115 & 492 \\
+		12 & 1 & 168 & 7 & 32 & 85 & 362 \\
+		\hline
+	\end{tabular}
+	\caption{tempi in secondi dei test effettuati}
+\end{table}
+\noindent
+Per comprendere come il software scali per numero di record vengono fissati i parametri di raggio spaziale $R$ e intervallo temporale $T$, in questo modo \`e possibile valutare l'andamento del tempo di computazione legato alla sola variazione di numero di record. Seguendo la procedura per tutte le combinazioni di raggio e tempo utilizzate ne risulta il grafico in Figura 5.1.\\
+Una linea del grafico rappresenta una serie di test effettuati sui tutti i quattro dataset fissando una coppia di parametri $R$ e $T$. Le serie di test vengono effettuate per tutte le 12 combinazioni e i risultati rappresentati in figura.\\
+\\
+Come era prevedibile i test che impiegano pi\`u tempo ad essere elaborati sono quelli con \textit{neighborhood} pi\`u ampio sia per quanto riguarda il raggio spaziale sia quello temporale.\\
+L'altro aspetto lampate \`e l'andamento \textbf{non lineare} del tempo all'aumentare del numero di record. Al contrario, con un numero sufficientemente alto di record, si pu\`o pensare che il software tenda ad un tempo esponenziale. Lo si evince soprattutto quando il numero di record sale da $3129$ a $5216$.\\
+Da notare inoltre che per un \textit{vicinato} pi\`u ristretto, l'incremento dei tempi legato al numero di record \`e meno marcato, ad esempio per $R = 1 - T = 72$.
+
+\begin{figure}[h]
+	\hspace{-3cm}
+	\includegraphics[height=0.75 \linewidth]{tempi12.png}
+	\caption{tempi di computazione in relazione al numero di record}
+\end{figure}

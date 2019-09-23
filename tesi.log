@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.3)  6 SEP 2019 10:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.3)  23 SEP 2019 16:45
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -98,17 +98,75 @@ e.cfg")
 \subfig@top=\skip49
 \subfig@bottom=\skip50
 )
+("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\multirow.
+sty"
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip51
+\multirow@cntb=\count94
+\multirow@dima=\skip52
+\bigstrutjot=\dimen114
+)
+("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\multicol.sty
+"
+Package: multicol 2018/04/20 v1.8s multicolumn formatting (FMi)
+\c@tracingmulticols=\count95
+\mult@box=\box28
+\multicol@leftmargin=\dimen115
+\c@unbalance=\count96
+\c@collectmore=\count97
+\doublecol@number=\count98
+\multicoltolerance=\count99
+\multicolpretolerance=\count100
+\full@width=\dimen116
+\page@free=\dimen117
+\premulticols=\dimen118
+\postmulticols=\dimen119
+\multicolsep=\skip53
+\multicolbaselineskip=\skip54
+\partial@page=\box29
+\last@line=\box30
+\maxbalancingoverflow=\dimen120
+\mult@rightbox=\box31
+\mult@grightbox=\box32
+\mult@gfirstbox=\box33
+\mult@firstbox=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\c@columnbadness=\count101
+\c@finalcolumnbadness=\count102
+\last@try=\dimen121
+\multicolovershoot=\dimen122
+\multicolundershoot=\dimen123
+\mult@nat@firstbox=\box52
+\colbreak@box=\box53
+\mc@col@check@num=\count103
+)
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\afterpage.st
 y"
 Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
 \AP@output=\toks17
-\AP@partial=\box28
-\AP@footins=\box29
+\AP@partial=\box54
+\AP@footins=\box55
 )
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.st
 y"
 Package: amsmath 2017/09/02 v2.17a AMS math features
-\@mathmargin=\skip51
+\@mathmargin=\skip55
 
 For additional information on amsmath, use the `?' option.
 
@@ -120,51 +178,51 @@ Package: amstext 2000/06/29 v2.01 AMS text
 "
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
-\ex@=\dimen114
+\ex@=\dimen124
 ))
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
 "
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen115
+\pmbraise@=\dimen125
 )
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
 "
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count94
+\inf@bad=\count104
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count95
-\leftroot@=\count96
+\uproot@=\count105
+\leftroot@=\count106
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count97
-\DOTSCASE@=\count98
+\classnum@=\count107
+\DOTSCASE@=\count108
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box30
-\strutbox@=\box31
-\big@size=\dimen116
+\Mathstrutbox@=\box56
+\strutbox@=\box57
+\big@size=\dimen126
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count99
-\c@MaxMatrixCols=\count100
+\macc@depth=\count109
+\c@MaxMatrixCols=\count110
 \dotsspace@=\muskip10
-\c@parentequation=\count101
-\dspbrk@lvl=\count102
+\c@parentequation=\count111
+\dspbrk@lvl=\count112
 \tag@help=\toks19
-\row@=\count103
-\column@=\count104
-\maxfields@=\count105
+\row@=\count113
+\column@=\count114
+\maxfields@=\count115
 \andhelp@=\toks20
-\eqnshift@=\dimen117
-\alignsep@=\dimen118
-\tagshift@=\dimen119
-\tagwidth@=\dimen120
-\totwidth@=\dimen121
-\lineht@=\dimen122
+\eqnshift@=\dimen127
+\alignsep@=\dimen128
+\tagshift@=\dimen129
+\tagwidth@=\dimen130
+\totwidth@=\dimen131
+\lineht@=\dimen132
 \@envbody=\toks21
-\multlinegap=\skip52
-\multlinetaggap=\skip53
+\multlinegap=\skip56
+\multlinetaggap=\skip57
 \mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
@@ -188,25 +246,25 @@ Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count106
-\rotFPtop=\skip54
-\rotFPbot=\skip55
-\rot@float@box=\box32
+\c@r@tfl@t=\count116
+\rotFPtop=\skip58
+\rotFPbot=\skip59
+\rot@float@box=\box58
 \rot@mess@toks=\toks23
 )
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.
 sty"
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip56
-\f@nch@O@elh=\skip57
-\f@nch@O@erh=\skip58
-\f@nch@O@olh=\skip59
-\f@nch@O@orh=\skip60
-\f@nch@O@elf=\skip61
-\f@nch@O@erf=\skip62
-\f@nch@O@olf=\skip63
-\f@nch@O@orf=\skip64
+\f@nch@headwidth=\skip60
+\f@nch@O@elh=\skip61
+\f@nch@O@erh=\skip62
+\f@nch@O@olh=\skip63
+\f@nch@O@orh=\skip64
+\f@nch@O@elf=\skip65
+\f@nch@O@erf=\skip66
+\f@nch@O@olf=\skip67
+\f@nch@O@orf=\skip68
 ) ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -273,9 +331,9 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 .sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen123
-\Hy@linkcounter=\count107
-\Hy@pagecounter=\count108
+\@linkdim=\dimen133
+\Hy@linkcounter=\count117
+\Hy@pagecounter=\count118
 
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.de
 f"
@@ -283,7 +341,7 @@ File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count109
+\Hy@SavedSpaceFactor=\count119
 
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.
 cfg"
@@ -296,12 +354,12 @@ Package hyperref Info: Plain pages OFF on input line 4524.
 Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
-\c@Hy@tempcnt=\count110
+\c@Hy@tempcnt=\count120
 LaTeX Info: Redefining \url on input line 5115.
-\XeTeXLinkMargin=\dimen124
-\Fld@menulength=\count111
-\Field@Width=\dimen125
-\Fld@charsize=\dimen126
+\XeTeXLinkMargin=\dimen134
+\Fld@menulength=\count121
+\Field@Width=\dimen135
+\Fld@charsize=\dimen136
 Package hyperref Info: Hyper figures OFF on input line 6369.
 Package hyperref Info: Link nesting OFF on input line 6374.
 Package hyperref Info: Hyper index ON on input line 6377.
@@ -311,17 +369,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6394.
 Package hyperref Info: PDF/A mode OFF on input line 6399.
 LaTeX Info: Redefining \ref on input line 6439.
 LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count112
-\c@Item=\count113
-\c@Hfootnote=\count114
+\Hy@abspage=\count122
+\c@Item=\count123
+\c@Hfootnote=\count124
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.d
 ef"
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count115
-\c@bookmark@seq@number=\count116
+\Fld@listcount=\count125
+\c@bookmark@seq@number=\count126
 
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfile
 check.sty"
@@ -329,18 +387,18 @@ Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip65
+\Hy@SectionHShift=\skip69
 )
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithm2e\algori
 thm2e.sty"
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
-\c@AlgoLine=\count117
-\algocf@hangindent=\skip66
+\c@AlgoLine=\count127
+\algocf@hangindent=\skip70
 
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpag
 e.sty"
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count118
+\c@checkoddpage=\count128
 )
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
@@ -349,41 +407,41 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 y"
 Package: relsize 2013/03/29 ver 4.1
 )
-\skiptotal=\skip67
-\skiplinenumber=\skip68
-\skiprule=\skip69
-\skiphlne=\skip70
-\skiptext=\skip71
-\skiplength=\skip72
-\algomargin=\skip73
-\skipalgocfslide=\skip74
-\algowidth=\dimen127
-\inoutsize=\dimen128
-\inoutindent=\dimen129
-\interspacetitleruled=\dimen130
-\interspacealgoruled=\dimen131
-\interspacetitleboxruled=\dimen132
-\algocf@ruledwidth=\skip75
-\algocf@inoutbox=\box33
-\algocf@inputbox=\box34
-\AlCapSkip=\skip76
-\AlCapHSkip=\skip77
-\algoskipindent=\skip78
-\algocf@nlbox=\box35
-\algocf@hangingbox=\box36
-\algocf@untilbox=\box37
-\algocf@skipuntil=\skip79
-\algocf@capbox=\box38
-\algocf@lcaptionbox=\skip80
-\algoheightruledefault=\skip81
-\algoheightrule=\skip82
-\algotitleheightruledefault=\skip83
-\algotitleheightrule=\skip84
-\c@algocfline=\count119
-\c@algocfproc=\count120
-\c@algocf=\count121
-\algocf@algoframe=\box39
-\algocf@algobox=\box40
+\skiptotal=\skip71
+\skiplinenumber=\skip72
+\skiprule=\skip73
+\skiphlne=\skip74
+\skiptext=\skip75
+\skiplength=\skip76
+\algomargin=\skip77
+\skipalgocfslide=\skip78
+\algowidth=\dimen137
+\inoutsize=\dimen138
+\inoutindent=\dimen139
+\interspacetitleruled=\dimen140
+\interspacealgoruled=\dimen141
+\interspacetitleboxruled=\dimen142
+\algocf@ruledwidth=\skip79
+\algocf@inoutbox=\box59
+\algocf@inputbox=\box60
+\AlCapSkip=\skip80
+\AlCapHSkip=\skip81
+\algoskipindent=\skip82
+\algocf@nlbox=\box61
+\algocf@hangingbox=\box62
+\algocf@untilbox=\box63
+\algocf@skipuntil=\skip83
+\algocf@capbox=\box64
+\algocf@lcaptionbox=\skip84
+\algoheightruledefault=\skip85
+\algoheightrule=\skip86
+\algotitleheightruledefault=\skip87
+\algotitleheightrule=\skip88
+\c@algocfline=\count129
+\c@algocfproc=\count130
+\c@algocf=\count131
+\algocf@algoframe=\box65
+\algocf@algobox=\box66
 )
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.st
 y"
@@ -393,16 +451,16 @@ Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
 ty"
 Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
-\captionmargin=\dimen133
-\captionmargin@=\dimen134
-\captionwidth=\dimen135
-\caption@tempdima=\dimen136
-\caption@indent=\dimen137
-\caption@parindent=\dimen138
-\caption@hangindent=\dimen139
+\captionmargin=\dimen143
+\captionmargin@=\dimen144
+\captionwidth=\dimen145
+\caption@tempdima=\dimen146
+\caption@indent=\dimen147
+\caption@parindent=\dimen148
+\caption@hangindent=\dimen149
 )
-\c@caption@flags=\count122
-\c@ContinuedFloat=\count123
+\c@caption@flags=\count132
+\c@ContinuedFloat=\count133
 Package caption Info: hyperref package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: subfigure package is loaded.
@@ -426,21 +484,21 @@ Language: italian 2019/01/05 v.1.4.01 Italian support for the babel system
 
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2018/06/05 3.22 Babel common definitions
-\babel@savecnt=\count124
-\U@D=\dimen140
+\babel@savecnt=\count134
+\U@D=\dimen150
 
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel.d
 ef")
-\bbl@dirlevel=\count125
+\bbl@dirlevel=\count135
 )
-\it@lettering=\count126
-\it@doublequoteactive=\count127
-\it@ISOcompliance=\count128
+\it@lettering=\count136
+\it@doublequoteactive=\count137
+\it@ISOcompliance=\count138
 ))
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.
 sty"
 Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count129
+\etb@tempcnta=\count139
 )
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2018/04/06 v1.3b Input encoding file
@@ -450,37 +508,37 @@ Package: inputenc 2018/04/06 v1.3b Input encoding file
 File: latin1.def 2018/04/06 v1.3b Input encoding file
 )) (tesi.aux (frontespizio.aux) (capitolo1.aux) (capitolo2.aux) (capitolo3.aux)
 
-(capitolo4.aux))
+(capitolo4.aux) (capitolo5.aux))
 \openout1 = `tesi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
 
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count130
-\scratchdimen=\dimen141
-\scratchbox=\box41
-\nofMPsegments=\count131
-\nofMParguments=\count132
+\scratchcounter=\count140
+\scratchdimen=\dimen151
+\scratchbox=\box67
+\nofMPsegments=\count141
+\nofMParguments=\count142
 \everyMPshowfont=\toks26
-\MPscratchCnt=\count133
-\MPscratchDim=\dimen142
-\MPnumerator=\count134
-\makeMPintoPDFobject=\count135
+\MPscratchCnt=\count143
+\MPscratchDim=\dimen152
+\MPnumerator=\count144
+\makeMPintoPDFobject=\count145
 \everyMPtoPDFconversion=\toks27
 )
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
@@ -498,8 +556,8 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\AtBeginShipoutBox=\box42
-Package hyperref Info: Link coloring OFF on input line 32.
+\AtBeginShipoutBox=\box68
+Package hyperref Info: Link coloring OFF on input line 34.
 
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
 ty"
@@ -509,19 +567,19 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 estring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count136
+\c@section@level=\count146
 )
-LaTeX Info: Redefining \ref on input line 32.
-LaTeX Info: Redefining \pageref on input line 32.
-LaTeX Info: Redefining \nameref on input line 32.
+LaTeX Info: Redefining \ref on input line 34.
+LaTeX Info: Redefining \pageref on input line 34.
+LaTeX Info: Redefining \nameref on input line 34.
  (tesi.out) (tesi.out)
 \@outlinefile=\write3
 \openout3 = `tesi.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \it@ocap on input line 32.
-LaTeX Info: Redefining \it@ccap on input line 32.
+LaTeX Info: Redefining \it@ocap on input line 34.
+LaTeX Info: Redefining \it@ccap on input line 34.
 
 
 File italian.ldf warning: 
@@ -529,12 +587,12 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 32.
+italian.ldf    on input line 34.
 
 \openout2 = `frontespizio.aux'.
 
 (frontespizio.tex
-<logo_unimib.pdf, id=114, 67.8029pt x 66.29492pt>
+<logo_unimib.pdf, id=123, 67.8029pt x 66.29492pt>
 File: logo_unimib.pdf Graphic file (type pdf)
 <use logo_unimib.pdf>
 Package pdftex.def Info: logo_unimib.pdf  used on input line 6.
@@ -590,7 +648,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.52 \include{capitolo1}
+l.54 \include{capitolo1}
                          [2]
 \openout2 = `capitolo1.aux'.
 
@@ -668,18 +726,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--21
  []
 
 [9]
-<neighborhood.png, id=205, 375.20175pt x 285.4665pt>
+<neighborhood.png, id=216, 375.20175pt x 285.4665pt>
 File: neighborhood.png Graphic file (type png)
 <use neighborhood.png>
 Package pdftex.def Info: neighborhood.png  used on input line 40.
 (pdftex.def)             Requested size: 307.57008pt x 234.00238pt.
  [10 <./neighborhood.png>]
-<neia1.png, id=216, 87.9285pt x 102.98476pt>
+<neia1.png, id=227, 87.9285pt x 102.98476pt>
 File: neia1.png Graphic file (type png)
 <use neia1.png>
 Package pdftex.def Info: neia1.png  used on input line 60.
 (pdftex.def)             Requested size: 66.59422pt x 77.99881pt.
-<neia2.png, id=217, 63.8385pt x 104.7915pt>
+<neia2.png, id=228, 63.8385pt x 104.7915pt>
 File: neia2.png Graphic file (type png)
 <use neia2.png>
 Package pdftex.def Info: neia2.png  used on input line 61.
@@ -769,7 +827,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--117
  []
 
 [18] [19]
-<albero.png, id=313, 220.825pt x 194.7275pt>
+<albero.png, id=324, 220.825pt x 194.7275pt>
 File: albero.png Graphic file (type png)
 <use albero.png>
 Package pdftex.def Info: albero.png  used on input line 135.
@@ -786,7 +844,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 159--165
 
  []
 
-<sptree.png, id=319, 417.35925pt x 231.264pt>
+<sptree.png, id=330, 417.35925pt x 231.264pt>
 File: sptree.png Graphic file (type png)
 <use sptree.png>
 Package pdftex.def Info: sptree.png  used on input line 176.
@@ -925,7 +983,7 @@ Overfull \hbox (47.27713pt too wide) in paragraph at lines 101--112
 []  [] 
  []
 
-<frequenze18.png, id=434, 478.1865pt x 281.25075pt>
+<frequenze18.png, id=445, 478.1865pt x 281.25075pt>
 File: frequenze18.png Graphic file (type png)
 <use frequenze18.png>
 Package pdftex.def Info: frequenze18.png  used on input line 118.
@@ -1011,14 +1069,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 177--183
  []
 
 [36])
-Underfull \hbox (badness 10000) in paragraph at lines 195--55
+Underfull \hbox (badness 10000) in paragraph at lines 195--57
 
  []
 
-[37] [38
+[37]
+\openout2 = `capitolo5.aux'.
+
+ (capitolo5.tex [38
 
 
-] (tesi.bbl
+
+]
+Capitolo 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--10
+
+ []
+
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 21--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--25
+
+ []
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 53--60
+
+ []
+
+[41
+
+]
+<tempi12.png, id=500, 724.20563pt x 395.22656pt>
+File: tempi12.png Graphic file (type png)
+<use tempi12.png>
+Package pdftex.def Info: tempi12.png  used on input line 63.
+(pdftex.def)             Requested size: 535.97008pt x 292.5pt.
+
+Overfull \hbox (63.2229pt too wide) in paragraph at lines 62--64
+[]  [] 
+ []
+
+) [42 <./tempi12.png (PNG copy)>] (tesi.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 9--13
 []\OT1/cmr/m/sc/12 Department, B. P.  \OT1/cmr/m/n/12 Cri-me in-ci-dent re-port
 s (au-gu-
@@ -1054,25 +1151,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--31
 /12 https : / / github . com / fedelux3 /
  []
 
-[39
+[43
+
+
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
- [40]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 67.
+ [44]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
  (tesi.aux (frontespizio.aux) (capitolo1.aux) (capitolo2.aux)
-(capitolo3.aux) (capitolo4.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
+(capitolo3.aux) (capitolo4.aux) (capitolo5.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 67.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 67.
 Package rerunfilecheck Info: File `tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 45A3A54A59BA4F60D2360CE5F78EC5B7;1806.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 64.
+(rerunfilecheck)             Checksum: 7E114EE2CA12411C459D98BA9C30E879;1934.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
  ) 
 Here is how much of TeX's memory you used:
- 9695 strings out of 492973
- 145491 string characters out of 3126693
- 267313 words of memory out of 3000000
- 13177 multiletter control sequences out of 15000+200000
+ 9891 strings out of 492973
+ 148531 string characters out of 3126693
+ 273047 words of memory out of 3000000
+ 13344 multiletter control sequences out of 15000+200000
  17012 words of font info for 64 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
  36i,32n,43p,796b,618s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1097,9 +1196,9 @@ onts/cm/cmsy10.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/fede9/AppData/Local/Progra
 ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/fede9/AppData
 /Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on tesi.pdf (42 pages, 416602 bytes).
+Output written on tesi.pdf (46 pages, 485651 bytes).
 PDF statistics:
- 614 PDF objects out of 1000 (max. 8388607)
- 207 named destinations out of 1000 (max. 500000)
- 260 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 655 PDF objects out of 1000 (max. 8388607)
+ 221 named destinations out of 1000 (max. 500000)
+ 281 words of extra memory for PDF output out of 10000 (max. 10000000)
 

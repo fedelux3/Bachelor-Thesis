@@ -90,8 +90,8 @@ Nei test effettuati si utilizzano le tipologie di crimini con UCR Part = 1, e so
 Sono stati eliminati i record con le informazioni di LATITUDINE e LONGITUDINE vuote o non valide. Sono stati eliminati valori di INCIDENT\_NUMBER duplicati.\\ 
 Il periodo di tempo degli eventi scelto \`e l'anno 2018, perch\`e degli anni precedenti mancano riferimenti ad alcuni mesi. Questa mancanza di dati avrebbe potuto condizionare gli esiti dei test, in quanto \`e risaputo che la frequenza di certe tipologie di eventi criminali \`e soggetta a variazioni in base alla stagione e al periodo dell'anno.\\
 \\
-Dopo tutte queste assunzioni i record cosiderati per il database del 2018 sono: $72135$.\\ 
-Di questi si \`e deciso di considerare, per significativit\`a e compattezza nei risultati, i tipi con UCR part = 1, ovvero i reati di pi\`u alta gravit\`a, concretamente \textbf{$15648$ record} di eventi criminali. \\
+Dopo tutte queste assunzioni i record cosiderati per il database del 2018 sono: $72\,135$.\\ 
+Di questi si \`e deciso di considerare, per significativit\`a e compattezza nei risultati, i tipi con UCR part = 1, ovvero i reati di pi\`u alta gravit\`a, concretamente \textbf{15\,648 record} di eventi criminali. \\
 Come chiaro che sia, i tipi di eventi non sono ugualmente frequenti, si pu\`o notare in Figura 4.1 (di seguito) l'evento pi\`u rilevato \`e \textit{larceny} (furto), mentre quello di intesit\`a minore \`e \textit{homicide} (omicidio).\\
 \\
 Le colonne della versione finale del database sono quelle di\\ INCIDENT\_NUMBER, OFFENCE\_CODE\_GROUP, OCCURRED\_ON\_DATE, LATITUDE, LONGITUDE.\\
@@ -186,7 +186,7 @@ L'\textbf{output} \`e di due tipi:
 
 \item output su file.csv dove al termine della computazione di un dataset stampa l'insieme $Top$ e i tempi di computazione per livello. 
 \end{itemize}
-L'output in csv utilizza il seguente formato:
+L'output in csv \`e stampato nel seguente formato:
 \\
 nomeFile, $R$, $T$, num$Top$, $\theta$ finale, $[tempo2, tempo3, ..., tempoN]$, $tempoTot$\\
 dove $[tempo2, tempo3, ..., tempoN]$ \`e una lista che contiene i tempo di calcolo divisi nei vari livelli di albero.\\
