@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.3)  23 SEP 2019 16:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.3)  23 SEP 2019 17:15
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -1092,13 +1092,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--25
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--25
-
- []
-
 [40]
-Underfull \hbox (badness 10000) in paragraph at lines 53--60
+Underfull \hbox (badness 10000) in paragraph at lines 57--64
 
  []
 
@@ -1108,10 +1103,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--60
 <tempi12.png, id=500, 724.20563pt x 395.22656pt>
 File: tempi12.png Graphic file (type png)
 <use tempi12.png>
-Package pdftex.def Info: tempi12.png  used on input line 63.
+Package pdftex.def Info: tempi12.png  used on input line 67.
 (pdftex.def)             Requested size: 535.97008pt x 292.5pt.
 
-Overfull \hbox (63.2229pt too wide) in paragraph at lines 62--64
+Overfull \hbox (63.2229pt too wide) in paragraph at lines 66--68
 []  [] 
  []
 
@@ -1196,7 +1191,7 @@ onts/cm/cmsy10.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/fede9/AppData/Local/Progra
 ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/fede9/AppData
 /Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on tesi.pdf (46 pages, 485651 bytes).
+Output written on tesi.pdf (46 pages, 485749 bytes).
 PDF statistics:
  655 PDF objects out of 1000 (max. 8388607)
  221 named destinations out of 1000 (max. 500000)
