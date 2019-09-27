@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.3)  23 SEP 2019 17:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.3)  27 SEP 2019 14:31
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -592,7 +592,7 @@ italian.ldf    on input line 34.
 \openout2 = `frontespizio.aux'.
 
 (frontespizio.tex
-<logo_unimib.pdf, id=123, 67.8029pt x 66.29492pt>
+<logo_unimib.pdf, id=135, 67.8029pt x 66.29492pt>
 File: logo_unimib.pdf Graphic file (type pdf)
 <use logo_unimib.pdf>
 Package pdftex.def Info: logo_unimib.pdf  used on input line 6.
@@ -726,18 +726,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--21
  []
 
 [9]
-<neighborhood.png, id=216, 375.20175pt x 285.4665pt>
+<neighborhood.png, id=231, 375.20175pt x 285.4665pt>
 File: neighborhood.png Graphic file (type png)
 <use neighborhood.png>
 Package pdftex.def Info: neighborhood.png  used on input line 40.
 (pdftex.def)             Requested size: 307.57008pt x 234.00238pt.
  [10 <./neighborhood.png>]
-<neia1.png, id=227, 87.9285pt x 102.98476pt>
+<neia1.png, id=242, 87.9285pt x 102.98476pt>
 File: neia1.png Graphic file (type png)
 <use neia1.png>
 Package pdftex.def Info: neia1.png  used on input line 60.
 (pdftex.def)             Requested size: 66.59422pt x 77.99881pt.
-<neia2.png, id=228, 63.8385pt x 104.7915pt>
+<neia2.png, id=243, 63.8385pt x 104.7915pt>
 File: neia2.png Graphic file (type png)
 <use neia2.png>
 Package pdftex.def Info: neia2.png  used on input line 61.
@@ -827,7 +827,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--117
  []
 
 [18] [19]
-<albero.png, id=324, 220.825pt x 194.7275pt>
+<albero.png, id=339, 220.825pt x 194.7275pt>
 File: albero.png Graphic file (type png)
 <use albero.png>
 Package pdftex.def Info: albero.png  used on input line 135.
@@ -844,7 +844,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 159--165
 
  []
 
-<sptree.png, id=330, 417.35925pt x 231.264pt>
+<sptree.png, id=345, 417.35925pt x 231.264pt>
 File: sptree.png Graphic file (type png)
 <use sptree.png>
 Package pdftex.def Info: sptree.png  used on input line 176.
@@ -983,7 +983,7 @@ Overfull \hbox (47.27713pt too wide) in paragraph at lines 101--112
 []  [] 
  []
 
-<frequenze18.png, id=445, 478.1865pt x 281.25075pt>
+<frequenze18.png, id=460, 478.1865pt x 281.25075pt>
 File: frequenze18.png Graphic file (type png)
 <use frequenze18.png>
 Package pdftex.def Info: frequenze18.png  used on input line 118.
@@ -1093,6 +1093,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--25
  []
 
 [40]
+Overfull \hbox (2.67226pt too wide) in paragraph at lines 38--38
+[]|\OT1/cmr/bx/n/12 comb|  
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 57--64
 
  []
@@ -1100,7 +1105,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--64
 [41
 
 ]
-<tempi12.png, id=500, 724.20563pt x 395.22656pt>
+<tempi12.png, id=515, 724.20563pt x 395.22656pt>
 File: tempi12.png Graphic file (type png)
 <use tempi12.png>
 Package pdftex.def Info: tempi12.png  used on input line 67.
@@ -1110,7 +1115,46 @@ Overfull \hbox (63.2229pt too wide) in paragraph at lines 66--68
 []  [] 
  []
 
-) [42 <./tempi12.png (PNG copy)>] (tesi.bbl
+[42 <./tempi12.png (PNG copy)>]
+<rag_nrec.png, id=521, 1244.39906pt x 827.34094pt>
+File: rag_nrec.png Graphic file (type png)
+<use rag_nrec.png>
+Package pdftex.def Info: rag_nrec.png  used on input line 78.
+(pdftex.def)             Requested size: 469.28784pt x 312.00119pt.
+
+Overfull \hbox (44.91026pt too wide) in paragraph at lines 77--79
+[]  [] 
+ []
+
+[43
+
+ <./rag_nrec.png>]
+<tem_nrec.png, id=527, 1253.28226pt x 826.287pt>
+File: tem_nrec.png Graphic file (type png)
+<use tem_nrec.png>
+Package pdftex.def Info: tem_nrec.png  used on input line 91.
+(pdftex.def)             Requested size: 502.79565pt x 331.50238pt.
+
+Overfull \hbox (72.72762pt too wide) in paragraph at lines 90--92
+[]  [] 
+ []
+
+[44
+
+ <./tem_nrec.png>]
+<rag_temp.png, id=533, 1078.0275pt x 826.287pt>
+File: rag_temp.png Graphic file (type png)
+<use rag_temp.png>
+Package pdftex.def Info: rag_temp.png  used on input line 105.
+(pdftex.def)             Requested size: 457.93356pt x 350.99762pt.
+
+Overfull \hbox (42.0919pt too wide) in paragraph at lines 104--106
+[]  [] 
+ []
+
+[45
+
+ <./rag_temp.png>]) [46] (tesi.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 9--13
 []\OT1/cmr/m/sc/12 Department, B. P.  \OT1/cmr/m/n/12 Cri-me in-ci-dent re-port
 s (au-gu-
@@ -1146,27 +1190,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--31
 /12 https : / / github . com / fedelux3 /
  []
 
-[43
+[47
 
 
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 67.
- [44]
+ [48]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
  (tesi.aux (frontespizio.aux) (capitolo1.aux) (capitolo2.aux)
 (capitolo3.aux) (capitolo4.aux) (capitolo5.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 67.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 67.
 Package rerunfilecheck Info: File `tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 7E114EE2CA12411C459D98BA9C30E879;1934.
+(rerunfilecheck)             Checksum: 7DFEA8C63622FF717D646C0BD90EDAF4;2189.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
  ) 
 Here is how much of TeX's memory you used:
- 9891 strings out of 492973
- 148531 string characters out of 3126693
+ 9920 strings out of 492973
+ 148954 string characters out of 3126693
  273047 words of memory out of 3000000
- 13344 multiletter control sequences out of 15000+200000
+ 13359 multiletter control sequences out of 15000+200000
  17012 words of font info for 64 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
  36i,32n,43p,796b,618s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1191,9 +1235,9 @@ onts/cm/cmsy10.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/fede9/AppData/Local/Progra
 ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/fede9/AppData
 /Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on tesi.pdf (46 pages, 485749 bytes).
+Output written on tesi.pdf (50 pages, 963400 bytes).
 PDF statistics:
- 655 PDF objects out of 1000 (max. 8388607)
- 221 named destinations out of 1000 (max. 500000)
- 281 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 696 PDF objects out of 1000 (max. 8388607)
+ 232 named destinations out of 1000 (max. 500000)
+ 320 words of extra memory for PDF output out of 10000 (max. 10000000)
 

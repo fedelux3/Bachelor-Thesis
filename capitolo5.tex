@@ -35,7 +35,7 @@ In Tabella 5.1 vengono mostrati i test effettuati con i tempi di computazione, s
 	\centering
 	\begin{tabular}{c|c|c|c|c|c|c}
 		\hline
-		\multirow{2}{1cm}{\textbf{test}} & \multirow{2}{2.2cm}{\textbf{raggio spaziale}} & \multirow{2}{2.2cm}{\textbf{intervallo temporale}} & \multicolumn{4}{c}{\textbf{tempo per numero di record}} \\
+		\multirow{2}{1cm}{\textbf{comb}} & \multirow{2}{2.2cm}{\textbf{raggio spaziale}} & \multirow{2}{2.2cm}{\textbf{intervallo temporale}} & \multicolumn{4}{c}{\textbf{tempo per numero di record}} \\
 		& & & \textbf{1043} & \textbf{2235} & \textbf{3129} & \textbf{5216} \\
 		\hline
 		1 & 2 & 168 & 10 & 87 & 198 & 693 \\
@@ -60,10 +60,52 @@ Una linea del grafico rappresenta una serie di test effettuati sui tutti i quatt
 \\
 Come era prevedibile, i test che impiegano pi\`u tempo ad essere elaborati sono quelli con \textit{neighborhood} pi\`u ampio, sia per quanto riguarda il raggio spaziale sia quello temporale.\\
 Un aspetto rilevante \`e l'andamento \textbf{non lineare} del tempo all'aumentare del numero di record. Al contrario, con un numero sufficientemente alto di record, si pu\`o pensare che il software tenda ad un tempo esponenziale. Lo si evince soprattutto quando il numero di record sale da $3129$ a $5216$.\\
-Da notare inoltre che per un \textit{vicinato} pi\`u ristretto, l'incremento dei tempi legato al numero di record \`e meno marcato, ad esempio per $R = 1 - T = 72$.
+Da notare inoltre che per un \textit{vicinato} pi\`u ristretto, l'incremento dei tempi legato al numero di record \`e meno marcato, ad esempio per $R = 1 $, $ T = 72$.
 
 \begin{figure}[h]
 	\hspace{-3cm}
 	\includegraphics[height=0.75 \linewidth]{tempi12.png}
 	\caption{tempi di computazione in relazione al numero di record}
 \end{figure}
+\noindent
+Dal grafico per\`o \`e non emerge chiaramente quale parametro influenza maggiormente la durata dell'elaborazione. Segue un'analisi pi\`u dettagliata su alcune combinazioni di parametri.
+\clearpage
+\subsection{Raggio spaziale e numero record}
+Nei grafici che seguono in Figura 5.2 viene mostrato l'andamento del tempo di computazione in funzione di $R$ e del numero dei record. In ciascun caso vengono considerati i test con valore di $T$ uguale, in modo che esso non influenzi l'andamento del tempo di computazione. 
+ 
+\begin{figure}[h]
+	\hspace{-1.3cm}
+	\includegraphics[height=0.8 \linewidth]{rag_nrec.png}
+	\caption{tempi di computazione in funzione al raggio spaziale e al numero record}
+\end{figure}
+\noindent
+Come ci si pu\`o aspettare man mano che $R$ e il numero di record crescono, il tempo di computazione aumenta, ma non in modo uniforme per entrambe le variabili.\\
+Si nota infatti che il raggio spaziale $R$ ha un impatto maggiore nei tempi rispetto all'incremento legato al numero record che, pur non essendo lineare, \`e di entit\`a minore in confronto a quello legato ad $R$.
+\clearpage
+
+\subsection{Intervallo temporale e numero record}
+Nei grafici che seguono in Figura 5.3 viene mostrato l'andamento del tempo di computazione in funzione di $T$ e del numero dei record. Per ogni grafico vengono considerati i test con valore di $R$ uguale, in modo che esso non influenzi l'andamento del tempo di computazione. 
+
+\begin{figure}[h]
+	\hspace{-1.5cm}
+	\includegraphics[height=0.85 \linewidth]{tem_nrec.png}
+	\caption{tempi di computazione in funzione all'intervallo temporale e al numero record}
+\end{figure}
+
+\noindent
+Analogamente ai test considerati in precedenza, all'aumentare del valore delle variabili il tempo di computazione aumenta pi\`u che proporzionalmente. \\
+In questo caso, per\`o, \`e il numero di record che influenza maggiormente il tempo di computazione. Osservando si nota che l'incremento legato a $T$ \`e meno marcato rispetto a quello legato al numero record.
+\clearpage
+
+\subsection{Raggio e intervallo temporale}
+Nei grafici che seguono in Figura 5.4 viene mostrato l'andamento del tempo di computazione in funzione di $R$ e $T$. Per ogni grafico vengono considerati i test con uno numero di record uguale, in modo tale che esso non influenzi l'andamento del tempo di computazione. 
+
+\begin{figure}[h]
+	\hspace{-1cm}
+	\includegraphics[height=0.9 \linewidth]{rag_temp.png}
+	\caption{tempi di computazione in funzione all'intervallo temporale e al numero record}
+\end{figure}
+\noindent
+Da questi grafici si evince che entrambe le variabili influenzano in modo significativo il tempo di computazione. Si nota comunque che, in particolare per numero di record pi\`u elevato, $R$ ha maggiore influenza rispetto a $T$. La differenza non \`e cos\`i marcata, anzi, fa eccezione il caso di numero record = 1043 in cui $T$ scala maggiormente, situazione dovuta probabilmente al fatto che si hanno risultati molto ravvicinati e di basso tempo di computazione ($0-20$ secondi). 
+
+\paragraph{In conclusione} si pu\`o dire che tutte e tre le variabili studiate hanno un impatto significativo sul tempo di computazione, ma $R$ e il \textit{numero record} lo influenzano maggiormente rispetto a $T$.
