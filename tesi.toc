@@ -46,4 +46,10 @@
 \contentsline {subsection}{\numberline {5.1.2}Intervallo temporale e numero record}{44}{subsection.5.1.2}
 \contentsline {subsection}{\numberline {5.1.3}Raggio e intervallo temporale}{45}{subsection.5.1.3}
 \contentsline {paragraph}{In conclusione}{46}{section*.36}
-\contentsline {chapter}{Bibliografia}{47}{section*.36}
+\contentsline {section}{\numberline {5.2}Indici}{47}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Supporto}{47}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Confidenza}{48}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Lift}{48}{subsection.5.2.3}
+\contentsline {section}{\numberline {5.3}Analisi}{49}{section.5.3}
+\contentsline {paragraph}{Lift}{49}{section*.39}
+\contentsline {chapter}{Bibliografia}{51}{section*.39}

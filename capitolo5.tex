@@ -27,6 +27,7 @@ I valori scelti di questi due parametri sono variano entro i seguenti range:
 	\item $T$ varia da 72 a 168 ore (da 3 giorni a 7 giorni)
 \end{itemize} 
 \clearpage
+
 \section{Tempi di computazione}
 La prima parte dell'analisi fatta riguarda i tempi di computazione e in particolare lo studio di come scala all'aumentare dei record il tempo di elaborazione. Sono state scelte 12 combinazioni dei parametri $R$ e $T$, applicate a tutti i quattro dataset. In concreto vi sono $12 \times 4 = 48$ test, 12 combinazioni per 4 dataset.\\
 In Tabella 5.1 vengono mostrati i test effettuati con i tempi di computazione, suddivisi in base a: raggio spaziale, intervallo temporale e numero di record.
@@ -109,3 +110,103 @@ Nei grafici che seguono in Figura 5.4 viene mostrato l'andamento del tempo di co
 Da questi grafici si evince che entrambe le variabili influenzano in modo significativo il tempo di computazione. Si nota comunque che, in particolare per numero di record pi\`u elevato, $R$ ha maggiore influenza rispetto a $T$. La differenza non \`e cos\`i marcata, anzi, fa eccezione il caso di numero record = 1043 in cui $T$ scala maggiormente, situazione dovuta probabilmente al fatto che si hanno risultati molto ravvicinati e di basso tempo di computazione ($0-20$ secondi). 
 
 \paragraph{In conclusione} si pu\`o dire che tutte e tre le variabili studiate hanno un impatto significativo sul tempo di computazione, ma $R$ e il \textit{numero record} lo influenzano maggiormente rispetto a $T$.
+\clearpage
+
+\section{Indici}
+La seconda parte dell'analisi riguarda i risultati ottenuti. Per poter valutare correttamente l'importanza degli stessi vengono utilizzati degli indici.\\
+L'indice pi\`u signficativo \`e sicuramente il \textit{participation index}, ma accanto a quello ne sono stati considerati altri: il \textbf{supporto}, la \textbf{confidenza} e il \textbf{lift}.
+\subsection{Supporto}
+Supponiamo di dover trattare un \textit{market basket problem} in cui si considerano gli acquisti di caff\`e e t\`e. Per analizzare le possibili regole di associazione viene utilizzata una \textit{contingency table}. Una \textit{contingency table} \`e una tabella che evidenzia le frequenze assolute della vendita dei prodotti in base alle intersezioni di righe e colonne della tabella. Di seguito un esempio:
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		& \textbf{caff\`e} & \textbf{no caff\`e} & \\
+		\hline
+		\textbf{t\`e} & 150 & 50 & \textbf{200} \\
+		\hline
+		\textbf{no t\`e} & 650 & 150 & \textbf{800} \\
+		\hline
+		& \textbf{800} & \textbf{200} & \textcolor{red}{\textbf{1000}} \\
+		\hline
+	\end{tabular}
+	\caption{esempio di contingency table}
+\end{table}
+\noindent
+Come si evince dalla Tabella 5.2 gli acquisti di t\`e sono stati 200, quelli di caff\`e sono stati 800 (totale 1000 transazioni) ma solo 150 clienti hanno acquistato entrambi i prodotti. Come si pu\`o notare che 650 clienti hanno acquistato caff\`e ma non t\`e.\\
+Consideriamo la sequenza $A \rightarrow B$.\\
+Il supporto a questa sequenza \`e dato dal rapporto delle transazioni che includono i due prodotti rispetto alle transazioni normali ovvero:
+
+$s(A \rightarrow B) = ${\large $\frac{\sigma\{A, B\}}{|T|}$}\\
+dove $|T|$ \`e il numero delle transazioni totali. \\
+Sostanzialmente indica la percentuale di transazioni che contengono entrambre $A$ e $B$.\\
+\\
+Nel nostro esempio consideriamo la sequenza $t\grave{e} \rightarrow caff\grave{e}$:
+
+$s(t\grave{e} \rightarrow caff\grave{e}) = ${\large $\frac{\sigma\{t\grave{e}, caff\grave{e}\}}{|T|}$} $ = ${\large $\frac{150}{1000}$} $ = 0.15 = 15\%$\\
+quindi il 15\% degli acquisti considerati sono di entrambi, t\`e e caff\`e. 
+
+\subsection{Confidenza}
+L'altro indice considerato nell'analisi \`e quello della \textit{confidenza}.\\
+La confidenza indica, date le transazioni che contengono $A$, qual \`e la percentuale di transazioni che contengono $B$.\\
+Data una regola di associazione $A \rightarrow B$ la confidenza modella la probabilit\`a della presenza di $B$ nella transazione \textit{condizionata} dalla presenza di $A$, formalmente:
+
+$c(A \rightarrow B) = P(B|A) = ${\large $\frac{P(A,B)}{P(A)}$} $=$ {\large $\frac{\sigma(A,B)}{|T|} \frac{|T|}{\sigma(A)}$}$ = ${\large $\frac{\sigma(A,B)}{\sigma(A)}$}\\
+\\
+Nel nostro esempio:
+
+$c(t\grave{e} \rightarrow caff\grave{e}) = P(caff\grave{e}|t\grave{e}) = ${\large $\frac{150}{200}$}$ = 0,75 = 75\%$\\
+$75\%$ \`e una percentuale alta per la quale l'acquisto del caff\`e \`e condizionato dall'acquisto del t\`e, non va dimenticato per\`o che il supporto \`e solo del $15\%$. Per comprendere meglio la dipendenza di un evento rispetto ad un altro viene utilizzato l'indice \textit{lift}.
+
+\subsection{Lift}
+Il limite della confidenza \`e che non considera il supporto del dataset nella parte destra della regola, quindi non fornisce una valutazione corretta nel caso in cui gli elementi della sequenza non siano stocasticamente indipendenti.\\
+Nel nostro esempio si valuta che molte delle persone che bevono t\`e bevono anche caff\`e ma non si considera quante persone in totale bevono caff\`e.\\
+L'indice che tiene in considerazione questa situazione \`e il \textit{Lift}:
+
+$Lift(A \rightarrow B) = $ {\large $\frac{c(A \rightarrow B)}{s(B)}$} $ = $ {\large $\frac{P(B|A)}{P(B)}$} $ = $ {\large $\frac{P(B,A)}{P(A) P(B)}$}
+
+\begin{itemize}
+	\item se $lift = 1$ gli eventi sono indipendenti
+	\item se $lift > 1$ gli eventi sono correlati positivamente ($P(A \rightarrow B) > P(B)$)
+	\item se $lift < 1$ gli eventi sono correlati negativamente
+\end{itemize} 
+\noindent
+Nel nostro esempio:
+
+$Lift(t\grave{e} \rightarrow caff\grave{e}) = $ {\large $\frac{c(t\grave{e} \rightarrow caff\grave{e})}{s(caff\grave{e})}$} $ = $ {\large $\frac{0.75}{0.8}$} $ = 0.9375 < 1$\\
+il valore \`e $< 1$ pertanto vi \`e correlazione negativa per cui la regola in questione \underline{non} \`e da considerare interessante.\\
+\\
+
+\section{Analisi}
+Prima di procedere all'anlisi vera e propria dei risultati \`e bene fare alcune premesse. Di seguito viene analizzata una particolare configurazione di parametri applicata ad un dataset scelto.\\ 
+\`E stato scelto il dataset $3$, quello con $3\,129$ record, e i parametri $R = 2$, $T = 168$ in quanto presenta dei risultati variegati ai quali si possono fare diverse osservazioni soprattutto sugli indici.\\
+Ne vediamo di seguito un piccolo estratto:
+
+\begin{table}[h]
+	\hspace{-0.75cm}
+	\begin{tabular}{|p{8cm}|c|c|c|c|}
+		\hline
+		\textbf{Sequenza} & \textbf{PI} & \textbf{Support} & \textbf{Confid} & \textbf{Lift} \\
+		\hline
+		$[$'Larceny', 'Robbery'$]$ & 0.8727 & 0.046 & 0.8727 & 16,5598 \\
+		\hline
+		$[$'Larceny', 'Commercial Burglary'$]$ & 0.8644 & 0.0163 & 0.8644 & 45.7354 \\
+		\hline
+		$[$'Larceny From Motor Vehicle', 'Larceny', 'Commercial Burglary'$]$ & 0.7157 & 0.0147 & 0.7797 & 41.2540 \\
+		\hline
+		$[$'Larceny From Motor Vehicle', 'Larceny', 'Aggravated Assault', 'Other Burglary'$]$ & 0.7157 & 0.0048 & 0.75 & 117.1875 \\
+		\hline
+		$[$'Aggravated Assault', 'Larceny', 'Residential Burglary'$]$ & 0.6428 & 0.0521 & 0.7026 & 9.4818 \\
+		\hline
+		$[$'Aggravated Assault', 'Larceny From Motor Vehicle', 'Auto Theft'$]$ &  0.6259 & 0.0479 & 0.6356 & 8.4297 \\
+		
+		\hline
+	\end{tabular}
+	\caption{estratto dei risultati}
+\end{table}
+\noindent
+Come si pu\`o notare le sequenza di lunghezza 2 hanno tendenzialmente un \textit{PI} maggiore rispetto alle sequenze di lunghezza maggiore. Questa fatto \`e triviale in quanto le istanze coinvolte all'aumentare del numero di elementi della sequenza diminuisce e pertanto il \textit{PI} segue questa tendenza. Lo si comprende anche pensando alla struttura ad albero, man mano che si inseriscono nodi in profondità, la significativit\`a della sequenza diminuisce, quindi il \textit{PI}.\\
+\\
+Un'altra osservazione che si pu\`o fare \`e che, sempre per le sequenze di lunghezza 2, il \textit{PI} e la \textit{confidenza} hanno valori sostanzialmente uguali. Anche in questo caso la spiegazione \`e piuttosto semplice in quanto la confidenza calcola quanto l'ultimo elemento della sequenza influenza quelli precedenti ed \`e lo stesso calcolo del \textit{participation rateo} a cui il \textit{PI} si appoggia. Naturalmente considerando sequenze di lunghezza maggiore, i due valori differscono.
+\paragraph{Lift}
