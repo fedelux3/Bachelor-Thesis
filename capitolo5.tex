@@ -1,6 +1,5 @@
 \chapter{Analisi dei risultati}
 \label{Analisi}
-\pagestyle{empty}
 
 La performance del software \`e stata valutata tramite diversi test in cui vengono utilizzati database con diverso numero di record e diverse combinazioni di parametri.
 \\\\
@@ -180,33 +179,105 @@ il valore \`e $< 1$ pertanto vi \`e correlazione negativa per cui la regola in q
 
 \section{Analisi}
 Prima di procedere all'anlisi vera e propria dei risultati \`e bene fare alcune premesse. Di seguito viene analizzata una particolare configurazione di parametri applicata ad un dataset scelto.\\ 
-\`E stato scelto il dataset $3$, quello con $3\,129$ record, e i parametri $R = 2$, $T = 168$ in quanto presenta dei risultati variegati ai quali si possono fare diverse osservazioni soprattutto sugli indici.\\
+\`E stato scelto il dataset $3$, quello con $3129$ record, e i parametri $R = 2$, $T = 168$ in quanto presenta dei risultati variegati ai quali si possono fare diverse osservazioni soprattutto sugli indici.\\
 Ne vediamo di seguito un piccolo estratto:
 
 \begin{table}[h]
 	\hspace{-0.75cm}
-	\begin{tabular}{|p{8cm}|c|c|c|c|}
-		\hline
-		\textbf{Sequenza} & \textbf{PI} & \textbf{Support} & \textbf{Confid} & \textbf{Lift} \\
+	\begin{tabular}{m{8cm}|c|c|c|c}
+		\centering \textbf{Sequenza} & \textbf{PI} & \textbf{Support} & \textbf{Confid} & \textbf{Lift} \\
 		\hline
 		$[$'Larceny', 'Robbery'$]$ & 0.8727 & 0.046 & 0.8727 & 16,5598 \\
-		\hline
 		$[$'Larceny', 'Commercial Burglary'$]$ & 0.8644 & 0.0163 & 0.8644 & 45.7354 \\
-		\hline
 		$[$'Larceny From Motor Vehicle', 'Larceny', 'Commercial Burglary'$]$ & 0.7157 & 0.0147 & 0.7797 & 41.2540 \\
-		\hline
 		$[$'Larceny From Motor Vehicle', 'Larceny', 'Aggravated Assault', 'Other Burglary'$]$ & 0.7157 & 0.0048 & 0.75 & 117.1875 \\
-		\hline
 		$[$'Aggravated Assault', 'Larceny', 'Residential Burglary'$]$ & 0.6428 & 0.0521 & 0.7026 & 9.4818 \\
-		\hline
 		$[$'Aggravated Assault', 'Larceny From Motor Vehicle', 'Auto Theft'$]$ &  0.6259 & 0.0479 & 0.6356 & 8.4297 \\
-		
-		\hline
 	\end{tabular}
 	\caption{estratto dei risultati}
 \end{table}
 \noindent
-Come si pu\`o notare le sequenza di lunghezza 2 hanno tendenzialmente un \textit{PI} maggiore rispetto alle sequenze di lunghezza maggiore. Questa fatto \`e triviale in quanto le istanze coinvolte all'aumentare del numero di elementi della sequenza diminuisce e pertanto il \textit{PI} segue questa tendenza. Lo si comprende anche pensando alla struttura ad albero, man mano che si inseriscono nodi in profondità, la significativit\`a della sequenza diminuisce, quindi il \textit{PI}.\\
+Come si pu\`o notare le sequenza di lunghezza 2 hanno tendenzialmente un \textit{PI} maggiore rispetto alle sequenze di lunghezza maggiore. Questo fatto \`e triviale in quanto le istanze coinvolte all'aumentare del numero di elementi della sequenza diminuisce e pertanto il \textit{PI} segue questa tendenza. Lo si comprende anche pensando alla struttura ad albero, man mano che si inseriscono nodi in profondit\`a, la significativit\`a della sequenza diminuisce, quindi il \textit{PI}.\\
 \\
 Un'altra osservazione che si pu\`o fare \`e che, sempre per le sequenze di lunghezza 2, il \textit{PI} e la \textit{confidenza} hanno valori sostanzialmente uguali. Anche in questo caso la spiegazione \`e piuttosto semplice in quanto la confidenza calcola quanto l'ultimo elemento della sequenza influenza quelli precedenti ed \`e lo stesso calcolo del \textit{participation rateo} a cui il \textit{PI} si appoggia. Naturalmente considerando sequenze di lunghezza maggiore, i due valori differscono.
-\paragraph{Lift}
+
+\paragraph{Supporto} Il supporto calcolato sulle varie sequenze \`e tendenzialmente basso. La media dei supporti delle sequenze trovate \`e di circa il 5\% (vedi Figura 5.5). Il valore medio \`e basso in quanto il dataset \`e diviso in 9 classi di eventi e ciascuna classe ha una diversa frequenza, ad esempio \textit{larceny} \`e la classe con la frequenza maggiore. Pertanto possiamo considerare come sequenze significative quelle che hanno un supporto maggiore o paragonabile al 5\%.
+ 
+\paragraph{Lift} L'indice \textit{lift} come si pu\`o osservare dall'estratto della Tabella 5.3 \`e sostanzialmente sempre $> 1$. Essendo che un \textit{lift} $> 1$ significa una regola positivamente correlata, le sequenze estratte dall'algoritmo STBFM sono tutte significative rispetto al loro contesto. In alcuni test, quando vengono estratte sequenze di basso $PI$, il \textit{lift} pu\`o risultare $<1$ ma questo non succede quando si imposta un threshold di partenza sufficientemente grande. Il \textit{lift} di conseguenza conferma l'utilit\`a di utilizzare un threshold dinamico e un numero fissato di risultati $Top$ per non perdersi in sequenze poco rilevanti.
+
+\paragraph{Confidenza} La confidenza calcolata sui risultati \`e relativa all'ultimo elemento della sequenza. Ad esempio consideriamo la sequenza: $[$'Larceny From Motor Vehicle', 'Larceny', 'Commercial Burglary'$]$, essa ha un $PI = 0.7157$ ma una $confidenza = 0.75$. Significa che la sequenza in s\`e ha un indice di partecipazione attorno al $71\%$ ma la sequenza di eventi $[$'Larceny From Motor Vehicle', 'Larceny'$]$ ha come conseguenza un Commercial Burglary al $75\%$.\\
+\\
+Gli indici di \textbf{PI} e \textbf{confidenza} combinati con il \textbf{supporto}, per comprendere l'incidenza del fenomeno, permettono di dare un significato pi\`u chiaro e possibilmente utile alle associazioni trovate.\\
+\\
+Per analizzare le sequenze pi\`u significative di lunghezza $> 2$ si considerano le frequenze percentuali delle varie classi in questo particolare dataset:
+
+\begin{figure}[h]
+	\hspace{-1.2cm}
+	\includegraphics[height=0.68 \linewidth]{freqRel.png}
+	\caption{frequenze percentuali dei tipi dataset 3}
+\end{figure}
+
+\vspace{10cm}
+\noindent
+Come si pu\`o notare le proporzioni tra i tipi rispetto alle frequenze del dataset principale (vedi Figura 4.1) sono sostanzialmente mantenute.\\
+\\
+Di seguito alcuni esempi di sequenze e la discussione dei rispettivi indici.
+
+\paragraph{Esempio 1} Ora prendiamo un esempio di sequenza di lunghezza 3 con alto PI e confidenza.
+
+\begin{table}[h]
+	\hspace{-0.5cm}
+	\begin{tabular}{m{8cm}|c|c|c}
+		\centering \textbf{Sequenza} & \textbf{PI} & \textbf{Support} & \textbf{Confidence} \\
+		$[$'Larceny From Motor Vehicle', 'Larceny', 'Other Burglary'$]$ & 0.7157 & 0,0058 & 0.9 \\
+	\end{tabular}
+\end{table}
+
+\noindent
+Con un $PI$ al $71.57\%$ questa sequenza \`e da considerarsi signficativa. La confidenza allo 0.9 inolte ci comunica che se vi \`e stato un Larceny From Motor Vehicle (furto in auto) e successivamente un Larceny (furto) allora con una correlazione del 90\% avverr\`a un Other Burglary (furto con scasso) nello stesso raggio temporale e spaziale. \`E una conclusione molto potente ma non bisogna dimenticare che il supporto a questa affermazione \`e molto basso (circa lo $0.58\%$), ovvero il numero di istanze che influenza \`e esiguo. Da considerare che il poco supporto \`e dovuto indubbiamente anche alla bassa frequenza che ha Other Burglary sul totale delle istanze ($0.64\%$).
+
+\paragraph{Esempio 2} Prendiamo in considerazione un altro esempio.
+
+\begin{table}[h]
+	\hspace{-0.5cm}
+	\begin{tabular}{m{8cm}|c|c|c}
+		\centering \textbf{Sequenza} & \textbf{PI} & \textbf{Support} & \textbf{Confidence} \\
+		$[$'Larceny From Motor Vehicle', 'Larceny', 'Aggravated Assault'$]$ & 0.7157 & 0,0991 & 0.7543 \\
+	\end{tabular}
+\end{table}
+\noindent
+La sequenza presa in esame presenta un \textit{PI} del $71.57\%$, quindi molto buono, un livello di confidenza dell'ultimo elemento del $75.43\%$, altrettanto alto, e un supporto del $9.91\%$. Il livello di supporto a questa sequenza \`e decisamente maggiore rispetto all'esempio precedente, infatti, a parit\`a di di \textit{PI}, la sequenza presente \`e molto pi\`u interessante ed utilizzabile.\\
+Bisogna notare per\`o un fatto tra questi due esempi, i primi due elementi della sequenza sono gli stessi: Larceny From Motor Vehicle e Larceny. Significa che essi sono altamente correlati ed influenzano molti tipi di eventi successivi.
+
+\paragraph{Esempio 3} Consideriamo ora un caso di sequenza di lunghezza 4.
+
+\begin{table}[h]
+	\hspace{-0.5cm}
+	\begin{tabular}{m{8cm}|c|c|c}
+		\centering \textbf{Sequenza} & \textbf{PI} & \textbf{Support} & \textbf{Confidence} \\
+		$[$'Larceny', 'Aggravated Assault', 'Larceny From Motor Vehicle', 'Auto Theft'$]$ & 0.6184 & 0,0479 & 0.6356 \\
+	\end{tabular}
+\end{table}
+\noindent
+Si nota subito un valore \textit{PI} minore rispetto agli altri, $61.84\%$; \`e fisiologico un \textit{participation index} minore rispetto alle sequenze con meno elementi. La confidenza \`e del $63.56\%$, un valore buono ma nulla di troppo significativo. Il supporto \`e del $4.79\%$, un valore non elevato ma neanche irrisorio.\\
+L'associazione analizzata non ci comunica, attraverso i suoi indici, un grado di affidabilit\`a consistente, \`e un fatto comune per le sequenze di lunghezza 4 nelle quali gli indicatori tendono ad assumere valori medi o comunque non decisamente elevati.\\
+\clearpage
+\noindent
+Di seguito le sequenze di lunghezza $> 2$ considerate pi\`u significative rispetto alle altre:
+
+\begin{table}[h]
+	\hspace{-0.5cm}
+	\begin{tabular}{m{8cm}|c|c|c}
+		\centering \textbf{Sequenza} & \textbf{PI} & \textbf{Support} & \textbf{Confidence} \\
+		\hline
+		$[$'Larceny From Motor Vehicle', 'Larceny', 'Aggravated Assault'$]$ & 0.7157 & 0,0991 & 0.7543 \\
+		$[$'Larceny From Motor Vehicle', 'Larceny', 'Auto Theft'$]$ & 0.7157 & 0,0575 & 0.7627\\
+		$[$'Larceny From Motor Vehicle', 'Larceny', 'Residential Burglary'$]$ & 0.6907 & 0,0508 & 0.6853\\
+		$[$'Larceny', 'Larceny From Motor Vehicle', 'Auto Theft'$]$ & 0.6853 & 0,0521 & 0.6907 \\ 
+		$[$'Aggravated Assault', 'Larceny', 'Larceny From Motor Vehicle'$]$ & 0.6428 & 0,1262 & 0.7425 \\
+		$[$'Aggravated Assault', 'Larceny', 'Residential Burglary'$]$ & 0.6428 & 0,0521 & 0.7026 \\
+		$[$'Aggravated Assault', 'Larceny', 'Larceny From Motor Vehicle', 'Auto Theft'$]$ & 0.6356 & 0,0479 & 0.6356 \\		
+	\end{tabular}
+\end{table}
+
+ 

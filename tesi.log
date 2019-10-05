@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.3)  3 OCT 2019 12:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.3)  5 OCT 2019 10:49
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -673,37 +673,37 @@ l.55 \include{capitolo1}
  (capitolo1.tex
 Capitolo 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--12
+Underfull \hbox (badness 10000) in paragraph at lines 6--11
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 12.
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 12.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <12> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 32.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 31.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 32.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 31.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--45
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--45
+Underfull \hbox (badness 10000) in paragraph at lines 15--44
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--45
+Underfull \hbox (badness 10000) in paragraph at lines 15--44
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--44
 
  []
 
@@ -711,17 +711,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--45
 
 
 ] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 57--63
+Underfull \hbox (badness 10000) in paragraph at lines 56--62
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--63
+Underfull \hbox (badness 10000) in paragraph at lines 56--62
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 64--81
+Underfull \hbox (badness 10000) in paragraph at lines 63--80
 
  []
 
@@ -739,7 +739,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 64--81
 ]
 Capitolo 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--21
+Underfull \hbox (badness 10000) in paragraph at lines 17--20
 
  []
 
@@ -747,68 +747,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--21
 <neighborhood.png, id=256, 375.20175pt x 285.4665pt>
 File: neighborhood.png Graphic file (type png)
 <use neighborhood.png>
-Package pdftex.def Info: neighborhood.png  used on input line 40.
+Package pdftex.def Info: neighborhood.png  used on input line 39.
 (pdftex.def)             Requested size: 307.57008pt x 234.00238pt.
  [10 <./neighborhood.png>]
 <neia1.png, id=267, 87.9285pt x 102.98476pt>
 File: neia1.png Graphic file (type png)
 <use neia1.png>
-Package pdftex.def Info: neia1.png  used on input line 60.
+Package pdftex.def Info: neia1.png  used on input line 59.
 (pdftex.def)             Requested size: 66.59422pt x 77.99881pt.
 <neia2.png, id=268, 63.8385pt x 104.7915pt>
 File: neia2.png Graphic file (type png)
 <use neia2.png>
-Package pdftex.def Info: neia2.png  used on input line 61.
+Package pdftex.def Info: neia2.png  used on input line 60.
 (pdftex.def)             Requested size: 47.51735pt x 77.99881pt.
  [11 <./neia1.png> <./neia2.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 65.
+(hyperref)                removing `\\' on input line 64.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--79
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--79
+Underfull \hbox (badness 10000) in paragraph at lines 70--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--79
+Underfull \hbox (badness 10000) in paragraph at lines 70--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--103
+Underfull \hbox (badness 10000) in paragraph at lines 70--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--102
 
  []
 
 [12
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--110
+Underfull \hbox (badness 10000) in paragraph at lines 105--109
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 125--131
+Underfull \hbox (badness 10000) in paragraph at lines 124--130
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--131
+Underfull \hbox (badness 10000) in paragraph at lines 124--130
 
  []
 
@@ -827,12 +827,12 @@ Capitolo 3.
 Underfull \vbox (badness 3989) has occurred while \output is active []
 
  [16]
-Underfull \hbox (badness 10000) in paragraph at lines 74--81
+Underfull \hbox (badness 10000) in paragraph at lines 73--80
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 87--94
+Underfull \hbox (badness 10000) in paragraph at lines 86--93
 
  []
 
@@ -840,7 +840,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--94
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--117
+Underfull \hbox (badness 10000) in paragraph at lines 110--116
 
  []
 
@@ -848,24 +848,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--117
 <albero.png, id=364, 220.825pt x 194.7275pt>
 File: albero.png Graphic file (type png)
 <use albero.png>
-Package pdftex.def Info: albero.png  used on input line 135.
+Package pdftex.def Info: albero.png  used on input line 134.
 (pdftex.def)             Requested size: 176.90956pt x 155.99762pt.
  [20
 
  <./albero.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 159--165
+Underfull \hbox (badness 10000) in paragraph at lines 158--164
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--165
+Underfull \hbox (badness 10000) in paragraph at lines 158--164
 
  []
 
 <sptree.png, id=370, 417.35925pt x 231.264pt>
 File: sptree.png Graphic file (type png)
 <use sptree.png>
-Package pdftex.def Info: sptree.png  used on input line 176.
+Package pdftex.def Info: sptree.png  used on input line 175.
 (pdftex.def)             Requested size: 351.92946pt x 195.0pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -873,30 +873,30 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [21
 
 ] [22 <./sptree.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 186--190
+Underfull \hbox (badness 10000) in paragraph at lines 185--189
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--194
+Underfull \hbox (badness 10000) in paragraph at lines 189--193
 
  []
 
 
-Overfull \hbox (5.79874pt too wide) in paragraph at lines 190--194
+Overfull \hbox (5.79874pt too wide) in paragraph at lines 189--193
 \OT1/cmr/m/n/12 Partendo da-gli al-go-rit-mi pre-ce-den-te-men-te de-fi-ni-ti i
 n-te-gria-mo l'al-be-ro $\OML/cmm/m/it/12 SPTree$\OT1/cmr/m/n/12 . 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--201
+Underfull \hbox (badness 10000) in paragraph at lines 194--200
 
  []
 
 [23
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 239--243
+Underfull \hbox (badness 10000) in paragraph at lines 238--242
 
  []
 
@@ -904,27 +904,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 239--243
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25]
-Underfull \hbox (badness 10000) in paragraph at lines 285--289
+Underfull \hbox (badness 10000) in paragraph at lines 284--288
 
  []
 
 [26]
-Underfull \hbox (badness 10000) in paragraph at lines 292--302
+Underfull \hbox (badness 10000) in paragraph at lines 291--301
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--302
+Underfull \hbox (badness 10000) in paragraph at lines 291--301
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--302
+Underfull \hbox (badness 10000) in paragraph at lines 291--301
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--334
+Underfull \hbox (badness 10000) in paragraph at lines 309--333
 
  []
 
@@ -936,22 +936,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 310--334
  (capitolo4.tex
 Capitolo 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--12
+Underfull \hbox (badness 10000) in paragraph at lines 7--11
 
  []
 
 
-Underfull \hbox (badness 5878) in paragraph at lines 29--30
+Underfull \hbox (badness 5878) in paragraph at lines 28--29
 []|\OT1/cmr/m/n/12 categoria di even-to cri-mi-na-le
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 45--46
+Underfull \hbox (badness 2790) in paragraph at lines 44--45
 []|\OT1/cmr/m/n/12 giorno del-la set-ti-ma-na in cui
  []
 
 
-Overfull \hbox (34.26439pt too wide) in paragraph at lines 20--60
+Overfull \hbox (34.26439pt too wide) in paragraph at lines 19--59
 []  [] 
  []
 
@@ -963,33 +963,33 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 ] [30]
-Overfull \hbox (12.44392pt too wide) in paragraph at lines 64--76
+Overfull \hbox (12.44392pt too wide) in paragraph at lines 63--75
 $[]$ \OT1/cmr/m/n/12 del even-to si puo ri-ca-va-re in IN-CI-DENT[]NUMBER,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--76
+Underfull \hbox (badness 10000) in paragraph at lines 63--75
 
  []
 
 
-Overfull \hbox (20.3157pt too wide) in paragraph at lines 89--99
+Overfull \hbox (20.3157pt too wide) in paragraph at lines 88--98
 \OT1/cmr/m/n/12 TU-DI-NE vuo-te o non va-li-de. So-no sta-ti eli-mi-na-ti va-lo
 -ri di IN-CI-DENT[]NUMBER
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--99
+Underfull \hbox (badness 10000) in paragraph at lines 88--98
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--99
+Underfull \hbox (badness 10000) in paragraph at lines 88--98
 
  []
 
 
-Overfull \hbox (14.48067pt too wide) in paragraph at lines 89--99
+Overfull \hbox (14.48067pt too wide) in paragraph at lines 88--98
 \OT1/cmr/m/n/12 INCIDENT[]NUMBER, OF-FEN-CE[]CODE[]GROUP, OC-CUR-RED[]ON[]DATE,
 
  []
@@ -997,17 +997,17 @@ Overfull \hbox (14.48067pt too wide) in paragraph at lines 89--99
 [31
 
 ]
-Overfull \hbox (47.27713pt too wide) in paragraph at lines 101--112
+Overfull \hbox (47.27713pt too wide) in paragraph at lines 100--111
 []  [] 
  []
 
 <frequenze18.png, id=485, 478.1865pt x 281.25075pt>
 File: frequenze18.png Graphic file (type png)
 <use frequenze18.png>
-Package pdftex.def Info: frequenze18.png  used on input line 118.
+Package pdftex.def Info: frequenze18.png  used on input line 117.
 (pdftex.def)             Requested size: 424.36612pt x 249.59976pt.
 
-Overfull \hbox (22.75084pt too wide) in paragraph at lines 117--119
+Overfull \hbox (22.75084pt too wide) in paragraph at lines 116--118
 []  [] 
  []
 
@@ -1015,79 +1015,79 @@ Overfull \hbox (22.75084pt too wide) in paragraph at lines 117--119
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [32] [33 <./frequenze18.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 124--127
+Underfull \hbox (badness 10000) in paragraph at lines 123--126
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--137
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
 []|\OT1/cmr/m/n/12 children
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--148
+Underfull \hbox (badness 10000) in paragraph at lines 139--147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--148
+Underfull \hbox (badness 10000) in paragraph at lines 139--147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--148
+Underfull \hbox (badness 10000) in paragraph at lines 139--147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--148
+Underfull \hbox (badness 10000) in paragraph at lines 139--147
 
  []
 
 [34
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 157--164
+Underfull \hbox (badness 10000) in paragraph at lines 156--163
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--164
+Underfull \hbox (badness 10000) in paragraph at lines 156--163
 
  []
 
 [35]
-Underfull \hbox (badness 10000) in paragraph at lines 165--176
+Underfull \hbox (badness 10000) in paragraph at lines 164--175
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--176
+Underfull \hbox (badness 10000) in paragraph at lines 164--175
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--176
+Underfull \hbox (badness 10000) in paragraph at lines 164--175
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--176
+Underfull \hbox (badness 10000) in paragraph at lines 164--175
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--183
+Underfull \hbox (badness 10000) in paragraph at lines 176--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--183
+Underfull \hbox (badness 10000) in paragraph at lines 176--182
 
  []
 
 [36])
-Underfull \hbox (badness 10000) in paragraph at lines 195--58
+Underfull \hbox (badness 10000) in paragraph at lines 194--58
 
  []
 
@@ -1101,22 +1101,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--58
 ]
 Capitolo 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--10
+Underfull \hbox (badness 10000) in paragraph at lines 4--9
 
  []
 
 [39]
-Underfull \hbox (badness 10000) in paragraph at lines 21--25
+Underfull \hbox (badness 10000) in paragraph at lines 20--24
 
  []
 
 [40]
-Overfull \hbox (2.67226pt too wide) in paragraph at lines 39--39
+Overfull \hbox (2.67226pt too wide) in paragraph at lines 38--38
 []|\OT1/cmr/bx/n/12 comb|  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--65
+Underfull \hbox (badness 10000) in paragraph at lines 57--64
 
  []
 
@@ -1126,10 +1126,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--65
 <tempi12.png, id=540, 724.20563pt x 395.22656pt>
 File: tempi12.png Graphic file (type png)
 <use tempi12.png>
-Package pdftex.def Info: tempi12.png  used on input line 68.
+Package pdftex.def Info: tempi12.png  used on input line 67.
 (pdftex.def)             Requested size: 535.97008pt x 292.5pt.
 
-Overfull \hbox (63.2229pt too wide) in paragraph at lines 67--69
+Overfull \hbox (63.2229pt too wide) in paragraph at lines 66--68
 []  [] 
  []
 
@@ -1137,10 +1137,10 @@ Overfull \hbox (63.2229pt too wide) in paragraph at lines 67--69
 <rag_nrec.png, id=546, 1244.39906pt x 827.34094pt>
 File: rag_nrec.png Graphic file (type png)
 <use rag_nrec.png>
-Package pdftex.def Info: rag_nrec.png  used on input line 79.
+Package pdftex.def Info: rag_nrec.png  used on input line 78.
 (pdftex.def)             Requested size: 469.28784pt x 312.00119pt.
 
-Overfull \hbox (44.91026pt too wide) in paragraph at lines 78--80
+Overfull \hbox (44.91026pt too wide) in paragraph at lines 77--79
 []  [] 
  []
 
@@ -1150,10 +1150,10 @@ Overfull \hbox (44.91026pt too wide) in paragraph at lines 78--80
 <tem_nrec.png, id=552, 1253.28226pt x 826.287pt>
 File: tem_nrec.png Graphic file (type png)
 <use tem_nrec.png>
-Package pdftex.def Info: tem_nrec.png  used on input line 92.
+Package pdftex.def Info: tem_nrec.png  used on input line 91.
 (pdftex.def)             Requested size: 502.79565pt x 331.50238pt.
 
-Overfull \hbox (72.72762pt too wide) in paragraph at lines 91--93
+Overfull \hbox (72.72762pt too wide) in paragraph at lines 90--92
 []  [] 
  []
 
@@ -1163,48 +1163,109 @@ Overfull \hbox (72.72762pt too wide) in paragraph at lines 91--93
 <rag_temp.png, id=558, 1078.0275pt x 826.287pt>
 File: rag_temp.png Graphic file (type png)
 <use rag_temp.png>
-Package pdftex.def Info: rag_temp.png  used on input line 106.
+Package pdftex.def Info: rag_temp.png  used on input line 105.
 (pdftex.def)             Requested size: 457.93356pt x 350.99762pt.
 
-Overfull \hbox (42.0919pt too wide) in paragraph at lines 105--107
+Overfull \hbox (42.0919pt too wide) in paragraph at lines 104--106
 []  [] 
  []
 
 [45
 
  <./rag_temp.png>] [46]
-Underfull \hbox (badness 10000) in paragraph at lines 141--146
+Underfull \hbox (badness 10000) in paragraph at lines 140--145
 
  []
 
 [47
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 155--158
+Underfull \hbox (badness 10000) in paragraph at lines 154--157
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--180
+Underfull \hbox (badness 10000) in paragraph at lines 176--179
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--180
+Underfull \hbox (badness 10000) in paragraph at lines 176--179
 
  []
 
 [48]
-Overfull \hbox (45.20941pt too wide) in paragraph at lines 187--206
+Overfull \hbox (44.40942pt too wide) in paragraph at lines 186--197
 []  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--212
+Underfull \hbox (badness 10000) in paragraph at lines 199--203
 
  []
 
-) [49] [50
+
+Underfull \vbox (badness 5260) has occurred while \output is active []
+
+ [49]
+Underfull \hbox (badness 10000) in paragraph at lines 208--213
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--213
+
+ []
+
+<freqRel.png, id=584, 499.8675pt x 301.72725pt>
+File: freqRel.png Graphic file (type png)
+<use freqRel.png>
+Package pdftex.def Info: freqRel.png  used on input line 216.
+(pdftex.def)             Requested size: 439.35846pt x 265.19714pt.
+
+Overfull \hbox (17.82632pt too wide) in paragraph at lines 215--217
+[]  [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--225
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [50]
+Overfull \hbox (20.55362pt too wide) in paragraph at lines 229--234
+[]  [] 
+ []
+
+[51 <./freqRel.png>]
+Overfull \hbox (20.55362pt too wide) in paragraph at lines 242--247
+[]  [] 
+ []
+
+
+Overfull \hbox (20.55362pt too wide) in paragraph at lines 255--260
+[]  [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--264
+
+ []
+
+[52]
+Overfull \hbox (20.55362pt too wide) in paragraph at lines 269--281
+[]  [] 
+ []
+
+) [53
+
+] [54
 
 
 ] (tesi.bbl
@@ -1243,25 +1304,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--31
 /12 https : / / github . com / fedelux3 /
  []
 
-[51
+[55
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 68.
- [52]
+ [56]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 68.
  (tesi.aux (frontespizio.aux) (capitolo1.aux) (capitolo2.aux)
 (capitolo3.aux) (capitolo4.aux) (capitolo5.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 68.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 68.
 Package rerunfilecheck Info: File `tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 7A499256A58EEF3226E19FDE539F59B1;2485.
+(rerunfilecheck)             Checksum: 573B793C95974BCD47A84F503E828720;2490.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 68.
  ) 
 Here is how much of TeX's memory you used:
- 10374 strings out of 492973
- 154270 string characters out of 3126693
+ 10393 strings out of 492973
+ 154513 string characters out of 3126693
  282566 words of memory out of 3000000
- 13794 multiletter control sequences out of 15000+200000
+ 13798 multiletter control sequences out of 15000+200000
  17012 words of font info for 64 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
  36i,32n,43p,796b,625s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1286,9 +1347,9 @@ onts/cm/cmsy10.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/fede9/AppData/Local/Progra
 ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/fede9/AppData
 /Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on tesi.pdf (54 pages, 982582 bytes).
+Output written on tesi.pdf (58 pages, 1012138 bytes).
 PDF statistics:
- 742 PDF objects out of 1000 (max. 8388607)
- 244 named destinations out of 1000 (max. 500000)
- 360 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 774 PDF objects out of 1000 (max. 8388607)
+ 258 named destinations out of 1000 (max. 500000)
+ 365 words of extra memory for PDF output out of 10000 (max. 10000000)
 
