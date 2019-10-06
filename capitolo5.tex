@@ -3,9 +3,9 @@
 
 La performance del software \`e stata valutata tramite diversi test in cui vengono utilizzati database con diverso numero di record e diverse combinazioni di parametri.
 \\\\
-Il database di partenza utilizzato \`e quello relativo al Boston Crime Department del 2018 descritto nel capitolo precedente con $15\,648$ record. Non \`e stato utilizzato per\`o direttamente in quanto il numero di record \`e molto elevato. Con un alto numero di record il tempo di elaborazione aumenta eccessivamente, pertanto si \`e preferito testare il software in suoi sottoinsiemi.\\
+Il database di partenza utilizzato \`e quello relativo al Boston Crime Department del 2018 descritto nel capitolo precedente con $15\,648$ record. Tuttavia, non \`e stato utilizzato per\`o direttamente in quanto il numero di record \`e molto elevato. Con un alto numero di record, il tempo di elaborazione aumenta eccessivamente, pertanto si \`e preferito testare il software in suoi sottoinsiemi.\\
 Per la generazione dei dataset sottoinsiemi viene copiato un record ogni $N$, in questo modo si mantengono le proporzioni delle frequenze tra i diversi tipi di eventi.\\
-Sono stati generati 4 dataset sottoinsieme ed hanno i seguenti numeri di record:
+Sono stati generati 4 dataset sottoinsieme, i quali hanno i seguenti numeri di record:
 \begin{enumerate}
 	\item 1043 - 1 ogni 15 record
 	\item 2235 - 1 ogni 7 record
@@ -20,7 +20,7 @@ I parametri utilizzati sono stati: $\theta$, numero di sequenze top ($Num$), $R$
 \paragraph{Il numero di sequenze top $Num$} da considerare nel insieme $Top$ di output \`e stato fissato a 50, ovvero come output si considerano solo le prime cinquanta sequenze di tipi per \textit{participation index}. Il valore \`e frutto del compromesso tra numero di sequenze significative da visualizzare e tempi di computazione. Se si scegliesse un valore minore non si avrebbero sequenze di tipi significativi probabilmente utili. Se si segliesse un valore maggiore i tempi di computazione lieviterebbero esponenzialmente; inoltre, le sequenze ricavate oltre la cinquantesima posizione avranno, con alta probabilit\`a, un $PI$ basso, quindi poco rilevanti.
 \\\\
 I parametri di \textbf{raggio spaziale $R$} e \textbf{intervallo temporale $T$} sono variabili che vengono fissate in base al test da effettuare.\\
-I valori scelti di questi due parametri sono variano entro i seguenti range:
+I valori scelti di questi due parametri variano entro i seguenti range:
 \begin{itemize}
 	\item $R$ varia da 1 a 3 km
 	\item $T$ varia da 72 a 168 ore (da 3 giorni a 7 giorni)
@@ -60,7 +60,7 @@ Una linea del grafico rappresenta una serie di test effettuati sui tutti i quatt
 \\
 Come era prevedibile, i test che impiegano pi\`u tempo ad essere elaborati sono quelli con \textit{neighborhood} pi\`u ampio, sia per quanto riguarda il raggio spaziale sia quello temporale.\\
 Un aspetto rilevante \`e l'andamento \textbf{non lineare} del tempo all'aumentare del numero di record. Al contrario, con un numero sufficientemente alto di record, si pu\`o pensare che il software tenda ad un tempo esponenziale. Lo si evince soprattutto quando il numero di record sale da $3129$ a $5216$.\\
-Da notare inoltre che per un \textit{vicinato} pi\`u ristretto, l'incremento dei tempi legato al numero di record \`e meno marcato, ad esempio per $R = 1 $, $ T = 72$.
+Da notare inoltre che, per un \textit{vicinato} pi\`u ristretto, l'incremento dei tempi legato al numero di record \`e meno marcato, ad esempio per $R = 1 $, $ T = 72$.
 
 \begin{figure}[h]
 	\hspace{-3cm}
@@ -68,7 +68,7 @@ Da notare inoltre che per un \textit{vicinato} pi\`u ristretto, l'incremento dei
 	\caption{tempi di computazione in relazione al numero di record}
 \end{figure}
 \noindent
-Dal grafico per\`o \`e non emerge chiaramente quale parametro influenza maggiormente la durata dell'elaborazione. Segue un'analisi pi\`u dettagliata su alcune combinazioni di parametri.
+Tuttavia dal grafico non emerge chiaramente quale parametro influenzi maggiormente la durata dell'elaborazione. Segue un'analisi pi\`u dettagliata su alcune combinazioni di parametri.
 \clearpage
 \subsection{Raggio spaziale e numero record}
 Nei grafici che seguono in Figura 5.2 viene mostrato l'andamento del tempo di computazione in funzione di $R$ e del numero dei record. In ciascun caso vengono considerati i test con valore di $T$ uguale, in modo che esso non influenzi l'andamento del tempo di computazione. 
@@ -79,7 +79,7 @@ Nei grafici che seguono in Figura 5.2 viene mostrato l'andamento del tempo di co
 	\caption{tempi di computazione in funzione al raggio spaziale e al numero record}
 \end{figure}
 \noindent
-Come ci si pu\`o aspettare man mano che $R$ e il numero di record crescono, il tempo di computazione aumenta, ma non in modo uniforme per entrambe le variabili.\\
+Come ci si pu\`o aspettare, man mano che $R$ e il numero di record crescono, il tempo di computazione aumenta, ma non in modo uniforme per entrambe le variabili.\\
 Si nota infatti che il raggio spaziale $R$ ha un impatto maggiore nei tempi rispetto all'incremento legato al numero record che, pur non essendo lineare, \`e di entit\`a minore in confronto a quello legato ad $R$.
 \clearpage
 
@@ -94,7 +94,7 @@ Nei grafici che seguono in Figura 5.3 viene mostrato l'andamento del tempo di co
 
 \noindent
 Analogamente ai test considerati in precedenza, all'aumentare del valore delle variabili il tempo di computazione aumenta pi\`u che proporzionalmente. \\
-In questo caso, per\`o, \`e il numero di record che influenza maggiormente il tempo di computazione. Osservando si nota che l'incremento legato a $T$ \`e meno marcato rispetto a quello legato al numero record.
+In questo caso, per\`o, \`e il numero di record che influenza maggiormente il tempo di computazione. Ci\`o che si nota \`e che l'incremento legato a $T$ \`e meno marcato rispetto a quello legato al numero record.
 \clearpage
 
 \subsection{Raggio e intervallo temporale}
@@ -160,7 +160,7 @@ $75\%$ \`e una percentuale alta per la quale l'acquisto del caff\`e \`e condizio
 
 \subsection{Lift}
 Il limite della confidenza \`e che non considera il supporto del dataset nella parte destra della regola, quindi non fornisce una valutazione corretta nel caso in cui gli elementi della sequenza non siano stocasticamente indipendenti.\\
-Nel nostro esempio si valuta che molte delle persone che bevono t\`e bevono anche caff\`e ma non si considera quante persone in totale bevono caff\`e.\\
+Nel nostro esempio si denota che molte delle persone che bevono t\`e bevono anche caff\`e ma non si considera quante persone in totale bevono caff\`e.\\
 L'indice che tiene in considerazione questa situazione \`e il \textit{Lift}:
 
 $Lift(A \rightarrow B) = $ {\large $\frac{c(A \rightarrow B)}{s(B)}$} $ = $ {\large $\frac{P(B|A)}{P(B)}$} $ = $ {\large $\frac{P(B,A)}{P(A) P(B)}$}
@@ -179,7 +179,7 @@ il valore \`e $< 1$ pertanto vi \`e correlazione negativa per cui la regola in q
 
 \section{Analisi}
 Prima di procedere all'anlisi vera e propria dei risultati \`e bene fare alcune premesse. Di seguito viene analizzata una particolare configurazione di parametri applicata ad un dataset scelto.\\ 
-\`E stato scelto il dataset $3$, quello con $3129$ record, e i parametri $R = 2$, $T = 168$ in quanto presenta dei risultati variegati ai quali si possono fare diverse osservazioni soprattutto sugli indici.\\
+\`E stato scelto il dataset $3$, quello con $3129$ record, e i parametri $R = 2$, $T = 168$ in quanto presenta dei risultati variegati ai quali si possono fare diverse osservazioni, soprattutto sugli indici.\\
 Ne vediamo di seguito un piccolo estratto:
 
 \begin{table}[h]
@@ -197,13 +197,13 @@ Ne vediamo di seguito un piccolo estratto:
 	\caption{estratto dei risultati}
 \end{table}
 \noindent
-Come si pu\`o notare le sequenza di lunghezza 2 hanno tendenzialmente un \textit{PI} maggiore rispetto alle sequenze di lunghezza maggiore. Questo fatto \`e triviale in quanto le istanze coinvolte all'aumentare del numero di elementi della sequenza diminuisce e pertanto il \textit{PI} segue questa tendenza. Lo si comprende anche pensando alla struttura ad albero, man mano che si inseriscono nodi in profondit\`a, la significativit\`a della sequenza diminuisce, quindi il \textit{PI}.\\
+Come si pu\`o notare, le sequenze di lunghezza 2 hanno tendenzialmente un \textit{PI} maggiore rispetto alle sequenze di lunghezza maggiore. Questo fatto \`e triviale in quanto le istanze coinvolte all'aumentare del numero di elementi della sequenza diminuisce e pertanto il \textit{PI} segue questa tendenza. Lo si comprende anche pensando alla struttura ad albero, in cui, man mano che si inseriscono nodi in profondit\`a, la significativit\`a della sequenza diminuisce, quindi il \textit{PI}.\\
 \\
-Un'altra osservazione che si pu\`o fare \`e che, sempre per le sequenze di lunghezza 2, il \textit{PI} e la \textit{confidenza} hanno valori sostanzialmente uguali. Anche in questo caso la spiegazione \`e piuttosto semplice in quanto la confidenza calcola quanto l'ultimo elemento della sequenza influenza quelli precedenti ed \`e lo stesso calcolo del \textit{participation rateo} a cui il \textit{PI} si appoggia. Naturalmente considerando sequenze di lunghezza maggiore, i due valori differscono.
+Un'altra osservazione che si pu\`o fare \`e che, sempre per le sequenze di lunghezza 2, il \textit{PI} e la \textit{confidenza} hanno valori sostanzialmente uguali. Anche in questo caso la spiegazione \`e piuttosto semplice in quanto la confidenza calcola quanto l'ultimo elemento della sequenza influenza quelli precedenti ed \`e lo stesso calcolo del \textit{participation rateo} a cui il \textit{PI} si appoggia. Naturalmente, considerando sequenze di lunghezza maggiore, i due valori differscono.
 
 \paragraph{Supporto} Il supporto calcolato sulle varie sequenze \`e tendenzialmente basso. La media dei supporti delle sequenze trovate \`e di circa il 5\% (vedi Figura 5.5). Il valore medio \`e basso in quanto il dataset \`e diviso in 9 classi di eventi e ciascuna classe ha una diversa frequenza, ad esempio \textit{larceny} \`e la classe con la frequenza maggiore. Pertanto possiamo considerare come sequenze significative quelle che hanno un supporto maggiore o paragonabile al 5\%.
  
-\paragraph{Lift} L'indice \textit{lift} come si pu\`o osservare dall'estratto della Tabella 5.3 \`e sostanzialmente sempre $> 1$. Essendo che un \textit{lift} $> 1$ significa una regola positivamente correlata, le sequenze estratte dall'algoritmo STBFM sono tutte significative rispetto al loro contesto. In alcuni test, quando vengono estratte sequenze di basso $PI$, il \textit{lift} pu\`o risultare $<1$ ma questo non succede quando si imposta un threshold di partenza sufficientemente grande. Il \textit{lift} di conseguenza conferma l'utilit\`a di utilizzare un threshold dinamico e un numero fissato di risultati $Top$ per non perdersi in sequenze poco rilevanti.
+\paragraph{Lift} L'indice \textit{lift}, come si pu\`o osservare dall'estratto della Tabella 5.3 \`e sostanzialmente sempre $> 1$. Essendo che una regola con un \textit{lift} $> 1$ significa che \`e una regola positivamente correlata, le sequenze estratte dall'algoritmo STBFM sono tutte significative rispetto al loro contesto. In alcuni test, quando vengono estratte sequenze di basso $PI$, il \textit{lift} pu\`o risultare $<1$ ma questo non succede quando si imposta un threshold di partenza sufficientemente grande. Il \textit{lift} di conseguenza conferma l'utilit\`a di utilizzare un threshold dinamico e un numero fissato di risultati $Top$ per non perdersi in sequenze poco rilevanti.
 
 \paragraph{Confidenza} La confidenza calcolata sui risultati \`e relativa all'ultimo elemento della sequenza. Ad esempio consideriamo la sequenza: $[$'Larceny From Motor Vehicle', 'Larceny', 'Commercial Burglary'$]$, essa ha un $PI = 0.7157$ ma una $confidenza = 0.75$. Significa che la sequenza in s\`e ha un indice di partecipazione attorno al $71\%$ ma la sequenza di eventi $[$'Larceny From Motor Vehicle', 'Larceny'$]$ ha come conseguenza un Commercial Burglary al $75\%$.\\
 \\
@@ -219,9 +219,9 @@ Per analizzare le sequenze pi\`u significative di lunghezza $> 2$ si considerano
 
 \vspace{10cm}
 \noindent
-Come si pu\`o notare le proporzioni tra i tipi rispetto alle frequenze del dataset principale (vedi Figura 4.1) sono sostanzialmente mantenute.\\
+Come si pu\`o notare, le proporzioni tra i tipi rispetto alle frequenze del dataset principale (vedi Figura 4.1) sono sostanzialmente mantenute.\\
 \\
-Di seguito alcuni esempi di sequenze e la discussione dei rispettivi indici.
+Di seguito vengono riportati alcuni esempi di sequenze e la discussione dei rispettivi indici.
 
 \paragraph{Esempio 1} Ora prendiamo un esempio di sequenza di lunghezza 3 con alto PI e confidenza.
 
@@ -234,7 +234,7 @@ Di seguito alcuni esempi di sequenze e la discussione dei rispettivi indici.
 \end{table}
 
 \noindent
-Con un $PI$ al $71.57\%$ questa sequenza \`e da considerarsi signficativa. La confidenza allo 0.9 inolte ci comunica che se vi \`e stato un Larceny From Motor Vehicle (furto in auto) e successivamente un Larceny (furto) allora con una correlazione del 90\% avverr\`a un Other Burglary (furto con scasso) nello stesso raggio temporale e spaziale. \`E una conclusione molto potente ma non bisogna dimenticare che il supporto a questa affermazione \`e molto basso (circa lo $0.58\%$), ovvero il numero di istanze che influenza \`e esiguo. Da considerare che il poco supporto \`e dovuto indubbiamente anche alla bassa frequenza che ha Other Burglary sul totale delle istanze ($0.64\%$).
+Con un $PI$ al $71.57\%$ questa sequenza \`e da considerarsi signficativa. La confidenza allo 0.9 inolte ci comunica che se vi \`e stato un Larceny From Motor Vehicle (furto in auto) e successivamente un Larceny (furto) allora con una correlazione del 90\% avverr\`a un Other Burglary (furto con scasso) nello stesso raggio temporale e spaziale. \`E una conclusione molto potente ma non bisogna dimenticare che il supporto a questa affermazione \`e molto basso (circa lo $0.58\%$), ovvero il numero di istanze che influenza \`e esiguo. Va considerato che il poco supporto \`e dovuto indubbiamente anche alla bassa frequenza che ha Other Burglary sul totale delle istanze ($0.64\%$).
 
 \paragraph{Esempio 2} Prendiamo in considerazione un altro esempio.
 
@@ -247,7 +247,7 @@ Con un $PI$ al $71.57\%$ questa sequenza \`e da considerarsi signficativa. La co
 \end{table}
 \noindent
 La sequenza presa in esame presenta un \textit{PI} del $71.57\%$, quindi molto buono, un livello di confidenza dell'ultimo elemento del $75.43\%$, altrettanto alto, e un supporto del $9.91\%$. Il livello di supporto a questa sequenza \`e decisamente maggiore rispetto all'esempio precedente, infatti, a parit\`a di di \textit{PI}, la sequenza presente \`e molto pi\`u interessante ed utilizzabile.\\
-Bisogna notare per\`o un fatto tra questi due esempi, i primi due elementi della sequenza sono gli stessi: Larceny From Motor Vehicle e Larceny. Significa che essi sono altamente correlati ed influenzano molti tipi di eventi successivi.
+Va per\`o evidenziato un aspetto relativo a questi due esempi, ovvero che i primi due elementi della sequenza sono gli stessi: Larceny From Motor Vehicle e Larceny. Ci\`o ignifica che essi sono altamente correlati ed influenzano molti tipi di eventi successivi.
 
 \paragraph{Esempio 3} Consideriamo ora un caso di sequenza di lunghezza 4.
 
@@ -260,7 +260,7 @@ Bisogna notare per\`o un fatto tra questi due esempi, i primi due elementi della
 \end{table}
 \noindent
 Si nota subito un valore \textit{PI} minore rispetto agli altri, $61.84\%$; \`e fisiologico un \textit{participation index} minore rispetto alle sequenze con meno elementi. La confidenza \`e del $63.56\%$, un valore buono ma nulla di troppo significativo. Il supporto \`e del $4.79\%$, un valore non elevato ma neanche irrisorio.\\
-L'associazione analizzata non ci comunica, attraverso i suoi indici, un grado di affidabilit\`a consistente, \`e un fatto comune per le sequenze di lunghezza 4 nelle quali gli indicatori tendono ad assumere valori medi o comunque non decisamente elevati.\\
+L'associazione analizzata  attraverso i suoi indici non ci comunica un grado di affidabilit\`a consistente e ci\`o \`e un fatto comune per le sequenze di lunghezza 4 nelle quali gli indicatori tendono ad assumere valori medi o comunque non decisamente elevati.\\
 \clearpage
 \noindent
 Di seguito le sequenze di lunghezza $> 2$ considerate pi\`u significative rispetto alle altre:

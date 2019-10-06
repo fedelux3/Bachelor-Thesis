@@ -148,15 +148,15 @@ Il campo \textbf{children} contiene una lista di reference ad oggetti Node che s
 \subsection{SPTree}
 La classe SPTree si occupa di modellare il Sequence Pattern Tree. Come struttura del nodo di base utilizza la classe \textit{Node}.\\
 Seguendo il modello di struttura dati originale, l'SPTree ha un solo attributo di base, la \textbf{root}. Essa \`e un \textit{Node} con tutti i parametri inizialmente settati a \textbf{None}. Con l'inserimento di ciascun nodo di primo livello di albero, viene riempito il campo children della root con i reference al nodo stesso.\\
-L'\textbf{inserimento} viene gestito dal metodo \textit{insertNode()} che, data una sequenza in input e il suo set di istanze, genera il nuovo nodo. Il nuovo nodo corrisponde all'ultimo elemento della sequenza in input, e viene posizionato nell'albero seguendo il percorso della stessa.\\
+L'\textbf{inserimento} viene gestito dal metodo \textit{insertNode()} che, data una sequenza in input e il suo set di istanze, genera il nuovo nodo. Il nuovo nodo corrisponde all'ultimo elemento della sequenza in input e viene posizionato nell'albero seguendo il percorso della stessa.\\
 L'\textbf{eliminazione} di un nodo viene gestita dal metodo \textit{deleteNode()} che, data in input una sequenza, elimina l'ultimo nodo corrispondente, permettendo il \textit{pruning} di tutto il sottoalbero presente nei children di quel nodo.\\
-Inoltre \`e stato definito un \textbf{metodo ausiliario} \textit{searchNode()} che, data una sequenza in input, restituisce il nodo corrispondete all'ultima posizione della stessa.
+Inoltre \`e stato definito un \textbf{metodo ausiliario} \textit{searchNode()} che data una sequenza in input restituisce il nodo corrispondete all'ultima posizione della stessa.
 
 \subsection{STBFM}
 Il corpo dell'algoritmo vero e proprio \`e contenuto nel file \textit{STBFM.py}.\\
-Il software rispecchia il pi\`u possibile l'algoritmo originale definito nel Capitolo 3 utilizzando la classe \textit{SPTree}. Vanno fatte comunque delle premesse.\\
+Il software rispecchia il pi\`u possibile l'algoritmo originale definito nel Capitolo 3 utilizzando la classe \textit{SPTree}. Detto ci\`o, vanno fatte comunque delle premesse.\\
 \\
-La distanza spaziale, avendo in input coordinate GPS, non pu\`o considerarsi perfetta in quanto la superficie terrestre non \`e regolare e il nostro pianeta non pu\`o essere considerato una sfera. Il metodo di calcolo della distanza scelto \`e quello della \textit{legge sferica dei coseni}:\\
+In primo luogo, la distanza spaziale, avendo in input coordinate GPS, non pu\`o considerarsi perfetta in quanto la superficie terrestre non \`e regolare e il nostro pianeta non pu\`o essere considerato una sfera. Il metodo di calcolo della distanza scelto \`e quello della \textit{legge sferica dei coseni}:\\
 \\
 date $(\varphi_1, \lambda_1)$ e $(\varphi_2, \lambda_2)$ due coordinate in radianti (latitudine, longitudine)
 la distanza tra di esse in km \`e:
@@ -164,9 +164,9 @@ la distanza tra di esse in km \`e:
 $d = \arccos(\sin(\varphi_1) \cdot \sin(\varphi_2) + \cos(\varphi_1) \cdot \cos(\varphi_2) \cdot \cos(\Delta \lambda)) \cdot R$\\
 \\
 dove $R = 6371 [km]$ \`e il raggio della Terra e $\Delta \lambda$ la differenza tra $\lambda_1$ e $\lambda_2$.\\
-L'applicazione di altri metodi di calcolo per la distanza probabilmente modifica i risultati anche se di lieve intensit\`a.\\
+L'applicazione di altri metodi di calcolo per la distanza probabilmente modifica i risultati, anche se di lieve intensit\`a.\\
 \\
-Un'altra premessa degna di nota \`e la generazione delle sequenze candidato di lunghezza 2. Il software genera tutte le combinazioni possibili di sequenze \textit{randomicamente}. Questo implica che la generazione dell'albero non avviene sempre nello stesso ordine e quindi valida ulteriormente i risultati ottenuti, in particolare per quanto riguarda i tempi di computazione che restano indipendenti dall'ordine delle sequenze candidato scelto.\\
+Un'altra premessa degna di nota \`e la generazione delle sequenze candidato di lunghezza 2. Il software genera tutte le combinazioni possibili di sequenze \textit{randomicamente}. Questo implica che la generazione dell'albero non avvenga sempre nello stesso ordine, situazione che valida ulteriormente i risultati ottenuti, in particolare per quanto riguarda i tempi di computazione che restano indipendenti dall'ordine delle sequenze candidato scelto.\\
 \\
 In generale, il resto del software rispetta tutti i passaggi visti nell'Algorithm 1, 6 e 8, adattandoli al linguaggio di programmazione Python.\\
 \\
@@ -183,7 +183,7 @@ L'\textbf{output} \`e di due tipi:
 \begin{itemize}
 \item output da terminale che, man mano nella computazione, mostra i risultati intermedi e lo svolgimento delle operazioni, nonch\`e eventuali errori;
 
-\item output su file.csv dove al termine della computazione di un dataset stampa l'insieme $Top$ e i tempi di computazione per livello. 
+\item output su file csv, dove al termine della computazione di un dataset stampa l'insieme $Top$ e i tempi di computazione per livello. 
 \end{itemize}
 L'output in csv \`e stampato nel seguente formato:
 \\
