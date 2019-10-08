@@ -57,4 +57,6 @@
 \contentsline {paragraph}{Esempio 1}{51}{section*.43}
 \contentsline {paragraph}{Esempio 2}{52}{section*.45}
 \contentsline {paragraph}{Esempio 3}{52}{section*.47}
-\contentsline {chapter}{Bibliografia}{55}{table.caption.49}
+\contentsline {chapter}{\numberline {6}Conclusioni e prospettive future}{55}{chapter.6}
+\contentsline {paragraph}{Altre prospettive}{55}{section*.50}
+\contentsline {chapter}{Bibliografia}{57}{section*.50}
