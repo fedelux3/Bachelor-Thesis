@@ -135,7 +135,7 @@ Supponiamo di dover trattare un \textit{market basket problem} in cui si conside
 \noindent
 Come si evince dalla Tabella 5.2 gli acquisti di t\`e sono stati 200, quelli di caff\`e sono stati 800 (totale 1000 transazioni) ma solo 150 clienti hanno acquistato entrambi i prodotti. Come si pu\`o notare che 650 clienti hanno acquistato caff\`e ma non t\`e.\\
 Consideriamo la sequenza $A \rightarrow B$.\\
-Il supporto a questa sequenza \`e dato dal rapporto delle transazioni che includono i due prodotti rispetto alle transazioni normali ovvero:
+Il supporto a questa sequenza \`e dato dal rapporto delle transazioni che includono i due prodotti rispetto alle transazioni totali ovvero:
 
 $s(A \rightarrow B) = ${\large $\frac{\sigma\{A, B\}}{|T|}$}\\
 dove $|T|$ \`e il numero delle transazioni totali. \\
@@ -151,7 +151,7 @@ L'altro indice considerato nell'analisi \`e quello della \textit{confidenza}.\\
 La confidenza indica, date le transazioni che contengono $A$, qual \`e la percentuale di transazioni che contengono $B$.\\
 Data una regola di associazione $A \rightarrow B$ la confidenza modella la probabilit\`a della presenza di $B$ nella transazione \textit{condizionata} dalla presenza di $A$, formalmente:
 
-$c(A \rightarrow B) = P(B|A) = ${\large $\frac{P(A,B)}{P(A)}$} $=$ {\large $\frac{\sigma(A,B)}{|T|} \frac{|T|}{\sigma(A)}$}$ = ${\large $\frac{\sigma(A,B)}{\sigma(A)}$}\\
+$c(A \rightarrow B) = P(B|A) = ${\large $\frac{P(A,B)}{P(A)}$} $=$ {\large $\frac{\sigma\{A,B\}}{|T|} \frac{|T|}{\sigma\{A\}}$}$ = ${\large $\frac{\sigma\{A,B\}}{\sigma\{A\}}$}\\
 \\
 Nel nostro esempio:
 
@@ -267,15 +267,22 @@ Di seguito le sequenze di lunghezza $> 2$ considerate pi\`u significative rispet
 
 \begin{table}[h]
 	\hspace{-0.5cm}
-	\begin{tabular}{m{8cm}|c|c|c}
-		\centering \textbf{Sequenza} & \textbf{PI} & \textbf{Support} & \textbf{Confidence} \\
+	\begin{tabular}{m{8cm}|c|c|c|c}
+		\centering \textbf{Sequenza} & \textbf{PI} & \textbf{Support} & \textbf{Confidence} & \textbf{Lift} \\
 		\hline
-		$[$'Larceny From Motor Vehicle', 'Larceny', 'Aggravated Assault'$]$ & 0.7157 & 0,0991 & 0.7543 \\
-		$[$'Larceny From Motor Vehicle', 'Larceny', 'Auto Theft'$]$ & 0.7157 & 0,0575 & 0.7627\\
-		$[$'Larceny From Motor Vehicle', 'Larceny', 'Residential Burglary'$]$ & 0.6907 & 0,0508 & 0.6853\\
-		$[$'Larceny', 'Larceny From Motor Vehicle', 'Auto Theft'$]$ & 0.6853 & 0,0521 & 0.6907 \\ 
-		$[$'Aggravated Assault', 'Larceny', 'Larceny From Motor Vehicle'$]$ & 0.6428 & 0,1262 & 0.7425 \\
-		$[$'Aggravated Assault', 'Larceny', 'Residential Burglary'$]$ & 0.6428 & 0,0521 & 0.7026 \\
-		$[$'Aggravated Assault', 'Larceny', 'Larceny From Motor Vehicle', 'Auto Theft'$]$ & 0.6356 & 0,0479 & 0.6356 \\		
+		$[$'Larceny From Motor Vehicle', 'Larceny', 'Aggravated Assault'$]$ & 0.7157 & 0,0991 & 0.7543 & 5,7405
+		\\
+		$[$'Larceny From Motor Vehicle', 'Larceny', 'Auto Theft'$]$ & 0.7157 & 0,0575 & 0.7627 & 10,1154
+		\\
+		$[$'Larceny From Motor Vehicle', 'Larceny', 'Residential Burglary'$]$ & 0.6907 & 0,0508 & 0.6853 & 9,2483
+		\\
+		$[$'Larceny', 'Larceny From Motor Vehicle', 'Auto Theft'$]$ & 0.6853 & 0,0521 & 0.6907 & 9,1605
+		\\ 
+		$[$'Aggravated Assault', 'Larceny', 'Larceny From Motor Vehicle'$]$ & 0.6428 & 0,1262 & 0.7425 & 4,3676
+		\\
+		$[$'Aggravated Assault', 'Larceny', 'Residential Burglary'$]$ & 0.6428 & 0,0521 & 0.7026 & 9,4818
+		\\
+		$[$'Aggravated Assault', 'Larceny', 'Larceny From Motor Vehicle', 'Auto Theft'$]$ & 0.6356 & 0,0479 & 0.6356 & 8,4297
+		 \\		
 	\end{tabular}
 \end{table}

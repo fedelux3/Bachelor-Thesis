@@ -2,6 +2,7 @@
 
 \usepackage{graphicx}
 \usepackage{setspace}
+%\usepackage{inputenc}
 \usepackage{tabularx}
 \usepackage{subfigure}
 \usepackage{multirow}
@@ -37,11 +38,11 @@
 \thispagestyle{empty} \normalfont \cleardoublepage
 %\include{dedica}
 %\thispagestyle{empty}  \clearpage
-\pagenumbering{arabic}
+\pagenumbering{Roman}
 %\include{abstract}
 %\thispagestyle{empty} \vspace*{.75truecm} \cleardoublepage
-%\include{ringraziamenti}
-%\thispagestyle{empty} \vspace*{.75truecm} \normalfont \cleardoublepage
+\include{ringraziamenti}
+\thispagestyle{empty} \vspace*{.75truecm} \normalfont \cleardoublepage
 \pagestyle{plain}\renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter.\ #1}{}} 
 \renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}         
 \fancyhead[LE,RO]{\bfseries\thepage}    
