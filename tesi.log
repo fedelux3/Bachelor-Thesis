@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.3)  11 OCT 2019 10:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.3)  14 OCT 2019 09:30
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -714,6 +714,7 @@ l.45
       [1
 
 
+
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -1096,7 +1097,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--182
  []
 
 [34])
-Underfull \hbox (badness 10000) in paragraph at lines 194--59
+Underfull \hbox (badness 10000) in paragraph at lines 194--60
 
  []
 
@@ -1281,21 +1282,19 @@ Overfull \hbox (71.4671pt too wide) in paragraph at lines 269--288
 
 
 
-]
-Capitolo 6.
-)
-Overfull \hbox (14.28171pt too wide) in paragraph at lines 12--61
+])
+Overfull \hbox (14.28171pt too wide) in paragraph at lines 14--62
  []\OT1/cmr/bx/n/12 Altre pro-spet-ti-ve[] \OT1/cmr/m/n/12 L'al-go-rit-mo og-ge
 t-to di que-sto ela-bo-ra-to lo \OT1/cmr/m/it/12 Spatio-temporal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--61
+Underfull \hbox (badness 10000) in paragraph at lines 14--62
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--61
+Underfull \hbox (badness 10000) in paragraph at lines 14--62
 
  []
 
@@ -1351,22 +1350,22 @@ Underfull \hbox (badness 2173) in paragraph at lines 34--37
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 71.
  [56]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 71.
  (tesi.aux (frontespizio.aux) (ringraziamenti.aux) (capitolo1.aux)
 (capitolo2.aux) (capitolo3.aux) (capitolo4.aux) (capitolo5.aux)
 (conclusioni.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 70.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 70.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 71.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 71.
 Package rerunfilecheck Info: File `tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 1B23DB1AB2B8604AD307BC8A9EA1F1F3;2606.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 70.
+(rerunfilecheck)             Checksum: 396A52F1792AAB2EF81AAAF51082E2D2;2608.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 71.
  ) 
 Here is how much of TeX's memory you used:
  10421 strings out of 492973
- 155068 string characters out of 3126693
- 283704 words of memory out of 3000000
+ 155072 string characters out of 3126693
+ 283708 words of memory out of 3000000
  13804 multiletter control sequences out of 15000+200000
  17012 words of font info for 64 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
@@ -1392,7 +1391,7 @@ onts/cm/cmsy10.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/fede9/AppData/Local/Progra
 ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/fede9/AppData
 /Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on tesi.pdf (62 pages, 1015036 bytes).
+Output written on tesi.pdf (62 pages, 1017540 bytes).
 PDF statistics:
  808 PDF objects out of 1000 (max. 8388607)
  266 named destinations out of 1000 (max. 500000)
