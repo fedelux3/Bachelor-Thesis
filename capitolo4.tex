@@ -97,10 +97,10 @@ Le colonne della versione finale del database sono quelle di\\ INCIDENT\_NUMBER,
 In Tabella 4.2 un esempio di alcuni record del dataset:
 
 \begin{table}[h]
-	\hspace{-1.5cm}
-	\begin{tabular}{|l|l|l|l|l|}
+	\hspace{-1cm}
+	\begin{tabular}{|l|m{3.3cm}|l|l|l|}
 		\hline
-		incident\_number & offence\_code\_group & occurred\_on\_date & latitude & longitude \\
+		incident\_numb & offence\_code\_group & occurred\_on\_date & latitude & longitude \\
 		\hline
 		I192014076 & Larceny & 20/12/2018 00:01 & 4.232.386.050 & -7.107.600.196 \\
 		I192003189 & Aggravated Assault & 30/12/2018 12:00 & 4.233.596.847 & -7.108.129.856\\
@@ -111,12 +111,11 @@ In Tabella 4.2 un esempio di alcuni record del dataset:
 	\caption{esempio di record nel dataset dopo preprocessing}
 \end{table}
 
-
-\begin{figure}[h]
-	\hspace{-0.5cm}
+\begin{sidewaysfigure}
+	%\hspace{-0.5cm}
 	\includegraphics[height=0.64 \linewidth]{frequenze18.png}
 	\caption{frequenze eventi per tipologia nel 2018}
-\end{figure}
+\end{sidewaysfigure}
 \clearpage
 
 \section{Implementazione}

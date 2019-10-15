@@ -254,7 +254,7 @@ Calcolato il \textit{participation index}, se esso \`e maggiore del threshold $\
 	\nl $L_m := \emptyset$\\
 	\nl \ForEach{$\overrightarrow{s} \in C_m$}{
 		\nl CalculatePI($\overrightarrow{s}$)\\
-		\nl \If{PI($\overrightarrow{s} \ge \theta$)}{
+		\nl \If{PI($\overrightarrow{s}$) $ \ge \theta$}{
 			\nl \If{$|Top| < N-1$}{
 				\nl Add $\overrightarrow{s}$ to $L_m$, add $\overrightarrow{s}$ to $Top$
 			} 
@@ -264,7 +264,7 @@ Calcolato il \textit{participation index}, se esso \`e maggiore del threshold $\
 			}
 			\nl \Else{
 				\nl Add $\overrightarrow{s}$ to $L_m$, add $\overrightarrow{s}$ to $Top$\\
-				\nl \If{PI($\overrightarrow{s} > \theta$)}{
+				\nl \If{PI($\overrightarrow{s}$) $> \theta$}{
 					\nl $\theta := $ PI($Top(N)$)\\
 					\nl Delete all $\overrightarrow{s} \in Top$ with PI($\overrightarrow{s}$) $< \theta$\\
 					\nl Delete all $\overrightarrow{s} \in L_m$ with PI($\overrightarrow{s}$) $< \theta$\\

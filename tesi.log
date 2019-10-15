@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.3)  14 OCT 2019 09:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.3)  16 OCT 2019 00:16
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -529,20 +529,20 @@ File: latin1.def 2018/04/06 v1.3b Input encoding file
 (conclusioni.aux))
 \openout1 = `tesi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
 
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
@@ -575,7 +575,7 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 \AtBeginShipoutBox=\box68
-Package hyperref Info: Link coloring OFF on input line 36.
+Package hyperref Info: Link coloring OFF on input line 37.
 
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
 ty"
@@ -587,17 +587,17 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count146
 )
-LaTeX Info: Redefining \ref on input line 36.
-LaTeX Info: Redefining \pageref on input line 36.
-LaTeX Info: Redefining \nameref on input line 36.
+LaTeX Info: Redefining \ref on input line 37.
+LaTeX Info: Redefining \pageref on input line 37.
+LaTeX Info: Redefining \nameref on input line 37.
  (tesi.out) (tesi.out)
 \@outlinefile=\write3
 \openout3 = `tesi.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \it@ocap on input line 36.
-LaTeX Info: Redefining \it@ccap on input line 36.
+LaTeX Info: Redefining \it@ocap on input line 37.
+LaTeX Info: Redefining \it@ccap on input line 37.
 
 
 File italian.ldf warning: 
@@ -605,7 +605,7 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 36.
+italian.ldf    on input line 37.
 
 \openout2 = `frontespizio.aux'.
 
@@ -1007,97 +1007,104 @@ Overfull \hbox (14.48067pt too wide) in paragraph at lines 88--98
 [29
 
 ]
-Overfull \hbox (47.27713pt too wide) in paragraph at lines 100--111
+Overfull \hbox (2.03703pt too wide) in paragraph at lines 103--103
+[]|\OT1/cmr/m/n/12 offence[]code[]group| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--106
+[]|\OT1/cmr/m/n/12 Aggravated
+ []
+
+
+Overfull \hbox (44.63077pt too wide) in paragraph at lines 100--111
 []  [] 
  []
 
 <frequenze18.png, id=503, 478.1865pt x 281.25075pt>
 File: frequenze18.png Graphic file (type png)
 <use frequenze18.png>
-Package pdftex.def Info: frequenze18.png  used on input line 117.
-(pdftex.def)             Requested size: 424.36612pt x 249.59976pt.
+Package pdftex.def Info: frequenze18.png  used on input line 116.
+(pdftex.def)             Requested size: 644.17404pt x 378.87964pt.
 
-Overfull \hbox (22.75084pt too wide) in paragraph at lines 116--118
-[]  [] 
+Overfull \hbox (52.17404pt too wide) in paragraph at lines 116--117
+[][] 
  []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 [30] [31 <./frequenze18.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 123--126
+Underfull \hbox (badness 10000) in paragraph at lines 122--125
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
 []|\OT1/cmr/m/n/12 children
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--147
+Underfull \hbox (badness 10000) in paragraph at lines 138--146
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--147
+Underfull \hbox (badness 10000) in paragraph at lines 138--146
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--147
+Underfull \hbox (badness 10000) in paragraph at lines 138--146
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--147
+Underfull \hbox (badness 10000) in paragraph at lines 138--146
 
  []
 
 [32
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 156--163
+Underfull \hbox (badness 10000) in paragraph at lines 155--162
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--163
+Underfull \hbox (badness 10000) in paragraph at lines 155--162
 
  []
 
 [33]
-Underfull \hbox (badness 10000) in paragraph at lines 164--175
+Underfull \hbox (badness 10000) in paragraph at lines 163--174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--175
+Underfull \hbox (badness 10000) in paragraph at lines 163--174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--175
+Underfull \hbox (badness 10000) in paragraph at lines 163--174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--175
+Underfull \hbox (badness 10000) in paragraph at lines 163--174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--182
+Underfull \hbox (badness 10000) in paragraph at lines 175--181
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--182
+Underfull \hbox (badness 10000) in paragraph at lines 175--181
 
  []
 
 [34])
-Underfull \hbox (badness 10000) in paragraph at lines 194--60
+Underfull \hbox (badness 10000) in paragraph at lines 193--61
 
  []
 
@@ -1137,9 +1144,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--64
 File: tempi12.png Graphic file (type png)
 <use tempi12.png>
 Package pdftex.def Info: tempi12.png  used on input line 67.
-(pdftex.def)             Requested size: 535.97008pt x 292.5pt.
+(pdftex.def)             Requested size: 500.2439pt x 272.99881pt.
 
-Overfull \hbox (63.2229pt too wide) in paragraph at lines 66--68
+Overfull \hbox (64.4854pt too wide) in paragraph at lines 66--68
 []  [] 
  []
 
@@ -1205,7 +1212,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--179
  []
 
 [46]
-Overfull \hbox (44.40942pt too wide) in paragraph at lines 186--197
+Overfull \hbox (37.29623pt too wide) in paragraph at lines 186--197
 []  [] 
  []
 
@@ -1233,7 +1240,7 @@ File: freqRel.png Graphic file (type png)
 Package pdftex.def Info: freqRel.png  used on input line 216.
 (pdftex.def)             Requested size: 439.35846pt x 265.19714pt.
 
-Overfull \hbox (17.82632pt too wide) in paragraph at lines 215--217
+Overfull \hbox (30.62999pt too wide) in paragraph at lines 215--217
 []  [] 
  []
 
@@ -1269,7 +1276,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 261--264
  []
 
 [50]
-Overfull \hbox (71.4671pt too wide) in paragraph at lines 269--288
+Overfull \hbox (31.4213pt too wide) in paragraph at lines 269--288
 []  [] 
  []
 
@@ -1283,18 +1290,18 @@ Overfull \hbox (71.4671pt too wide) in paragraph at lines 269--288
 
 
 ])
-Overfull \hbox (14.28171pt too wide) in paragraph at lines 14--62
+Overfull \hbox (14.28171pt too wide) in paragraph at lines 14--63
  []\OT1/cmr/bx/n/12 Altre pro-spet-ti-ve[] \OT1/cmr/m/n/12 L'al-go-rit-mo og-ge
 t-to di que-sto ela-bo-ra-to lo \OT1/cmr/m/it/12 Spatio-temporal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--62
+Underfull \hbox (badness 10000) in paragraph at lines 14--63
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--62
+Underfull \hbox (badness 10000) in paragraph at lines 14--63
 
  []
 
@@ -1350,23 +1357,23 @@ Underfull \hbox (badness 2173) in paragraph at lines 34--37
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 71.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 72.
  [56]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 71.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
  (tesi.aux (frontespizio.aux) (ringraziamenti.aux) (capitolo1.aux)
 (capitolo2.aux) (capitolo3.aux) (capitolo4.aux) (capitolo5.aux)
 (conclusioni.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 71.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 71.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 72.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
 Package rerunfilecheck Info: File `tesi.out' has not changed.
 (rerunfilecheck)             Checksum: 396A52F1792AAB2EF81AAAF51082E2D2;2608.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 71.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
  ) 
 Here is how much of TeX's memory you used:
- 10421 strings out of 492973
- 155072 string characters out of 3126693
- 283708 words of memory out of 3000000
- 13804 multiletter control sequences out of 15000+200000
+ 10422 strings out of 492973
+ 155077 string characters out of 3126693
+ 283712 words of memory out of 3000000
+ 13805 multiletter control sequences out of 15000+200000
  17012 words of font info for 64 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
  36i,32n,43p,796b,625s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1391,7 +1398,7 @@ onts/cm/cmsy10.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/fede9/AppData/Local/Progra
 ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/fede9/AppData
 /Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on tesi.pdf (62 pages, 1017540 bytes).
+Output written on tesi.pdf (62 pages, 1017252 bytes).
 PDF statistics:
  808 PDF objects out of 1000 (max. 8388607)
  266 named destinations out of 1000 (max. 500000)
