@@ -1,13 +1,17 @@
 \chapter{Introduzione}
 \label{Introduzione}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textit{1. Introduzione}}
+\cfoot{\thepage}
 \pagenumbering{arabic}
 \setcounter{page}{1}
 
 \section{Inquadramento generale}
 \noindent L'analisi e la comprensione di grosse quantit\`a di dati in questi ultimi anni sono diventate una pratica fondamentale per creare valore e comprendere i fenomeni che ci circondano. In particolare, quando questi fenomeni sono descritti da una posizione geografica e da un momento temporale preciso ci permettono di realizzare delle deduzioni che altrimenti sarebbero impensabili.
 \\\\
-In questo ramo della ricerca si inserisce il \textit{Data Mining}, ovvero l'insieme di tecniche e metodologie che hanno per oggetto l'estrazione di informazioni utili da grandi quantit\`a di dati attraverso metodi automatici o semi-automatici (\textit{machine learning}).\\
-Le tecniche di data mining utilizzate nel lavoro svolto sono quelle delle \textit{regole di associazione}, ossia metodi per estrarre relazioni nascoste tra i dati.\\
+In questo ramo della ricerca si inserisce il \textit{Data Mining}, ovvero l'insieme di tecniche e metodologie che hanno per oggetto l'estrazione di informazioni utili da grandi quantit\`a di dati attraverso metodi automatici o semi-automatici (\textit{machine learning})\cite{wiki:datamining}.\\
+Le tecniche di data mining utilizzate nel lavoro svolto sono quelle delle \textit{regole di associazione}\cite{wiki:associaz}, ossia metodi per estrarre relazioni nascoste tra i dati.\\
 Le condizioni che rendono possibile il raggiungimento di risultati significativi sono:
 \begin{itemize}
 	\item un insieme di $n$ etichette (item): $I = \{ i_1, i_2, ..., i_n\}$;
@@ -36,7 +40,7 @@ L'applicazione pratica tipica di questi metodi \`e l'analisi degli acquisti in u
 L'insieme di oggetti \`e $I = \{latte, omogenizzato, pannolini, birra\}$, il database \`e rappresentato dalla Tabella 1.1, dove 1 indica l'acquisto dell'oggetto in una transazione, 0 invece l'assenza del prodotto.\\
 Come si pu\`o notare, vi \`e una forte presenza della coppia di oggetti \\$\{ pannolini, birra\}$ per cui una possibile regola di associazione che possiamo dedurre \`e $\{pannolini\} \rightarrow \{birra\}$. \\
 La regola di associazione attesta che un'alta percentuale di persone che acquistano pannolini, acquistano, solitamente, anche birra.\\
-Da una prima analisi questa associazione sembra completamente controintuitiva. Eppure questo \`e forse il pi\`u iconico degli esempi di applicazioni di data mining. Infatti dall'analisi dei dati degli scontrini degli acquisti del fine settimana emergeva questa associazione, mettendo in luce il segmento delle coppie di giovani neo-genitori che invitavano gli amici a casa a cena nel weekend.\\
+Da una prima analisi questa associazione sembra completamente controintuitiva. Eppure questo \`e forse il pi\`u iconico degli esempi di applicazioni di data mining\cite{sole24:bigdata}. Infatti dall'analisi dei dati degli scontrini degli acquisti del fine settimana emergeva questa associazione, mettendo in luce il segmento delle coppie di giovani neo-genitori che invitavano gli amici a casa a cena nel weekend.\\
 Dalla scoperta di questa informazione nascosta, il gestore pu\`o applicare dei miglioramenti al supermercato, quali avvicinare il reparto pannolini al reparto birra in modo da agevolare i clienti e possibilmente aumentare le vendite o proporre delle offerte dedicate.\\
 \\
 Dal piccolo esempio appena esposto si possono intuire le potenzialit\`a offerte da questi algoritmi, nonch\`e la loro applicazione in svariati ambiti, per citarne alcuni: l'amministrazione aziendale, la prevenzione di epidemie e la previsione del crimine, proprio su quest'ultima si concentra il lavoro svolto.\\
@@ -44,7 +48,7 @@ Dal piccolo esempio appena esposto si possono intuire le potenzialit\`a offerte 
 Essendo i campi di applicazione molto diversi e di complessit\`a crescente, si ha la necessit\`a di algoritmi sempre pi\`u sofisticati e scalabili. Nel seguente elaborato si studia un algoritmo di data mining che mira a trovare associazioni di eventi avvenuti in un istante temporale e in un luogo preciso.
 
 \section{Breve descrizione del lavoro}
-L'algoritmo preso in esame \`e lo \textit{Spatio-Temporal Breath-first Miner (STBFM)} definito da Piotr S. Maciag and Robert Bembenik. Esso cerca di scoprire associazioni di tipologie di eventi connesse spazialmente e temporalmente.\\
+L'algoritmo preso in esame \`e lo \textit{Spatio-Temporal Breath-first Miner (STBFM)} definito da Piotr S. Maciag and Robert Bembenik\cite{icpram19}. Esso cerca di scoprire associazioni di tipologie di eventi connesse spazialmente e temporalmente.\\
 Viene definito un vicinato basato su un raggio spaziale e un intervallo di tempo con il quale valutare se il singolo evento \`e "vicino" (o in relazione) ad altri. Le relazioni di vicinato vengono considerate per tutti gli eventi di uno stesso tipo rispetto a tutti gli eventi di un altro tipo. In base ai vicinati trovati si ricava un valore di \textit{connessione} tra tipi compreso tra $[0,1]$, pi\`u questo valore tende a $1$ pi\`u i rispettivi tipi sono associati.\\
 Diverse sequenze di tipi vengono considerate e ad ogni una si calcola il valore di associazione, in questo modo si \`e in grado di confrontare quali sequenze sono pi\`u signficative di altre.
 \\
@@ -59,7 +63,7 @@ $\{pannolini\} \rightarrow \{birra\}$ - $0.8$
 Tramite i risultati ottenuti siamo in grado di comprendere le relazioni tra gli eventi e, in base all'applicazione, si supportano oppure si ostacolano. \\
 Si supportano nei casi in cui creano valore come l'esempio $\{pannolini\} \rightarrow \{birra\}$; si ostacolano nel caso di eventi negativi, ad esempio se si considera una sequenza di eventi criminali che ha una elevata correlazione come $borseggio \rightarrow$ \textit{furto con scasso}, si rileva la prima e si cerca di prevenire la seconda.\\
 \\
-Il caso pratico considerato \`e quello dei crimini avvenuti a Boston, utilizzando il database fornito dal Boston Police Department (BPD) in cui sono registrati tutti i crimini avvenuti a Boston dal 2015, etichettandoli con la tipologia (di crimine), le coordinate GPS dell'evento e il momento temporale in cui avvengono, con il giorno e l'orario.
+Il caso pratico considerato \`e quello dei crimini avvenuti a Boston, utilizzando il database fornito dal Boston Police Department (BPD) in cui sono registrati tutti i crimini avvenuti a Boston dal 2015\cite{dataBoston}, etichettandoli con la tipologia (di crimine), le coordinate GPS dell'evento e il momento temporale in cui avvengono, con il giorno e l'orario.
 \clearpage
 es.
 \begin{table}[h]

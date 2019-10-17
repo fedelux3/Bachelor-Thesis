@@ -1,5 +1,9 @@
 \chapter{Analisi dei risultati}
 \label{Analisi}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textit{5. Analisi dei risultati}}
+\cfoot{\thepage}
 
 La performance del software \`e stata valutata tramite diversi test in cui vengono utilizzati database con diverso numero di record e diverse combinazioni di parametri.
 \\\\
@@ -109,10 +113,10 @@ Nei grafici che seguono in Figura 5.4 viene mostrato l'andamento del tempo di co
 Da questi grafici si evince che entrambe le variabili influenzano in modo significativo il tempo di computazione. Si nota comunque che, in particolare per numero di record pi\`u elevato, $R$ ha maggiore influenza rispetto a $T$. La differenza non \`e cos\`i marcata, anzi, fa eccezione il caso di numero record = 1043 in cui $T$ scala maggiormente, situazione dovuta probabilmente al fatto che si hanno risultati molto ravvicinati e di basso tempo di computazione ($0-20$ secondi). 
 
 \paragraph{In conclusione} si pu\`o dire che tutte e tre le variabili studiate hanno un impatto significativo sul tempo di computazione, ma $R$ e il \textit{numero record} lo influenzano maggiormente rispetto a $T$.
-\clearpage
+\\
 
 \section{Indici}
-La seconda parte dell'analisi riguarda i risultati ottenuti. Per poter valutare correttamente l'importanza degli stessi vengono utilizzati degli indici.\\
+La seconda parte dell'analisi riguarda i risultati ottenuti. Per poter valutare correttamente l'importanza degli stessi vengono utilizzati degli indici\cite{silde:regole}.\\
 L'indice pi\`u signficativo \`e sicuramente il \textit{participation index}, ma accanto a quello ne sono stati considerati altri: il \textbf{supporto}, la \textbf{confidenza} e il \textbf{lift}.
 \subsection{Supporto}
 Supponiamo di dover trattare un \textit{market basket problem} in cui si considerano gli acquisti di caff\`e e t\`e. Per analizzare le possibili regole di associazione viene utilizzata una \textit{contingency table}. Una \textit{contingency table} \`e una tabella che evidenzia le frequenze assolute della vendita dei prodotti in base alle intersezioni di righe e colonne della tabella. Di seguito un esempio:
@@ -133,7 +137,9 @@ Supponiamo di dover trattare un \textit{market basket problem} in cui si conside
 	\caption{esempio di contingency table}
 \end{table}
 \noindent
-Come si evince dalla Tabella 5.2 gli acquisti di t\`e sono stati 200, quelli di caff\`e sono stati 800 (totale 1000 transazioni) ma solo 150 clienti hanno acquistato entrambi i prodotti. Come si pu\`o notare che 650 clienti hanno acquistato caff\`e ma non t\`e.\\
+Come si evince dalla Tabella 5.2 gli acquisti di t\`e sono stati 200, quelli di caff\`e sono stati 800 (totale 1000 transazioni) ma solo 150 clienti hanno acquistato entrambi i prodotti. Come si pu\`o notare che 650 clienti hanno acquistato caff\`e ma non t\`e.
+\clearpage
+\noindent
 Consideriamo la sequenza $A \rightarrow B$.\\
 Il supporto a questa sequenza \`e dato dal rapporto delle transazioni che includono i due prodotti rispetto alle transazioni totali ovvero:
 
@@ -175,7 +181,6 @@ Nel nostro esempio:
 
 $Lift(t\grave{e} \rightarrow caff\grave{e}) = $ {\large $\frac{c(t\grave{e} \rightarrow caff\grave{e})}{s(caff\grave{e})}$} $ = $ {\large $\frac{0.75}{0.8}$} $ = 0.9375 < 1$\\
 il valore \`e $< 1$ pertanto vi \`e correlazione negativa per cui la regola in questione \underline{non} \`e da considerare interessante.\\
-\\
 
 \section{Analisi}
 Prima di procedere all'anlisi vera e propria dei risultati \`e bene fare alcune premesse. Di seguito viene analizzata una particolare configurazione di parametri applicata ad un dataset scelto.\\ 
@@ -212,15 +217,15 @@ Gli indici di \textbf{PI} e \textbf{confidenza} combinati con il \textbf{support
 Per analizzare le sequenze pi\`u significative di lunghezza $> 2$ si considerano le frequenze percentuali delle varie classi in questo particolare dataset:
 
 \begin{figure}[h]
-	\hspace{-0.75cm}
+	\hspace{-1.25cm}
 	\includegraphics[height=0.68 \linewidth]{freqRel.png}
 	\caption{frequenze percentuali dei tipi dataset 3}
 \end{figure}
 
-\vspace{10cm}
 \noindent
 Come si pu\`o notare, le proporzioni tra i tipi rispetto alle frequenze del dataset principale (vedi Figura 4.1) sono sostanzialmente mantenute.\\
-\\
+\clearpage
+\noindent
 Di seguito vengono riportati alcuni esempi di sequenze e la discussione dei rispettivi indici.
 
 \paragraph{Esempio 1} Ora prendiamo un esempio di sequenza di lunghezza 3 con alto PI e confidenza.
@@ -252,7 +257,7 @@ Va per\`o evidenziato un aspetto relativo a questi due esempi, ovvero che i prim
 \paragraph{Esempio 3} Consideriamo ora un caso di sequenza di lunghezza 4.
 
 \begin{table}[h]
-	\hspace{-0.5cm}
+	\hspace{-0.cm}
 	\begin{tabular}{m{8cm}|c|c|c}
 		\centering \textbf{Sequenza} & \textbf{PI} & \textbf{Support} & \textbf{Confidence} \\
 		$[$'Larceny', 'Aggravated Assault', 'Larceny From Motor Vehicle', 'Auto Theft'$]$ & 0.6184 & 0,0479 & 0.6356 \\
@@ -261,12 +266,11 @@ Va per\`o evidenziato un aspetto relativo a questi due esempi, ovvero che i prim
 \noindent
 Si nota subito un valore \textit{PI} minore rispetto agli altri, $61.84\%$; \`e fisiologico un \textit{participation index} minore rispetto alle sequenze con meno elementi. La confidenza \`e del $63.56\%$, un valore buono ma nulla di troppo significativo. Il supporto \`e del $4.79\%$, un valore non elevato ma neanche irrisorio.\\
 L'associazione analizzata  attraverso i suoi indici non ci comunica un grado di affidabilit\`a consistente e ci\`o \`e un fatto comune per le sequenze di lunghezza 4 nelle quali gli indicatori tendono ad assumere valori medi o comunque non decisamente elevati.\\
-\clearpage
-\noindent
+\\
 Di seguito le sequenze di lunghezza $> 2$ considerate pi\`u significative rispetto alle altre:
 
 \begin{table}[h]
-	\hspace{-1cm}
+	\hspace{-0.6cm}
 	\begin{tabular}{m{8cm}|c|c|c|c}
 		\centering \textbf{Sequenza} & \textbf{PI} & \textbf{Support} & \textbf{Confid} & \textbf{Lift} \\
 		\hline
@@ -285,4 +289,5 @@ Di seguito le sequenze di lunghezza $> 2$ considerate pi\`u significative rispet
 		$[$'Aggravated Assault', 'Larceny', 'Larceny From Motor Vehicle', 'Auto Theft'$]$ & 0.6356 & 0,0479 & 0.6356 & 8,4297
 		 \\		
 	\end{tabular}
+	\caption{risultati pi\`u significativi}
 \end{table}

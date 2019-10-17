@@ -1,10 +1,14 @@
 \chapter{Dataset e Implementazione}
 \label{Dataset}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textit{4. Dataset e implementazione}}
+\cfoot{\thepage}
 
 La sezione seguente descrive il dataset del Boston Police Department (BPD) e l'implementazione dello Spatio-Temporal Breadth-First Miner applicato ad esso.
 
 \section{Dataset}
-Il dataset utilizzato si basa sulla raccolta dati del Department of Innovation and Technology del Boston Police Department. In questo database sono registrati tutti i reati rilevati sul campo dalla polizia di Boston dal giugno 2015 fino ad oggi. \`E un servizio che viene quotidianamente aggiornato con le nuove segnalazioni.\\
+Il dataset utilizzato si basa sulla raccolta dati del Department of Innovation and Technology del Boston Police Department\cite{dataBoston}. In questo database sono registrati tutti i reati rilevati sul campo dalla polizia di Boston dal giugno 2015 fino ad oggi. \`E un servizio che viene quotidianamente aggiornato con le nuove segnalazioni.\\
 Il dataset si compone di 17 colonne descritte singolarmente in Tabella 4.1.\\
 \\
 Per l'algoritmo oggetto del lavoro non sono necessari tutti questi dati, le informazioni fondamentali sono:
@@ -56,7 +60,7 @@ Per l'algoritmo oggetto del lavoro non sono necessari tutti questi dati, le info
 		17 & LOCATION & varchar(50) & latitudine e longitudine del luogo dell'evento\\
 		\hline
 	\end{tabular}
-	\caption{attributi database BPD}
+	\caption{attributi database BPD\cite{bostonCrime:data}}
 \end{table}
 \clearpage
 
@@ -69,7 +73,7 @@ Per l'algoritmo oggetto del lavoro non sono necessari tutti questi dati, le info
 Ad esempio: 2018-09-01 21:28:00
 \\
 \underline{La tipologia di evento} si ricava dalla colonna OFFENCE\_CODE\_GROUP. L'attributo definisce le diverse tipologie di crimini, pertanto \`e l'informazione in questo campo. Non \`e stato scelto l'attributo OFFENCE\_CODE in quanto le descrizioni sono troppo specifiche e poco generiche come dovrebbero essere le tipologie di eventi.\\
-Inoltre si \`e scelto di analizzare i crimini di particolare gravit\`a per cercare di avere dei risultati pi\`u utili e visibili possibili. Nel database i crimini sono suddivisi in tre macro categorie denominate UCR part (Uniform Crime Reporting), seguendo uno standard americano di raccolta dati criminali. Queste categorie sono ordinate per gravit\`a: la terza categoria comprende i reati lievi quali liti e frodi, la seconda gli illeciti pi\`u gravi come vandalismo e spaccio, la prima i reati molto gravi come furto con scasso, aggressione grave e omicidio.\\
+Inoltre si \`e scelto di analizzare i crimini di particolare gravit\`a per cercare di avere dei risultati pi\`u utili e visibili possibili. Nel database i crimini sono suddivisi in tre macro categorie denominate UCR part (Uniform Crime Reporting)\cite{ucr:data}, seguendo uno standard americano di raccolta dati criminali. Queste categorie sono ordinate per gravit\`a: la terza categoria comprende i reati lievi quali liti e frodi, la seconda gli illeciti pi\`u gravi come vandalismo e spaccio, la prima i reati molto gravi come furto con scasso, aggressione grave e omicidio.\\
 \\
 Nei test effettuati si utilizzano le tipologie di crimini con UCR Part = 1, e sono i seguenti 9:
 \begin{itemize}
@@ -97,10 +101,10 @@ Le colonne della versione finale del database sono quelle di\\ INCIDENT\_NUMBER,
 In Tabella 4.2 un esempio di alcuni record del dataset:
 
 \begin{table}[h]
-	\hspace{-1cm}
-	\begin{tabular}{|l|m{3.3cm}|l|l|l|}
+	\hspace{-0.2cm}
+	\begin{tabular}{|l|m{2.3cm}|l|l|l|}
 		\hline
-		incident\_numb & offence\_code\_group & occurred\_on\_date & latitude & longitude \\
+		incid\_numb & offence\_code & occurred\_on\_date & latitude & longitude \\
 		\hline
 		I192014076 & Larceny & 20/12/2018 00:01 & 4.232.386.050 & -7.107.600.196 \\
 		I192003189 & Aggravated Assault & 30/12/2018 12:00 & 4.233.596.847 & -7.108.129.856\\
@@ -113,7 +117,7 @@ In Tabella 4.2 un esempio di alcuni record del dataset:
 
 \begin{sidewaysfigure}
 	%\hspace{-0.5cm}
-	\includegraphics[height=0.64 \linewidth]{frequenze18.png}
+	\includegraphics[height=0.6 \linewidth]{frequenze18.png}
 	\caption{frequenze eventi per tipologia nel 2018}
 \end{sidewaysfigure}
 \clearpage
@@ -155,7 +159,7 @@ Inoltre \`e stato definito un \textbf{metodo ausiliario} \textit{searchNode()} c
 Il corpo dell'algoritmo vero e proprio \`e contenuto nel file \textit{STBFM.py}.\\
 Il software rispecchia il pi\`u possibile l'algoritmo originale definito nel Capitolo 3 utilizzando la classe \textit{SPTree}. Detto ci\`o, vanno fatte comunque delle premesse.\\
 \\
-In primo luogo, la distanza spaziale, avendo in input coordinate GPS, non pu\`o considerarsi perfetta in quanto la superficie terrestre non \`e regolare e il nostro pianeta non pu\`o essere considerato una sfera. Il metodo di calcolo della distanza scelto \`e quello della \textit{legge sferica dei coseni}:\\
+In primo luogo, la distanza spaziale, avendo in input coordinate GPS, non pu\`o considerarsi perfetta in quanto la superficie terrestre non \`e regolare e il nostro pianeta non pu\`o essere considerato una sfera. Il metodo di calcolo della distanza scelto \`e quello della \textit{legge sferica dei coseni}\cite{coord:calculate}:\\
 \\
 date $(\varphi_1, \lambda_1)$ e $(\varphi_2, \lambda_2)$ due coordinate in radianti (latitudine, longitudine)
 la distanza tra di esse in km \`e:

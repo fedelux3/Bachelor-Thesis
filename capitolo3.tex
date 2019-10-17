@@ -1,5 +1,9 @@
 \chapter{Algoritmo}
 \label{Algoritmo}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textit{3. Algoritmo}}
+\cfoot{\thepage}
 
 \section{Algoritmo di base}
 Definiti i concetti teorici di base, ora verr\`a descritto l'algoritmo \textbf{Spatio-Temporal Breadth-First Miner} (STBFM) che permette di trovare tutte le sequenze pattern con \textit{participation index} maggiore di una certa soglia \textbf{threshold} $\theta$ data dall'utente.\\
@@ -117,11 +121,11 @@ Per questi motivi viene definita una nuova struttura ad albero per evitare molti
 \clearpage
 
 \section{Struttura ad albero}
-A sostegno dell'algoritmo viene definita una struttura ad albero dedicata per ridurre drasticamente il numero delle computazioni, in particolare per quanto riguarda la generazione di sequenze candidato nuove.
+A sostegno dell'algoritmo viene definita una struttura ad albero\cite{wiki:albero} dedicata per ridurre drasticamente il numero delle computazioni, in particolare per quanto riguarda la generazione di sequenze candidato nuove.
 
 \subsection{Albero}
 Innanzitutto definiamo cos'\`e una struttura ad albero orientato:\\
-Un \textbf{albero orientato} \`e un grafo connesso, aciclico ed orientato. Esso \`e una struttura dati che si compone di due sottostrutture fondamentali: 
+Un \textbf{albero orientato} \`e un grafo connesso, aciclico ed orientato\cite{cormen:libro}. Esso \`e una struttura dati che si compone di due sottostrutture fondamentali: 
 \begin{itemize}
 	\item il \textbf{nodo} che solitamente contiene informazioni o altre strutture dati;
 	\item l'\textbf{arco} che stabilisce un collegamento gerarchico fra due nodi.
@@ -290,7 +294,7 @@ La combinazione di Algorithm 1, Algorithm 6 ed Algorithm 8 forma l'algoritmo \te
 \section{Alternativa - Algoritmo apriori}
 L'algoritmo proposto, non \`e l'unica alternativa allo studio di regole di associazioni. Un altro algoritmo di ricerca di associazioni molto valido \`e l'\textit{algoritmo apriori}.\\
 \\
-\textbf{L'algoritmo apriori} \`e utilizzato per la generazione di \textit{itemset} frequenti a partire da itemset con un solo elemento. Concretamente parte da una serie di itemset frequenti e vi aggiunge elementi verificando quanto questa frequenza venga mantenuta.\\
+\textbf{L'algoritmo apriori} \`e utilizzato per la generazione di \textit{itemset} frequenti a partire da itemset con un solo elemento\cite{wiki:apriori}. Concretamente parte da una serie di itemset frequenti e vi aggiunge elementi verificando quanto questa frequenza venga mantenuta.\\
 L'algoritmo si basa sulla considerazione che se un insieme di oggetti (itemset) \`e frequente,  allora anche tutti i suoi sottoinsiemi sono frequenti, viceversa se un itemset non \`e frequente, allora neanche gli insiemi che lo contengono sono frequenti, esso \`e definito \textbf{principio di anti-monotonicit\`a}.\\
 \\
 Viene applicato soprattutto per il \textit{problema del carrello della spesa}, ovvero lo studio delle correlazioni tra prodotti acquistati al supermercato. In questo tipo di situazioni la generazione del gruppo di candidati viene svolta aggiungendo un item per volta come quando si mettono i prodotti della spesa nel carrello. I gruppi di candidati sono successivamente valutati e l'algoritmo termina quando non ci sono ulteriori estensioni possibili, similmente a come avviene per lo \textit{STBFM}.\\

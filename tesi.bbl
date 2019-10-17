@@ -30,11 +30,6 @@ IlSole24ore.
   novembre 2015.
 \newblock pagine 12-13.
 
-\bibitem{bostonCrime:code}
-Federico Luzzi.
-\newblock Bostoncrime.
-\newblock \url{https://github.com/fedelux3/BostonCrime}.
-
 \bibitem{icpram19}
 Piotr~S. Maciag. and Robert Bembenik.
 \newblock A novel breadth-first strategy algorithm for discovering sequential

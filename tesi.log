@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.3)  16 OCT 2019 00:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.3)  17 OCT 2019 17:01
 entering extended mode
 **./tesi.tex
 (tesi.tex
@@ -639,16 +639,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--32
 
 
 {C:/Users/fede9/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./logo_unim
-ib.pdf>]) [2
+ib.pdf>])pdfTeX warning (ext4): destination with the same identifier (name{page
+.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.43 ...mpty} \vspace*{.75truecm} \cleardoublepage
+                                                   [1
 
 
 ]
 \openout2 = `ringraziamenti.aux'.
 
- (ringraziamenti.tex) [1
+ (ringraziamenti.tex)
+[1
 
 
-] [2
 
 ] (tesi.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 5.
@@ -659,50 +664,50 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Try loading font information for U+msb on input line 5.
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [3
+) [2
 
 
 ])
 \tf@toc=\write4
 \openout4 = `tesi.toc'.
 
- [4]
+ [3]
 \openout2 = `capitolo1.aux'.
 
  (capitolo1.tex
 Capitolo 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--12
+Underfull \hbox (badness 10000) in paragraph at lines 11--16
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 17.
 ("C:\Users\fede9\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <12> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 32.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 36.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 32.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 36.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--45
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--45
+Underfull \hbox (badness 10000) in paragraph at lines 20--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--45
+Underfull \hbox (badness 10000) in paragraph at lines 20--49
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--49
 
  []
 
@@ -710,28 +715,30 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.45 
+l.49 
       [1
 
 
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.46 \section
-             {Breve descrizione del lavoro} [2]
-Underfull \hbox (badness 10000) in paragraph at lines 57--63
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 61--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--63
+Underfull \hbox (badness 10000) in paragraph at lines 61--67
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 64--81
+Underfull \hbox (badness 10000) in paragraph at lines 68--85
 
  []
 
@@ -742,107 +749,104 @@ Underfull \hbox (badness 10000) in paragraph at lines 64--81
 ]
 \openout2 = `capitolo2.aux'.
 
- (capitolo2.tex [6
-
-
-
-]
+ (capitolo2.tex
 Capitolo 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--20
+Underfull \hbox (badness 10000) in paragraph at lines 21--24
 
  []
 
-[7]
-<neighborhood.png, id=275, 375.20175pt x 285.4665pt>
-File: neighborhood.png Graphic file (type png)
-<use neighborhood.png>
-Package pdftex.def Info: neighborhood.png  used on input line 39.
-(pdftex.def)             Requested size: 307.57008pt x 234.00238pt.
- [8 <./neighborhood.png>]
-<neia1.png, id=286, 87.9285pt x 102.98476pt>
-File: neia1.png Graphic file (type png)
-<use neia1.png>
-Package pdftex.def Info: neia1.png  used on input line 59.
-(pdftex.def)             Requested size: 66.59422pt x 77.99881pt.
-<neia2.png, id=287, 63.8385pt x 104.7915pt>
-File: neia2.png Graphic file (type png)
-<use neia2.png>
-Package pdftex.def Info: neia2.png  used on input line 60.
-(pdftex.def)             Requested size: 47.51735pt x 77.99881pt.
- [9 <./neia1.png> <./neia2.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 64.
+[6
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--78
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--78
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--78
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--102
-
- []
-
-[10
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+<neighborhood.png, id=277, 375.20175pt x 285.4665pt>
+File: neighborhood.png Graphic file (type png)
+<use neighborhood.png>
+Package pdftex.def Info: neighborhood.png  used on input line 43.
+(pdftex.def)             Requested size: 307.57008pt x 234.00238pt.
+ [7 <./neighborhood.png>]
+<neia1.png, id=288, 87.9285pt x 102.98476pt>
+File: neia1.png Graphic file (type png)
+<use neia1.png>
+Package pdftex.def Info: neia1.png  used on input line 63.
+(pdftex.def)             Requested size: 66.59422pt x 77.99881pt.
+<neia2.png, id=289, 63.8385pt x 104.7915pt>
+File: neia2.png Graphic file (type png)
+<use neia2.png>
+Package pdftex.def Info: neia2.png  used on input line 64.
+(pdftex.def)             Requested size: 47.51735pt x 77.99881pt.
+ [8 <./neia1.png> <./neia2.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 68.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--109
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 124--130
+Underfull \hbox (badness 10000) in paragraph at lines 74--82
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--130
+Underfull \hbox (badness 10000) in paragraph at lines 74--82
 
  []
 
-) [12
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--106
+
+ []
+
+[9
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--113
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 128--134
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--134
+
+ []
+
+) [11
 
 ]
 \openout2 = `capitolo3.aux'.
 
  (capitolo3.tex
 Capitolo 3.
-[13
+[12
 
 
 
-]
-Underfull \vbox (badness 3989) has occurred while \output is active []
-
- [14]
-Underfull \hbox (badness 10000) in paragraph at lines 73--80
+] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 77--84
 
  []
 
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 86--93
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 90--97
 
  []
 
@@ -850,397 +854,407 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--93
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--116
+Underfull \hbox (badness 10000) in paragraph at lines 114--120
 
  []
 
-[16] [17]
-<albero.png, id=382, 220.825pt x 194.7275pt>
+[15] [16]
+<albero.png, id=387, 220.825pt x 194.7275pt>
 File: albero.png Graphic file (type png)
 <use albero.png>
-Package pdftex.def Info: albero.png  used on input line 134.
+Package pdftex.def Info: albero.png  used on input line 138.
 (pdftex.def)             Requested size: 176.90956pt x 155.99762pt.
- [18
+ [17
 
  <./albero.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 158--164
+Underfull \hbox (badness 10000) in paragraph at lines 162--168
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--164
+Underfull \hbox (badness 10000) in paragraph at lines 162--168
 
  []
 
-<sptree.png, id=388, 417.35925pt x 231.264pt>
+<sptree.png, id=395, 417.35925pt x 231.264pt>
 File: sptree.png Graphic file (type png)
 <use sptree.png>
-Package pdftex.def Info: sptree.png  used on input line 175.
+Package pdftex.def Info: sptree.png  used on input line 179.
 (pdftex.def)             Requested size: 351.92946pt x 195.0pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[19
+[18
 
-] [20 <./sptree.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 185--189
-
- []
-
-
+] [19 <./sptree.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 189--193
 
  []
 
 
-Overfull \hbox (5.79874pt too wide) in paragraph at lines 189--193
+Underfull \hbox (badness 10000) in paragraph at lines 193--197
+
+ []
+
+
+Overfull \hbox (5.79874pt too wide) in paragraph at lines 193--197
 \OT1/cmr/m/n/12 Partendo da-gli al-go-rit-mi pre-ce-den-te-men-te de-fi-ni-ti i
 n-te-gria-mo l'al-be-ro $\OML/cmm/m/it/12 SPTree$\OT1/cmr/m/n/12 . 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--200
+Underfull \hbox (badness 10000) in paragraph at lines 198--204
 
  []
 
-[21
+[20
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 238--242
+Underfull \hbox (badness 10000) in paragraph at lines 242--246
 
  []
 
-[22]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23]
-Underfull \hbox (badness 10000) in paragraph at lines 284--288
+[21] [22]
+Underfull \hbox (badness 10000) in paragraph at lines 288--292
 
  []
 
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 291--301
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 295--305
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--301
+Underfull \hbox (badness 10000) in paragraph at lines 295--305
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--301
+Underfull \hbox (badness 10000) in paragraph at lines 295--305
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--333
+Underfull \hbox (badness 10000) in paragraph at lines 313--337
 
  []
 
-[25
+[24
 
-]) [26]
+]) [25]
 \openout2 = `capitolo4.aux'.
 
  (capitolo4.tex
 Capitolo 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--11
+Underfull \hbox (badness 10000) in paragraph at lines 11--15
 
  []
 
 
-Underfull \hbox (badness 5878) in paragraph at lines 28--29
+Underfull \hbox (badness 5878) in paragraph at lines 32--33
 []|\OT1/cmr/m/n/12 categoria di even-to cri-mi-na-le
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 44--45
+Underfull \hbox (badness 2790) in paragraph at lines 48--49
 []|\OT1/cmr/m/n/12 giorno del-la set-ti-ma-na in cui
  []
 
 
-Overfull \hbox (34.26439pt too wide) in paragraph at lines 19--59
+Overfull \hbox (34.26439pt too wide) in paragraph at lines 23--63
 []  [] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[27
+[26
 
 
 
-] [28]
-Overfull \hbox (12.44392pt too wide) in paragraph at lines 63--75
+] [27]
+Overfull \hbox (12.44392pt too wide) in paragraph at lines 67--79
 $[]$ \OT1/cmr/m/n/12 del even-to si puo ri-ca-va-re in IN-CI-DENT[]NUMBER,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--75
+Underfull \hbox (badness 10000) in paragraph at lines 67--79
 
  []
 
+[28
 
-Overfull \hbox (20.3157pt too wide) in paragraph at lines 88--98
+]
+Overfull \hbox (20.3157pt too wide) in paragraph at lines 92--102
 \OT1/cmr/m/n/12 TU-DI-NE vuo-te o non va-li-de. So-no sta-ti eli-mi-na-ti va-lo
 -ri di IN-CI-DENT[]NUMBER
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--98
+Underfull \hbox (badness 10000) in paragraph at lines 92--102
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--98
+Underfull \hbox (badness 10000) in paragraph at lines 92--102
 
  []
 
 
-Overfull \hbox (14.48067pt too wide) in paragraph at lines 88--98
+Overfull \hbox (14.48067pt too wide) in paragraph at lines 92--102
 \OT1/cmr/m/n/12 INCIDENT[]NUMBER, OF-FEN-CE[]CODE[]GROUP, OC-CUR-RED[]ON[]DATE,
 
  []
 
-[29
 
-]
-Overfull \hbox (2.03703pt too wide) in paragraph at lines 103--103
-[]|\OT1/cmr/m/n/12 offence[]code[]group| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 106--106
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
 []|\OT1/cmr/m/n/12 Aggravated
  []
 
 
-Overfull \hbox (44.63077pt too wide) in paragraph at lines 100--111
+Overfull \hbox (22.9474pt too wide) in paragraph at lines 104--115
 []  [] 
  []
 
-<frequenze18.png, id=503, 478.1865pt x 281.25075pt>
+<frequenze18.png, id=518, 478.1865pt x 281.25075pt>
 File: frequenze18.png Graphic file (type png)
 <use frequenze18.png>
-Package pdftex.def Info: frequenze18.png  used on input line 116.
-(pdftex.def)             Requested size: 644.17404pt x 378.87964pt.
+Package pdftex.def Info: frequenze18.png  used on input line 120.
+(pdftex.def)             Requested size: 603.9191pt x 355.20361pt.
 
-Overfull \hbox (52.17404pt too wide) in paragraph at lines 116--117
+Overfull \hbox (11.9191pt too wide) in paragraph at lines 120--121
 [][] 
  []
 
-[30] [31 <./frequenze18.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 122--125
+[29] [30 <./frequenze18.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 126--129
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
 []|\OT1/cmr/m/n/12 children
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--146
+Underfull \hbox (badness 10000) in paragraph at lines 142--150
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--146
+Underfull \hbox (badness 10000) in paragraph at lines 142--150
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--146
+Underfull \hbox (badness 10000) in paragraph at lines 142--150
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--146
+Underfull \hbox (badness 10000) in paragraph at lines 142--150
 
  []
 
-[32
+[31
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 155--162
+Underfull \hbox (badness 10000) in paragraph at lines 159--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--162
+Underfull \hbox (badness 10000) in paragraph at lines 159--166
 
  []
 
-[33]
-Underfull \hbox (badness 10000) in paragraph at lines 163--174
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 163--174
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 167--178
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--174
+Underfull \hbox (badness 10000) in paragraph at lines 167--178
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--174
+Underfull \hbox (badness 10000) in paragraph at lines 167--178
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--181
+Underfull \hbox (badness 10000) in paragraph at lines 167--178
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--181
+Underfull \hbox (badness 10000) in paragraph at lines 179--185
 
  []
 
-[34])
-Underfull \hbox (badness 10000) in paragraph at lines 193--61
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--185
 
  []
 
-[35]
+[33])
+Underfull \hbox (badness 10000) in paragraph at lines 197--61
+
+ []
+
+[34]
 \openout2 = `capitolo5.aux'.
 
- (capitolo5.tex [36
+ (capitolo5.tex
+Capitolo 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--13
+
+ []
+
+[35
 
 
 
 ]
-Capitolo 5.
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--9
+Underfull \hbox (badness 10000) in paragraph at lines 24--28
 
  []
 
-[37]
-Underfull \hbox (badness 10000) in paragraph at lines 20--24
-
- []
-
-[38]
-Overfull \hbox (2.67226pt too wide) in paragraph at lines 38--38
+[36]
+Overfull \hbox (2.67226pt too wide) in paragraph at lines 42--42
 []|\OT1/cmr/bx/n/12 comb|  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--64
+Underfull \hbox (badness 10000) in paragraph at lines 61--68
 
+ []
+
+[37
+
+]
+<tempi12.png, id=570, 724.20563pt x 395.22656pt>
+File: tempi12.png Graphic file (type png)
+<use tempi12.png>
+Package pdftex.def Info: tempi12.png  used on input line 71.
+(pdftex.def)             Requested size: 500.2439pt x 272.99881pt.
+
+Overfull \hbox (64.4854pt too wide) in paragraph at lines 70--72
+[]  [] 
+ []
+
+[38 <./tempi12.png (PNG copy)>]
+<rag_nrec.png, id=577, 1244.39906pt x 827.34094pt>
+File: rag_nrec.png Graphic file (type png)
+<use rag_nrec.png>
+Package pdftex.def Info: rag_nrec.png  used on input line 82.
+(pdftex.def)             Requested size: 469.28784pt x 312.00119pt.
+
+Overfull \hbox (44.91026pt too wide) in paragraph at lines 81--83
+[]  [] 
  []
 
 [39
 
-]
-<tempi12.png, id=558, 724.20563pt x 395.22656pt>
-File: tempi12.png Graphic file (type png)
-<use tempi12.png>
-Package pdftex.def Info: tempi12.png  used on input line 67.
-(pdftex.def)             Requested size: 500.2439pt x 272.99881pt.
+ <./rag_nrec.png>]
+<tem_nrec.png, id=583, 1253.28226pt x 826.287pt>
+File: tem_nrec.png Graphic file (type png)
+<use tem_nrec.png>
+Package pdftex.def Info: tem_nrec.png  used on input line 95.
+(pdftex.def)             Requested size: 502.79565pt x 331.50238pt.
 
-Overfull \hbox (64.4854pt too wide) in paragraph at lines 66--68
+Overfull \hbox (72.72762pt too wide) in paragraph at lines 94--96
 []  [] 
  []
 
-[40 <./tempi12.png (PNG copy)>]
-<rag_nrec.png, id=564, 1244.39906pt x 827.34094pt>
-File: rag_nrec.png Graphic file (type png)
-<use rag_nrec.png>
-Package pdftex.def Info: rag_nrec.png  used on input line 78.
-(pdftex.def)             Requested size: 469.28784pt x 312.00119pt.
+[40
 
-Overfull \hbox (44.91026pt too wide) in paragraph at lines 77--79
+ <./tem_nrec.png>]
+<rag_temp.png, id=589, 1078.0275pt x 826.287pt>
+File: rag_temp.png Graphic file (type png)
+<use rag_temp.png>
+Package pdftex.def Info: rag_temp.png  used on input line 109.
+(pdftex.def)             Requested size: 457.93356pt x 350.99762pt.
+
+Overfull \hbox (42.0919pt too wide) in paragraph at lines 108--110
 []  [] 
  []
 
 [41
 
- <./rag_nrec.png>]
-<tem_nrec.png, id=570, 1253.28226pt x 826.287pt>
-File: tem_nrec.png Graphic file (type png)
-<use tem_nrec.png>
-Package pdftex.def Info: tem_nrec.png  used on input line 91.
-(pdftex.def)             Requested size: 502.79565pt x 331.50238pt.
+ <./rag_temp.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 115--117
 
-Overfull \hbox (72.72762pt too wide) in paragraph at lines 90--92
-[]  [] 
  []
 
-[42
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 146--151
 
- <./tem_nrec.png>]
-<rag_temp.png, id=576, 1078.0275pt x 826.287pt>
-File: rag_temp.png Graphic file (type png)
-<use rag_temp.png>
-Package pdftex.def Info: rag_temp.png  used on input line 105.
-(pdftex.def)             Requested size: 457.93356pt x 350.99762pt.
+ []
 
-Overfull \hbox (42.0919pt too wide) in paragraph at lines 104--106
-[]  [] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--163
+
  []
 
 [43
 
- <./rag_temp.png>] [44]
-Underfull \hbox (badness 10000) in paragraph at lines 140--145
-
- []
-
-[45
-
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 154--157
+Underfull \hbox (badness 10000) in paragraph at lines 182--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--179
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 176--179
-
- []
-
-[46]
-Overfull \hbox (37.29623pt too wide) in paragraph at lines 186--197
+Overfull \hbox (37.29623pt too wide) in paragraph at lines 191--202
 []  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--203
+Underfull \hbox (badness 10000) in paragraph at lines 204--208
+
+ []
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 213--218
 
  []
 
 
-Underfull \vbox (badness 1005) has occurred while \output is active []
-
- [47]
-Underfull \hbox (badness 10000) in paragraph at lines 208--213
+Underfull \hbox (badness 10000) in paragraph at lines 213--218
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 208--213
-
- []
-
-<freqRel.png, id=602, 499.8675pt x 301.72725pt>
+[45]
+<freqRel.png, id=620, 499.8675pt x 301.72725pt>
 File: freqRel.png Graphic file (type png)
 <use freqRel.png>
-Package pdftex.def Info: freqRel.png  used on input line 216.
+Package pdftex.def Info: freqRel.png  used on input line 221.
 (pdftex.def)             Requested size: 439.35846pt x 265.19714pt.
 
-Overfull \hbox (30.62999pt too wide) in paragraph at lines 215--217
+Overfull \hbox (16.40361pt too wide) in paragraph at lines 220--222
+[]  [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--227
+
+ []
+
+[46 <./freqRel.png>]
+Overfull \hbox (20.55362pt too wide) in paragraph at lines 234--239
+[]  [] 
+ []
+
+
+Overfull \hbox (20.55362pt too wide) in paragraph at lines 247--252
+[]  [] 
+ []
+
+
+Overfull \hbox (34.77998pt too wide) in paragraph at lines 260--265
 []  [] 
  []
 
@@ -1248,64 +1262,46 @@ Overfull \hbox (30.62999pt too wide) in paragraph at lines 215--217
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--225
+Underfull \hbox (badness 10000) in paragraph at lines 266--271
 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [48]
-Overfull \hbox (20.55362pt too wide) in paragraph at lines 229--234
-[]  [] 
- []
-
-[49 <./freqRel.png>]
-Overfull \hbox (20.55362pt too wide) in paragraph at lines 242--247
-[]  [] 
- []
-
-
-Overfull \hbox (20.55362pt too wide) in paragraph at lines 255--260
-[]  [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 261--264
-
- []
-
-[50]
-Overfull \hbox (31.4213pt too wide) in paragraph at lines 269--288
-[]  [] 
- []
-
-) [51
+[47
 
 ]
+Overfull \hbox (42.80222pt too wide) in paragraph at lines 273--292
+[]  [] 
+ []
+
+) [48]
 \openout2 = `conclusioni.aux'.
 
- (conclusioni.tex [52
-
-
-
-])
-Overfull \hbox (14.28171pt too wide) in paragraph at lines 14--63
+ (conclusioni.tex)
+Overfull \hbox (14.28171pt too wide) in paragraph at lines 18--63
  []\OT1/cmr/bx/n/12 Altre pro-spet-ti-ve[] \OT1/cmr/m/n/12 L'al-go-rit-mo og-ge
 t-to di que-sto ela-bo-ra-to lo \OT1/cmr/m/it/12 Spatio-temporal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--63
+Underfull \hbox (badness 10000) in paragraph at lines 18--63
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--63
+Underfull \hbox (badness 10000) in paragraph at lines 18--63
 
  []
 
-[53] [54] (tesi.bbl
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--63
+
+ []
+
+[49
+
+
+
+] [50] (tesi.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 9--13
 []\OT1/cmr/m/n/12 Boston Po-li-ce De-part-ment.  Cri-me in-ci-dent re-ports (au
 -gu-
@@ -1346,37 +1342,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--32
 / 02 /
  []
 
-
-Underfull \hbox (badness 2173) in paragraph at lines 34--37
-[]\OT1/cmr/m/n/12 Federico Luz-zi.  Bo-ston-cri-me.  []$\OT1/cmtt/m/n/12 https 
-: / / github . com / fedelux3 /
- []
-
-[55
+[51
 
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 72.
- [56]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 76.
+ [52]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 76.
  (tesi.aux (frontespizio.aux) (ringraziamenti.aux) (capitolo1.aux)
 (capitolo2.aux) (capitolo3.aux) (capitolo4.aux) (capitolo5.aux)
 (conclusioni.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 72.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 76.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 76.
 Package rerunfilecheck Info: File `tesi.out' has not changed.
 (rerunfilecheck)             Checksum: 396A52F1792AAB2EF81AAAF51082E2D2;2608.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 76.
  ) 
 Here is how much of TeX's memory you used:
- 10422 strings out of 492973
- 155077 string characters out of 3126693
- 283712 words of memory out of 3000000
- 13805 multiletter control sequences out of 15000+200000
+ 10415 strings out of 492973
+ 155003 string characters out of 3126693
+ 283649 words of memory out of 3000000
+ 13804 multiletter control sequences out of 15000+200000
  17012 words of font info for 64 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
- 36i,32n,43p,796b,625s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,32n,44p,796b,625s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmbx8.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fo
@@ -1398,9 +1388,9 @@ onts/cm/cmsy10.pfb><C:/Users/fede9/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/fede9/AppData/Local/Progra
 ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/fede9/AppData
 /Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on tesi.pdf (62 pages, 1017252 bytes).
+Output written on tesi.pdf (57 pages, 1020380 bytes).
 PDF statistics:
- 808 PDF objects out of 1000 (max. 8388607)
- 266 named destinations out of 1000 (max. 500000)
+ 798 PDF objects out of 1000 (max. 8388607)
+ 260 named destinations out of 1000 (max. 500000)
  381 words of extra memory for PDF output out of 10000 (max. 10000000)
 
